@@ -14,8 +14,9 @@ git checkout master
 
 echo "Committing files..."
 cp -r _site/* ./
-git rm --ignore-unmatch $(git ls-files --deleted) ./._.inva.lid_78.${RANDOM}.99
+git add ./photos/album/*
 git add ./
+git rm --ignore-unmatch $(git ls-files --deleted) ./._.inva.lid_78.${RANDOM}.99
 git commit -m "Release $(date +%b_%d_%G_%Hh%Mm%Ss)"
 git push
 
