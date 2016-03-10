@@ -1,0 +1,12 @@
+[submodule "photos/album/nandi-hills"]
+	path = photos/album/nandi-hills
+	url = https://github.com/rohit01/photos-nandi-hills.git
+[submodule "photos/album/gokarna"]
+	path = photos/album/gokarna
+	url = https://github.com/rohit01/photos-gokarna.git
+[submodule "photos/album/gurgaon"]
+	path = photos/album/gurgaon
+	url = https://github.com/rohit01/photos-gurgaon.git
+[submodule "photos/album/uttarakhand"]
+	path = photos/album/uttarakhand
+	url = https://github.com/rohit01/photos-uttarakhand.git
