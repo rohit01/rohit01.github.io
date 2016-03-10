@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Simplicity - @rohit01</title>
+  <link href="http://www.rohit.io/rss.xml" rel="self" />
+  <link href="http://www.rohit.io/" />
+  <updated>2016-03-10T13:34:10+00:00</updated>
+  <id>http://www.rohit.io/</id>
+  <author>
+    <name>Rohit Gupta</name>
+    <email>hello@rohit.io</email>
+  </author>
+  
+  <entry>
+    <title>29 questions to ask yourself if you’re in devops</title>
+    <link href="http://www.rohit.io/blog/29-questions-to-ask-yourself-if-you-are-in-devops.html"/>
+    <updated>2015-07-10T20:10:00+00:00</updated>
+    <id>http://www.rohit.io/blog/29-questions-to-ask-yourself-if-you-are-in-devops</id>
+    <content type="html">&lt;p&gt;A few days ago, I had an opportunity to meet and interact with &lt;a href=&quot;https://github.com/cachedout&quot;&gt;Mike Place&lt;/a&gt;, who works as a developer at &lt;a href=&quot;http://saltstack.com/&quot;&gt;Saltstack&lt;/a&gt;. We had an interesting conversation about devops and how things work in the valley. Mike explained the growing importance of devops in organizations and the rise of devops as a culture that aims to collaboratively deliver systems into production, reliably and effectively.&lt;/p&gt;
+
+&lt;p&gt;He said &lt;em&gt;“Businesses are ever-changing. Engineers ship code, dozens of times each day. Every change in production has some probability of failure and business can get impacted due to that very failure. Risk is a combination of both of them. If only one of them is high, the risk may still be low. But if both of them are high, it can be a disaster. &lt;strong&gt;The role of devops is to minimize the risk of every change.&lt;/strong&gt;”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;He asked a series of questions to self-evaluate the health of the devops team in any organization. The questions are an eye opener to every devops engineer.&lt;/p&gt;
+
+&lt;p&gt;Here are 29 questions that you need to ask yourself if you are in devops. Go ahead and rate yourself on a scale of 1 to 5.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Do you automate everything that can be automated and makes sense to automate?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How easy is it to revert the changes?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you use role based configuration management?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you automate the creation of base system configuration (like OS installation, launching VMs, etc.)?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Is all your code stored in some version control system, viz. Git, mercurial, svn?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Does everyone (developers, devops, QA, etc.) in your organization knows where to look for code?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Can you build your code in ONE step? (5 points for one step build, -n if number of steps n is greater than 1)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Can you deploy your code in ONE step? (5 points for one step deploy, -n if number of steps n is greater than 1)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you have audited log for every deployment?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you release frequent small changes or club smaller changes into a big one to release less frequently?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you always ship master or feature branches?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you use feature flags to enable or disable a feature?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you do private beta releases?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you use AB Testing?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you do dark Launches?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you have metrics shared between Dev and Ops?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you have Application level metrics?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you co-relate application and system metrics?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you make changes based on the application or system metrics?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you have notifications based on metrics?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you have respect for other teams?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you stereotype others?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How hard it is to say YES?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Does your team hide things?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How often Dev talks about the impact with Ops?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Does Dev and Ops maintain checklist or plans?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Does Dev have access to production?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do you practice fire drills?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Are there developers on call rotations?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;What&amp;rsquo;s your score? Don&amp;rsquo;t worry, you don&amp;rsquo;t need to share it. It&amp;rsquo;s more important to ask yourself these questions often than focusing only on the answers.&lt;/p&gt;
+
+&lt;p&gt;Should you need any clarification regarding these questions, don’t hesitate to comment below. &lt;strong&gt;And as always, Thanks for reading :-)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Ansible Meetup @ Knowlarity</title>
+    <link href="http://www.rohit.io/blog/ansible-meetup-knowlarity.html"/>
+    <updated>2015-04-12T22:10:00+00:00</updated>
+    <id>http://www.rohit.io/blog/ansible-meetup-knowlarity</id>
+    <content type="html">&lt;p&gt;Yesterday, we hosted an Ansible Meetup at at &lt;a href=&quot;http://www.knowlarity.com/&quot;&gt;Knowlarity&lt;/a&gt; Bangalore office. It was a wonderful gathering, interactive sessions which included cute as well as dangerous questions :p&lt;br/&gt;
+Here are some exciting pics from the event:&lt;/p&gt;
+
+&lt;div style=&#39;position: relative; padding-bottom: 81%; height: 0; overflow: hidden;&#39;&gt;&lt;iframe id=&#39;iframe&#39; src=&#39;http://flickrit.com/slideshowholder.php?height=80&amp;size=big&amp;speed=3.0&amp;count=100&amp;setId=72157651504518608&amp;click=true&amp;counter=true&amp;theme=1&amp;thumbnails=1&amp;transition=2&amp;layoutType=responsive&amp;sort=0&#39; scrolling=&#39;no&#39; frameborder=&#39;0&#39;style=&#39;width:100%; height:100%; position: absolute; top:0; left:0;&#39; &gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Tech Talks on Ansible&lt;/h1&gt;
+
+&lt;p&gt;We had 5 sessions which covered Introduction to Ansible, advanced topics as well as contributing to Ansible.&lt;/p&gt;
+
+&lt;h3&gt;Getting started with Ansible-playbook&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/ansible-meetup-knowlarity/images/ravdeep.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/ravdeep003&quot;&gt;@ravdeep003&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.rohit.io/res/posts/ansible-meetup-knowlarity/getting-started-with-ansible-playbook/slides.pdf&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, Ravdeep gave an introduction to Ansible playbooks, inventory, modules, variables and a typical directory structure of an Ansible project. The session was very interactive with many participants completely new to Ansible. The demo session, especially got people excited.&lt;/p&gt;
+
+&lt;h3&gt;Web App, Automated deployment&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/ansible-meetup-knowlarity/images/adik.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/adityak2190&quot;&gt;@adityak2190&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.adikrishnan.in/static/preso/ansible-sitedeploy.html&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, Aditya showed a complete end to end automation of an application using Ansible. The application was a Django website. The application was deployed with nginx, wsgi (running under gunicorn) and SQLite database. The application was deployed from scratch in less than 5 mins. The source code of the demo application is in his &lt;a href=&quot;https://github.com/adityak2190/sitedeploy&quot;&gt;github repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Running Ansible via API&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/ansible-meetup-knowlarity/images/hussain.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/ImNagri&quot;&gt;@ImNagri&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.rohit.io/res/posts/ansible-meetup-knowlarity/running-ansible-via-api/slides.pdf&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, Hussain demonstrated how to use Ansible as a python library and expose custom APIs. His project used python flask to expose web APIs which was called from a remote server. The remote server had a beautiful WebUI built using bootstrap and javascript. The architecture was discussed in detail.&lt;/p&gt;
+
+&lt;h3&gt;AWS Management with Ansible&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/ansible-meetup-knowlarity/images/rohit.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/rohit01&quot;&gt;@rohit01&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.rohit.io/res/posts/ansible-meetup-knowlarity/aws-management-with-ansible&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;:  In this talk, I did a demo of Ansible cloud modules - AWS EC2 and Route53. The talk started with a quick introduction to AWS followed by a live demo. In the demo, I uploaded my public ssh key into AWS EC2, created a security group, launched two WordPress instances, created an ELB, register the newly created instances behind ELB and added an entry in Route53 nameserver. It demonstrated the power of Ansible to manage public clouds and define infrastructure in the form of simple YAML files.&lt;/p&gt;
+
+&lt;h3&gt;Contributing to Ansible&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/ansible-meetup-knowlarity/images/deepak.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/hellodiku&quot;&gt;@hellodiku&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.rohit.io/res/posts/ansible-meetup-knowlarity/contributing-to-ansible/slides.pdf&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, Deepak talked about writing custom Ansible modules. The talk started with a quick introduction to key concepts and then focused more on code structure. The demo highlighted the coding structure of Ansible project, while keeping it simple. His demo module is hosted in his &lt;a href=&quot;https://github.com/hellodk/ansible-meetup-bangalore&quot;&gt;github repository&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Say Cheers!&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/ansible-meetup-knowlarity/images/group_pic.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; align=&quot;center&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;Tweets on this event :-D&lt;/h3&gt;
+
+&lt;div class=&quot;tweetline&quot; align=&quot;center&quot;&gt;
+    &lt;a class=&quot;twitter-timeline&quot;  href=&quot;https://twitter.com/hashtag/AnsibleAtKnowlarity&quot; data-widget-id=&quot;587290017782870016&quot;&gt;#AnsibleAtKnowlarity Tweets&lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Devops Meetup @ Knowlarity</title>
+    <link href="http://www.rohit.io/blog/devops-meetup-knowlarity.html"/>
+    <updated>2015-02-21T21:00:00+00:00</updated>
+    <id>http://www.rohit.io/blog/devops-meetup-knowlarity</id>
+    <content type="html">&lt;p&gt;Today, we hosted a &lt;a href=&quot;http://www.meetup.com/devops-bangalore/&quot;&gt;DevOps Bangalore Group&lt;/a&gt; meetup at &lt;a href=&quot;http://www.knowlarity.com/&quot;&gt;Knowlarity&lt;/a&gt; office. A picture can tell a thousand words. So, let&amp;rsquo;s enjoy the story of this event with a slideshow (photo courtesy - &lt;a href=&quot;https://twitter.com/soumpaul&quot;&gt;@soumpaul&lt;/a&gt;).&lt;/p&gt;
+
+&lt;div style=&#39;position: relative; padding-bottom: 81%; height: 0; overflow: hidden;&#39;&gt;&lt;iframe id=&#39;iframe&#39; src=&#39;http://flickrit.com/slideshowholder.php?height=80&amp;size=big&amp;speed=3.0&amp;count=100&amp;setId=72157650942872382&amp;click=true&amp;counter=true&amp;theme=1&amp;thumbnails=1&amp;transition=2&amp;layoutType=responsive&amp;sort=0&#39; scrolling=&#39;no&#39; frameborder=&#39;0&#39;style=&#39;width:100%; height:100%; position: absolute; top:0; left:0;&#39; &gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Tech Talks&lt;/h1&gt;
+
+&lt;p&gt;We had a bunch of Devops related tech talks delivered by well known speakers from IT industry. Here&amp;rsquo;s the schedule with presentation slides:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;11:00 AM&lt;/em&gt;: &lt;strong&gt;RIP Nagios. Hello Docker Shinken!&lt;/strong&gt;&lt;br/&gt;
+  &lt;em&gt;Speaker&lt;/em&gt;: Rohit Gupta (me)&lt;br/&gt;
+  &lt;em&gt;Synopsis&lt;/em&gt;: &lt;a href=&quot;/blog/rip-nagios-hello-docker-shinken.html&quot;&gt;RIP Nagios. Hello Docker Shinken!&lt;/a&gt;&lt;br/&gt;
+  &lt;em&gt;Slides link&lt;/em&gt;: &lt;a href=&quot;http://www.rohit.io/res/posts/devops-meetup-knowlarity/rip_nagios_hello_docker_shinken/&quot;&gt;RIP Nagios. Hello Docker Shinken!&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;11:30 AM&lt;/em&gt;: &lt;strong&gt;Salt-Stack for Configuration Management&lt;/strong&gt;&lt;br/&gt;
+  &lt;em&gt;Speaker&lt;/em&gt;: Subhankar Sengupta&lt;br/&gt;
+  &lt;em&gt;Slides link&lt;/em&gt;: &lt;a href=&quot;http://www.slideshare.net/DevOpsBangalore/salt-stack-subhankar-sengupta&quot;&gt;Salt Stack&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;12:00 PM&lt;/em&gt;: &lt;strong&gt;Analyzing logs using ElasticSearch, Fluentd, Kibana&lt;/strong&gt;&lt;br/&gt;
+  &lt;em&gt;Speaker&lt;/em&gt;: Ravdeep Pasricha&lt;br/&gt;
+  &lt;em&gt;Twitter&lt;/em&gt;: &lt;a href=&quot;https://twitter.com/ravdeep003&quot;&gt;@ravdeep003&lt;/a&gt;&lt;br/&gt;
+  &lt;em&gt;Slides link&lt;/em&gt;: &lt;a href=&quot;http://www.rohit.io/res/posts/devops-meetup-knowlarity/Analyzing_logs_using_EFK.pdf&quot;&gt;Analyzing logs using EFK&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;12:30 PM&lt;/em&gt;: &lt;strong&gt;Lunch &amp;amp; Networking&lt;/strong&gt;&lt;br/&gt;
+  &lt;em&gt;Sponsored by &lt;a href=&quot;http://www.knowlarity.com/&quot;&gt;Knowlarity&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;01:00 PM&lt;/em&gt;: &lt;strong&gt;Apache Falcon (Data Pipeline Onboarding)&lt;/strong&gt;&lt;br/&gt;
+  &lt;em&gt;Speaker&lt;/em&gt;: Sanjeev Tripurari&lt;br/&gt;
+  &lt;em&gt;Slides link&lt;/em&gt;: &lt;a href=&quot;http://www.slideshare.net/DevOpsBangalore/apache-falcon-sanjeev-tripurari&quot;&gt;Apache Falcon&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;01:30 PM&lt;/em&gt;: &lt;strong&gt;Puppet for Configuration Management(Demo)&lt;/strong&gt;&lt;br/&gt;
+  &lt;em&gt;Speaker&lt;/em&gt;: Gourav Shah&lt;br/&gt;
+  &lt;em&gt;Twitter&lt;/em&gt;: &lt;a href=&quot;https://twitter.com/gouravshah&quot;&gt;@gouravshah&lt;/a&gt;&lt;br/&gt;
+  &lt;em&gt;Slides link&lt;/em&gt;: &lt;a href=&quot;https://prezi.com/kqpauy3eftli/package-nginx/&quot;&gt;Puppet&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;02:00 PM&lt;/em&gt;: &lt;strong&gt;Introduction to Vagrant&lt;/strong&gt;&lt;br/&gt;
+  &lt;em&gt;Speaker&lt;/em&gt;: Chandra&lt;br/&gt;
+  &lt;em&gt;Twitter&lt;/em&gt;: &lt;a href=&quot;https://twitter.com/chandrashekar_m&quot;&gt;@chandrashekar_m&lt;/a&gt;&lt;br/&gt;
+  &lt;em&gt;Slides link&lt;/em&gt;: &lt;a href=&quot;http://www.rohit.io/res/posts/devops-meetup-knowlarity/Vagrant_Talk.pdf&quot;&gt;Vagrant Talk&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>RIP Nagios. Hello Docker Shinken!</title>
+    <link href="http://www.rohit.io/blog/rip-nagios-hello-docker-shinken.html"/>
+    <updated>2014-12-18T18:00:00+00:00</updated>
+    <id>http://www.rohit.io/blog/rip-nagios-hello-docker-shinken</id>
+    <content type="html">&lt;p&gt;Nagios is a great IT infrastructure monitoring tool. Some people still consider it as an IT standard for monitoring. But as with any software, there is always competition. I personally find Shinken to be one of the most compatible, modern and dare I say, a better alternative to Nagios. In this post, I will do a quick comparison between the two tools, show you reasons to migrate and more importantly how to migrate your current Nagios setup to Shinken in less than 10 minutes! No, seriously!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Quick Introduction to Shinken&lt;/strong&gt;: Shinken was written by &lt;a href=&quot;https://twitter.com/naparuba&quot;&gt;Jean Gabès&lt;/a&gt; as a proof of concept for a new Nagios architecture. He proposed it as the new development branch of Nagios 4. When this proposal was turned down by Nagios authors, Shinken became an independent network monitoring software application compatible with Nagios. Shinken is basically a Nagios Core replacement written in python.&lt;/p&gt;
+
+&lt;h1&gt;Shinken vs Nagios:&lt;/h1&gt;
+
+&lt;p&gt;At &lt;a href=&quot;http://www.knowlarity.com/&quot;&gt;Knowlarity&lt;/a&gt;, we did the big switch from Nagios to Shinken for our complete infrastructure in just about a week. Having used both Nagios and Shinken now, I can tell you how Shinken has helped solve some of the fundamental problems which we faced using Nagios.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Reliability&lt;/strong&gt;: I was working on a NRPE notification plugin and deployed it in Nagios. I turned down a service to test it, but to my surprise Nagios was showing the status as OK (green). The last executed time got updated in the UI but nothing happened under the hood. It was a random issue and I suspect it could have been because of a old version of Nagios 3.x. I have been using Shinken for a while now (even before the migration in Knowlarity), and I have never once faced these sort of issues. The UI always displays the truth.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Active Development&lt;/strong&gt;: I updated Nagios to the latest 4.x. The first impression was that nothing had changed except for the colors in the user interface. In contrast, the complete architecture of Shinken 2.0 has been revamped. It has a modular design, and easy installation, and configuration features. Kudos to the Shinken community.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Multi DC deployment&lt;/strong&gt;: At Knowlarity, we have data-centers in multiple cities across multiple countries. It is a known fact that multi-DC deployment using Nagios is first of all difficult, and looks like a hack when deployed. In comparison, Shinken’s distributed architecture is amazingly simple. All of Shinken’s configuration is still managed in a single place. Here you just add a new shinken-poller in all your data centers and voila, you’re done.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Performance&lt;/strong&gt;: Nagios is written in C and is a lot faster than Shinken. However, Shinken has some exciting performance improvement modules like &lt;a href=&quot;https://github.com/shinken-monitoring/mod-booster-nrpe&quot;&gt;booster-nrpe&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Modern&lt;/strong&gt;: As opposed to Nagios tired old features, Shinken has support for dynamic configuration, AWS hosts, a module installer and many more rich support features. The Shinken community is very active and responsive.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;User Interface&lt;/strong&gt;: The Nagios UI, albeit old, is very feature rich. Shinken has a sleek and modern interface - WebUI. WebUI is really easy to use but lack features. However, there are many third party interfaces available. I like to use WebUI and &lt;a href=&quot;http://www.thruk.org/&quot;&gt;Thruk&lt;/a&gt; at the same time. Thruk interface is similar to that of Nagios. So hardcore Nagios users will still feel at home.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Easy Switch&lt;/strong&gt;: Probably the best thing about shinken is that it is like a plug and play replacement of Nagios core. Almost 100% compatible. Just dump your Nagios configuration in Shinken and it works. Take a look at their documentation for more details: &lt;a href=&quot;http://shinken.readthedocs.org/en/latest/01_about/whatsnew.html&quot;&gt;Feature comparison between Shinken and Nagios&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h1&gt;Switch to Shinken in 3 easy steps:&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Install &lt;a href=&quot;https://docs.docker.com/installation/#installation&quot;&gt;docker&lt;/a&gt;. Select and pull one of the following docker image:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Shinken&lt;/strong&gt;: It has basic shinken installation along with few must have modules like WebUI (Web Interface), standard nrpe plugins plus a few extra ones, nrpe-booster support and a lightweight web server (nginx). Link: &lt;a href=&quot;https://registry.hub.docker.com/u/rohit01/shinken/&quot;&gt;https://registry.hub.docker.com/u/rohit01/shinken/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Shinken Thruk&lt;/strong&gt;: Shinken (as written above) + Thruk web interface. Internal web server nginx is replaced with apache2. Link: &lt;a href=&quot;https://registry.hub.docker.com/u/rohit01/shinken_thruk/&quot;&gt;https://registry.hub.docker.com/u/rohit01/shinken_thruk/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Shinken Thruk Graphite&lt;/strong&gt;: Shinken Thruk (as written above) + graph support in WebUI. Graphs are stored and served using graphite. Retention is configured for 1 month on a per 2 minute basis. Link: &lt;a href=&quot;https://registry.hub.docker.com/u/rohit01/shinken_thruk_graphite/&quot;&gt;https://registry.hub.docker.com/u/rohit01/shinken_thruk_graphite/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt; Sample execution: &lt;code&gt;$ sudo docker pull rohit01/shinken&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Clone project &lt;strong&gt;&lt;a href=&quot;https://github.com/rohit01/docker_shinken&quot;&gt;docker_shinken&lt;/a&gt;&lt;/strong&gt;. You will see three directories corresponding to the docker images mentioned above. Go inside the directory corresponding to your selected image. You will see a directory named: &lt;a href=&quot;https://github.com/rohit01/docker_shinken/tree/master/shinken_basic/custom_configs&quot;&gt;custom_configs/&lt;/a&gt;. Dump your Nagios configuration here. A default configuration for monitoring docker host is already defined. User login details can be updated in file: &lt;a href=&quot;https://github.com/rohit01/docker_shinken/blob/master/shinken_basic/custom_configs/htpasswd.users&quot;&gt;htpasswd.users&lt;/a&gt;. File contains the documentation in comments.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run the docker image. Expose TCP port 80 to the base machine and mount custom_configs directory to /etc/shinken/custom_configs. Sample execution:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;`&quot;&gt; $ git clone https://github.com/rohit01/docker_shinken.git
+ $ cd docker_shinken/shinken_basic
+ $ sudo docker run -d -v &quot;$(pwd)/custom_configs:/etc/shinken/custom_configs&quot; -p 80:80 rohit01/shinken
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Open your browser and visit these urls (Default credential - admin/admin):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;WebUI&lt;/strong&gt;: &lt;a href=&quot;http://localhost/&quot;&gt;http://localhost/&lt;/a&gt;. Available on all three images.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Thruk UI&lt;/strong&gt;: &lt;a href=&quot;http://localhost/thruk/&quot;&gt;http://localhost/thruk/&lt;/a&gt;. Available on shinken_thruk and shinken_thruk_graphite images.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Graphs&lt;/strong&gt;: &lt;a href=&quot;http://localhost/service/docker_shinken/http_port_7770#graphs&quot;&gt;http://localhost/service/docker_shinken/http_port_7770#graphs&lt;/a&gt;. Available only on shinken_thruk_graphite image.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3&gt;Please Note:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Configuration changes are required only in one place/directory: custom_configs&lt;/li&gt;
+&lt;li&gt;The nrpe plugins installation directory is /usr/lib/nagios/plugins.&lt;/li&gt;
+&lt;li&gt;If you are using custom NRPE plugins, mount your plugins directory inside docker container at /usr/local/custom_plugins. Modify the resource path accordingly.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;If you have any question, I will be happy to answer them in comments. &lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Why static blog site is a good idea!</title>
+    <link href="http://www.rohit.io/blog/why-static-blog-site-is-a-good-idea.html"/>
+    <updated>2014-12-08T20:40:00+00:00</updated>
+    <id>http://www.rohit.io/blog/why-static-blog-site-is-a-good-idea</id>
+    <content type="html">&lt;p&gt;Starting a blog is fairly easy. There are many free blog hosting providers in the internet. However, each of them has some limitation on the level of customization. So, I decided to host it myself and figure out the best alternative.&lt;/p&gt;
+
+&lt;h1&gt;First Steps&lt;/h1&gt;
+
+&lt;p&gt;These were the first steps, I took while starting my blog - &lt;a href=&quot;http://www.rohit.io&quot;&gt;Simplicity&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Domain&lt;/strong&gt;: Domain is the most important identity of a blog. Free domains are mostly bound to a hosting provider and help them more than the owner. So, I decided to get a personal domain - &lt;a href=&quot;http://www.rohit.io&quot;&gt;rohit.io&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Static vs Dynamic&lt;/strong&gt;: Personal blogs are mostly static. Only blog posts get added every few days and comments by visitors. So, I decided to go with a static website generator - &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. For comments, I added the &lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt; plugin.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Hosting provider&lt;/strong&gt;: Github has support for hosting Jekyll websites. Plus, it&amp;rsquo;s highly reliable, zero maintenance and free. Problem solved!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Design&lt;/strong&gt;: The inbuilt theme of Jekyll is very basic. I searched few Jekyll websites and decide to reuse this one: &lt;a href=&quot;http://rsms.me&quot;&gt;http://rsms.me&lt;/a&gt; / &lt;a href=&quot;https://github.com/rsms/rsms.github.com&quot;&gt;https://github.com/rsms/rsms.github.com&lt;/a&gt;. Source code was under creative commons license (friendly).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Search&lt;/strong&gt;: &lt;a href=&quot;https://www.google.co.in/cse/&quot;&gt;Google custom search engine&lt;/a&gt; was already configured in the code. I updated the same to point to &lt;a href=&quot;http://www.rohit.io&quot;&gt;Simplicity&lt;/a&gt; blog.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Google Analytics&lt;/strong&gt;: This was, again, already configured in the code. Updated the same with the ID generated for &lt;a href=&quot;http://www.rohit.io&quot;&gt;Simplicity&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h1&gt;Next Steps&lt;/h1&gt;
+
+&lt;p&gt;I had a decent blog site. However, there were some unsolved problems like SEO, social plugins, link share previews, etc. Since, the website source code was not mine, it was difficult to fix. I did a complete revamp of the website to fix this. Post this, I was able to solve the following problems:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SEO&lt;/strong&gt;: Learned about SEO stuff and handled most of the meta tags as per standard.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Page Speed&lt;/strong&gt;: Google &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/&quot;&gt;PageSpeed Insight&lt;/a&gt; tool is a fantastic tool. It helped me to improve the website structure. I also integrated &lt;a href=&quot;https://www.cloudflare.com/&quot;&gt;cloudflare CDN&lt;/a&gt; to improve latency. The score of &lt;a href=&quot;http://www.rohit.io&quot;&gt;Simplicity&lt;/a&gt; in PageSpeed Insight tool is now &lt;strong&gt;96/100&lt;/strong&gt; :-D&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Twitter card&lt;/strong&gt;: Added &lt;a href=&quot;https://dev.twitter.com/cards/overview&quot;&gt;twitter card&lt;/a&gt; support for previews in twitter for links.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://ogp.me/&quot;&gt;The Open Graph protocol&lt;/a&gt;&lt;/strong&gt;: Added open graph related tags. This is used by Facebook and Linkedin for generating link previews.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search&lt;/strong&gt;: Google CSE depends on Google indexing + the search results were displayed at google website. I wanted to have an in-house search feature. I found this awesome Jekyll plugin: &lt;a href=&quot;https://github.com/slashdotdash/jekyll-lunr-js-search&quot;&gt;jekyll lunr js search&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Google Analytics&lt;/strong&gt;: The bounce rate at home page was reduced to almost half. This was a bonus :-)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Gyaan&lt;/strong&gt;: Static websites are great. Page load times are great. Hosting is free, reliable and scalable. 100% customization is possible. Basic dynamic features can be worked out using javascript. However, in the initial stages, it require&amp;rsquo;s a lot of development effort. Changing themes is also a pain.&lt;/p&gt;
+
+&lt;p&gt;The source code of &lt;a href=&quot;http://www.rohit.io&quot;&gt;Simplicity&lt;/a&gt; is available &lt;a href=&quot;https://github.com/rohit01/rohit01.github.io&quot;&gt;here&lt;/a&gt;. &lt;strong&gt;And as always, Thanks for Reading :-)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>PythonExpress @ DSCE</title>
+    <link href="http://www.rohit.io/blog/pythonexpress-dsce.html"/>
+    <updated>2014-09-08T01:45:00+00:00</updated>
+    <id>http://www.rohit.io/blog/pythonexpress-dsce</id>
+    <content type="html">&lt;p&gt;Spent an exciting weekend with college students of Dayananda Sagar College of Engineering (DSCE), Bangalore. They conducted a python workshop on 6-7 Sept, 2014 and invited me as a trainer (Thanks to &lt;a href=&quot;http://www.pythonexpress.in/&quot;&gt;pythonexpress&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/pythonexpress-dsce/group_pic.jpg&quot; alt=&quot;Me with DSCE students&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Slides&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.rohit.io/res/posts/pythonexpress-dsce/slides/python_basics.html&quot;&gt;Python basics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.rohit.io/res/posts/pythonexpress-dsce/slides/ds_and_functions.html&quot;&gt;Data structures and functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.rohit.io/res/posts/pythonexpress-dsce/slides/python_development.html&quot;&gt;Python development&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Thanks for Reading :-)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Not Just Another Independence Day</title>
+    <link href="http://www.rohit.io/blog/not-just-another-independence-day.html"/>
+    <updated>2014-08-18T03:35:00+00:00</updated>
+    <id>http://www.rohit.io/blog/not-just-another-independence-day</id>
+    <content type="html">&lt;p&gt;My alarm rang with a musical note, I turned it off and saw it&amp;rsquo;s 4:15 in the morning. Surprisingly, my friend was already awake and I wished him &lt;strong&gt;&lt;em&gt;Good Morning&lt;/em&gt;&lt;/strong&gt;, he replied &lt;strong&gt;&lt;em&gt;Jai Hind&lt;/em&gt;&lt;/strong&gt;. This was the start and it certainly set the mood for making it &lt;em&gt;Not Just Another Independence Day&lt;/em&gt;!&lt;/p&gt;
+
+&lt;p&gt;It was 5:20 and we, the three idiots, were out in a patriotic mood to celebrate the national festival. We reached the MG Road metro station and found it already awake before 6 AM. My friend asked for a ticket to Chandni Chowk but instead, received a free travel coupon. The person at the ticket counter said that today &lt;strong&gt;&lt;em&gt;the ride to Chandni Chowk is Free&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;It was 5:52 and we boarded the metro, but got no seats. It was easy to spot people with tricolor badge, traditional dress and young groups discussing national policies. I felt that my nation is now awake and ready to change. We reached Chandni Chowk at 6:45 and contributed to the queue, already too long. CRPF jawans were deployed at the station and were managing the crowd really well. Someone screamed, &lt;strong&gt;&lt;em&gt;Bharat Mata ki&lt;/em&gt;&lt;/strong&gt; and everyone replied &lt;strong&gt;&lt;em&gt;Jai&lt;/em&gt;&lt;/strong&gt;. This slogan continued throughout our way to Red Fort. I was like, &lt;em&gt;wow&lt;/em&gt;!&lt;/p&gt;
+
+&lt;p&gt;As we moved out of the Metro station, we saw the security arrangements. On our way to Red Fort, I saw Delhi police, CRPF jawans, SWAT team, NSG Black Cats, Snipers on roof tops and many more. They seemed to outnumber the number of civilians attending the event. At around 7:20, we were at the gallery and as expected, the seats were already full. I took a look around and saw that the Red Fort looked really beautiful, our national flag was flying all over the place, four giant screens displayed the venue live, Doordarshan had built high bamboo towers to cover the event live. Then, I heard someone saying, &amp;ldquo;Aaa gaya&amp;rdquo; (he came), I looked at the screen, our PM was here. People started clapping.&lt;/p&gt;
+
+&lt;p&gt;Our PM was here with a style. The Jodhpuri turban was not less than a fashion statement. He gradually reached the stage. An army official shouted something really loud. I heard it clear at a distance of about 500m. Moments later, the PM pulled the rope and our National Flag was flying. But wait, something exploded, something really loud on my right. Is it a bomb?&amp;hellip; Everyone trying to see. Phew, it is part of the 21 Gun Salute (Ekkess Topon Ki Salami). I was wondering, if this is the situation here, what would be like to be on a battlefield.&lt;/p&gt;
+
+&lt;p&gt;After an awesome flag hosting moment, the PM reached the Mic. No bullet proof glass on his front, no scripts to read, the gallery is waiting silently, more than a million eyes glued to the television, birds flying above the fort, the tail of his turban flying like a flag and he starts his speech. An hour long speech, and what a speech. There was total silence among the audience and when someone spoke, it was to clarify his last words - &lt;strong&gt;&lt;em&gt;Kya bola?&lt;/em&gt;&lt;/strong&gt; (&lt;strong&gt;&lt;em&gt;What did he say?&lt;/em&gt;&lt;/strong&gt;). The audience also acknowledged most of his statements with a round of applause. The speech ended with loud, energetic slogans of &lt;strong&gt;&lt;em&gt;Bharat Mata ki Jai&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;Jai Hind&lt;/em&gt;&lt;/strong&gt;. Post this, the national anthem was played. This concluded the event, but we decided to leave a little late and saw the PM among cute children.&lt;/p&gt;
+
+&lt;p&gt;After some time, we left the venue at around 9 AM and decided to try out the paratha from the world famous &lt;strong&gt;&lt;em&gt;parathe wali gali&lt;/em&gt;&lt;/strong&gt;. As we headed towards the same, we wondered if it was open. Most of the shops were closed and some people said the paratha shop usually opens at 10 AM and today, it might be closed. Determined to taste the lovely parathas, we moved against all odds. And finally, we were at the historic &lt;strong&gt;&lt;em&gt;parathe wali gali&lt;/em&gt;&lt;/strong&gt;. The paratha shops were open and the fragrance in the air was making us hungry. But wait, we need to wait&amp;hellip; The shop is already full and there is a queue outside the shop. The board at one of the shops, reads - Oldest and famous, serving parathas through 5 generations. There were pictures of many famous personalities like &lt;strong&gt;&lt;em&gt;Lal bahadur sastri&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Indira Gandhi&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Ranbir Kapoor&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Akshay Kumar&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;Sheila Dikshit&lt;/em&gt;&lt;/strong&gt; and many more. In the pictures, parathas were being served to all, but&amp;hellip; we need to wait!!&lt;/p&gt;
+
+&lt;p&gt;Finally, &lt;strong&gt;&lt;em&gt;hamara number aa gaya&lt;/em&gt;&lt;/strong&gt; (it was our turn). The menu looked like a sabzi market with paratha after every vegetable name. You name it and it&amp;rsquo;s there. Aloo, tomato, gobi, muli, etc + some strange ones too like rabri paratha. The menu also revealed, &lt;strong&gt;&lt;em&gt;its India at its best with the most affordable rates&lt;/em&gt;&lt;/strong&gt;. The table had some free munchies and parathas were served well on time. We ate like pigs and then ordered lassi from another shop. The lassi was served on a kulhad (glass made of clay) with a slice of Malai (cream of milk) on top. It was the best Lassi I ever had in my life.&lt;/p&gt;
+
+&lt;p&gt;Post this we headed towards the metro station. It was again, over crowded, but CRPF jawans managed it really well. In the metro, a person caught our attention as he was carrying a box of Bengali sweets. He was formally dressed in grey pants and light colored shirt. After some time, he joined our conversation about PM&amp;rsquo;s speech. I asked him if he went to the Red Fort and he replied, &amp;ldquo;&lt;strong&gt;No. I went to the office for the flag hosting ceremony. This time, everybody was present. Instructions were given that if anyone is absent, his/her accountability will be checked&lt;/strong&gt;&amp;rdquo;. He cherished the PM&amp;rsquo;s initiative on punctuality but revealed that some government officials are unhappy about it. Once we reached home, we saw the news channels analyzing independence day speech, but we crashed on the bed sooner than expected!&lt;/p&gt;
+
+&lt;p&gt;How did you celebrate the National Festival? Waiting to hear your answer and feedback in comments. &lt;strong&gt;And as always, Thanks for reading :-)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Contributing to Ansible is Super Easy</title>
+    <link href="http://www.rohit.io/blog/contributing-to-ansible-is-super-easy.html"/>
+    <updated>2014-08-05T13:23:00+00:00</updated>
+    <id>http://www.rohit.io/blog/contributing-to-ansible-is-super-easy</id>
+    <content type="html">&lt;p&gt;Just three days back, I thought about writing a SMS notification module and bingo, I was able to send a &lt;a href=&quot;https://github.com/ansible/ansible/pull/8408&quot;&gt;pull request&lt;/a&gt;, same day. I submitted a module named &amp;lsquo;plivo&amp;rsquo; which allows sending SMS notification using &lt;a href=&quot;https://www.plivo.com&quot;&gt;Plivo&lt;/a&gt; services. The playbook examples are hosted here: &lt;a href=&quot;https://github.com/rohit01/ansible-plivo-example&quot;&gt;https://github.com/rohit01/ansible-plivo-example&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Writing an &lt;a href=&quot;http://ansible.com&quot;&gt;Ansible&lt;/a&gt; module, is pretty much a straight forward approach. Though ansible modules can be written in any language, I will stick to Python in this post. In Python, a module is generally a single file with 3 different parts:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: This usually takes up the most number of lines&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Logic&lt;/strong&gt;: The real programming logic to perform the task&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ansible framework&lt;/strong&gt;: Ansible provides some really useful classes and functions to help you in this process&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h2&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;Ansible is designed to read two global variables and generate documentation. These are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Documentation&lt;/strong&gt;: A multiline string literal and a valid YAML document. It contains the detailed description of module we see using the command &lt;code&gt;ansible-doc &amp;lt;module_name&amp;gt;&lt;/code&gt; or at &lt;a href=&quot;http://docs.ansible.com&quot;&gt;docs.ansible.com&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Examples&lt;/strong&gt;: A multiline string literal and a valid YAML document. It demonstrates the sample usage of module.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Logic&lt;/h2&gt;
+
+&lt;p&gt;Logic is the programatic way to perform the task. It uses various resources provided by Ansible. These resources may include the arguments passed to module, ssh connection to host, cloud resources such as AWS, GAE, and many more. Ansible will connect to the host only if logic requires the same. For example, a notification module does not connect to the host for sending SMS, email, etc.&lt;/p&gt;
+
+&lt;h2&gt;Ansible Framework&lt;/h2&gt;
+
+&lt;p&gt;Ansible modules usually import a bunch of utilities to perform its task. The basic utilities are generally imported by all modules using the following import statement:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;    from ansible.module_utils.basic import *
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2&gt;Lets write a simple module&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Module to return a configurable string and control success status:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;noscript&gt;&lt;pre&gt;#!/usr/bin/python&lt;/p&gt;
+
+&lt;h1&gt;-&lt;em&gt;- coding: utf-8 -&lt;/em&gt;-&lt;/h1&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h1&gt;Author: Rohit Gupta - @rohit01 &amp;lt;rohit.kgec@gmail.com&amp;gt;&lt;/h1&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h1&gt;Sample ansible module to demonstrate code structure.&lt;/h1&gt;
+
+&lt;p&gt;#&lt;/p&gt;
+
+&lt;h1&gt;&amp;mdash;- Documentation Start &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/h1&gt;
+
+&lt;h2&gt;DOCUMENTATION = &amp;#39;&amp;#39;&amp;#39;&lt;/h2&gt;
+
+&lt;p&gt;version_added: &amp;quot;1.7&amp;quot;
+module: echo
+short_description: echo
+description:
+  - This module returns/displays a configured string
+options:
+  name:
+    description:
+      text message to print
+  success:
+    description:
+      If false, the module will exit with failure.
+    required: false
+    default: yes
+    choices: [ &amp;quot;yes&amp;quot;, &amp;quot;no&amp;quot; ]
+notes:
+  - This module does not connect to host. It is a dummy module
+    required: true
+requirements: []
+author: Rohit Gupta - @rohit01
+&amp;#39;&amp;#39;&amp;#39;&lt;/p&gt;
+
+&lt;p&gt;EXAMPLES = &amp;#39;&amp;#39;&amp;#39;
+- name: &amp;quot;echo&amp;quot;
+  echo: name=&amp;quot;I executed successfully&amp;quot; success=yes
+&amp;#39;&amp;#39;&amp;#39;&lt;/p&gt;
+
+&lt;h1&gt;&amp;mdash;- Logic Start &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/h1&gt;
+
+&lt;p&gt;def main():
+    # Note: &amp;#39;AnsibleModule&amp;#39; is an Ansible utility imported below
+    module = AnsibleModule(
+        argument_spec=dict(
+            name=dict(required=True),
+            success = dict(default=True, type=&amp;#39;bool&amp;#39;),
+        ),
+        supports_check_mode=True
+    )
+    success = module.params[&amp;#39;success&amp;#39;]
+    text = module.params[&amp;#39;name&amp;#39;]
+    if success:
+      module.exit_json(text=text)
+    else:
+      module.fail_json(msg=text)&lt;/p&gt;
+
+&lt;h1&gt;&amp;mdash;- Import Ansible Utilities (Ansible Framework) &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&lt;/h1&gt;
+
+&lt;p&gt;from ansible.module_utils.basic import *
+main()
+&lt;/pre&gt;&lt;/noscript&gt;&lt;script src=&quot;https://gist.github.com/rohit01/7ce30e3d3f12a4901fe2.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;And the examples to use this module is also simple:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;YAML&quot;&gt;    - echo: name=&quot;Hello World!&quot;
+    - echo: name=&quot;Success is Yes&quot; success=yes
+    - echo: name=&quot;Success is No&quot; success=no
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Write your own module&lt;/h2&gt;
+
+&lt;p&gt;Now that you know some basics, why not write something on your own. For more details on developing modules, I highly recommend the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Check some real module related to the one you are writing. Ansible modules are hosted &lt;a href=&quot;https://github.com/ansible/ansible/tree/devel/library&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Visit the &lt;a href=&quot;http://docs.ansible.com/developing_modules.html&quot;&gt;Ansible documentation on developing modules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Find Ansible utilities you may like to re-use. You can find them &lt;a href=&quot;https://github.com/ansible/ansible/tree/devel/lib/ansible/module_utils&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Share what you want to write and feedback in comments. &lt;strong&gt;And as always, Thanks for reading :-)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Ansible is Awesome</title>
+    <link href="http://www.rohit.io/blog/ansible-is-awesome.html"/>
+    <updated>2014-07-30T10:30:00+00:00</updated>
+    <id>http://www.rohit.io/blog/ansible-is-awesome</id>
+    <content type="html">&lt;p&gt;Since a couple of weeks, I have started using Ansible and am amazed with its awesomeness. In this short duration, I automated a bunch of items, read about best practices and found a lot of batteries/community projects.&lt;/p&gt;
+
+&lt;h2&gt;So, what really makes Ansible awesome?&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Agentless&lt;/em&gt;: Unlike Puppet, Chef or Saltstack, there is no need to run an agent on the clients&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Secure&lt;/em&gt;: Uses native SSH for all communications between master and client&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Scalable&lt;/em&gt;: &amp;lsquo;ansible-pull&amp;rsquo; is an advanced feature which has potential for very large deployments&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Ansible Facts&lt;/em&gt;: Systems data, such as IP address, OS, Disk space, etc. are available by default in the form of variables. It makes custom configuration and cloud deployments super easy&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Ansible Playbooks&lt;/em&gt;: Playbooks are like ansible code, usually writen for orchestration. These are YML files - Powerful and easy to understand&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Role&lt;/em&gt;: Ansible framework for writing playbooks in an organized structure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Super Easy to get started:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Installation:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Using PyPI: &lt;code&gt;(env)&lt;/code&gt;$ &lt;code&gt;pip install ansible&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Pakage Manager: $ &lt;code&gt;apt-get install ansible&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Hello world with ansible in just two steps:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$ &lt;code&gt;echo &quot;127.0.0.1&quot; &amp;gt; ansible_hosts&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;$ &lt;code&gt;ansible all -i ansible_hosts -m ping&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Batteries Included&lt;/strong&gt; - &lt;a href=&quot;http://docs.ansible.com/list_of_all_modules.html&quot;&gt;Ansible modules&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/ansible/ansible&quot;&gt;Open-source project&lt;/a&gt; and under active development&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Change management:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ansible is intellegent in making changes only if it is necessary. This means, when you ask ansible to install a software, it will install it only if it is not installed. It also provides a special &lt;code&gt;register&lt;/code&gt; method to trap the result in a variable. This variable can later be used in conditional statements to act differently.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h2&gt;My playbooks written as per guidelines on best practices&lt;/h2&gt;
+
+&lt;p&gt;Github repository: &lt;a href=&quot;https://github.com/rohit01/ansible-playbooks&quot;&gt;https://github.com/rohit01/ansible-playbooks&lt;/a&gt;. This project provides a basic layout for building configuration management system using Ansible.&lt;/p&gt;
+
+&lt;p&gt;Would love to hear your feedback in comments. &lt;strong&gt;And as always, Thanks for reading :-)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Dikhao - Quickly find all related AWS resources</title>
+    <link href="http://www.rohit.io/blog/dikhao-quickly-find-all-related-aws-resources.html"/>
+    <updated>2014-05-14T13:10:00+00:00</updated>
+    <id>http://www.rohit.io/blog/dikhao-quickly-find-all-related-aws-resources</id>
+    <content type="html">&lt;p&gt;Dikhao is an open source project (&lt;a href=&quot;https://github.com/rohit01/dikhao&quot;&gt;hosted in github&lt;/a&gt;), to cache every EC2 and route53 resource, find relations between them, and provide really fast lookups. It can be installed as a python command line utility (&lt;em&gt;pip install dikhao&lt;/em&gt;), deployed in &lt;a href=&quot;https://heroku.com/&quot;&gt;Heroku&lt;/a&gt; and has a ready to use &lt;a href=&quot;https://hubot.github.com/&quot;&gt;hubot&lt;/a&gt; plugin.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2&gt;Example search&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CLI command:&lt;br/&gt;
+  &lt;code&gt;$ batao -i route53.rohit.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hubot.github.com/&quot;&gt;Hubot&lt;/a&gt; bot in hipchat:&lt;br/&gt;
+  &lt;code&gt;@hubot batao route53.rohit.io&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://heroku.com/&quot;&gt;Heroku&lt;/a&gt; application:&lt;br/&gt;
+  &lt;code&gt;http://&amp;lt;app_name&amp;gt;.herokuapp.com/lookup/route53.rohit.io&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; Key &lt;em&gt;&amp;lsquo;route53.rohit.io&amp;rsquo;&lt;/em&gt; can be anything from the configurable list of indexed items (written below).&lt;/p&gt;
+
+&lt;h2&gt;Output&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;Route53 Details (210 secs ago):
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt; Name               &lt;/th&gt;
+&lt;th&gt; ttl &lt;/th&gt;
+&lt;th&gt; Type      &lt;/th&gt;
+&lt;th&gt; Value                                              &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt; route53.rohit.io.  &lt;/td&gt;
+&lt;td&gt; 300 &lt;/td&gt;
+&lt;td&gt; CNAME     &lt;/td&gt;
+&lt;td&gt; ec2-54-162-144-108.us-west-1.compute.amazonaws.com &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; elb1-dns.rohit.io. &lt;/td&gt;
+&lt;td&gt; 600 &lt;/td&gt;
+&lt;td&gt; A (Alias) &lt;/td&gt;
+&lt;td&gt; blog-elb-993346533.us-west-1.elb.amazonaws.com.    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; elb1-dns.rohit.io. &lt;/td&gt;
+&lt;td&gt; 600 &lt;/td&gt;
+&lt;td&gt; A (Alias) &lt;/td&gt;
+&lt;td&gt; web-elb-1401441163.us-west-1.elb.amazonaws.com.    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;pre&gt;&lt;code&gt;EC2 Instance Details (265 secs ago):
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;           Property &lt;/th&gt;
+&lt;th&gt; Value                                              &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;        Instance ID &lt;/td&gt;
+&lt;td&gt; i-e68e0cca                                         &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;              State &lt;/td&gt;
+&lt;td&gt; running                                            &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;            EC2 DNS &lt;/td&gt;
+&lt;td&gt; ec2-54-162-144-108.us-west-1.compute.amazonaws.com &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;         IP address &lt;/td&gt;
+&lt;td&gt; 54.162.144.108                                     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;             Region &lt;/td&gt;
+&lt;td&gt; us-west-1                                          &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;               Zone &lt;/td&gt;
+&lt;td&gt; us-west-1b                                         &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;      Instance type &lt;/td&gt;
+&lt;td&gt; m1.large                                           &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; Private IP address &lt;/td&gt;
+&lt;td&gt; 10.201.136.202                                     &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;        Private DNS &lt;/td&gt;
+&lt;td&gt; ip-10-201-136-202.us-west-1.compute.internal       &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;          ELB names &lt;/td&gt;
+&lt;td&gt; blog-elb,web-elb                                   &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;pre&gt;&lt;code&gt;Elastic IP Details (261 secs ago):
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt; Elastic IP     &lt;/th&gt;
+&lt;th&gt; Instance ID &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt; 54.162.144.108 &lt;/td&gt;
+&lt;td&gt; i-e68e0cca  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;pre&gt;&lt;code&gt;ELB Details (266 secs ago):
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt; Name     &lt;/th&gt;
+&lt;th&gt; ELB DNS                                         &lt;/th&gt;
+&lt;th&gt; Instance ID &lt;/th&gt;
+&lt;th&gt; State        &lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt; blog-elb &lt;/td&gt;
+&lt;td&gt; blog-elb-993346533.us-west-1.elb.amazonaws.com. &lt;/td&gt;
+&lt;td&gt; i-e68e0cca  &lt;/td&gt;
+&lt;td&gt; InService    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;          &lt;/td&gt;
+&lt;td&gt;                                                 &lt;/td&gt;
+&lt;td&gt; i-e68kkbba  &lt;/td&gt;
+&lt;td&gt; InService    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;          &lt;/td&gt;
+&lt;td&gt;                                                 &lt;/td&gt;
+&lt;td&gt; i-52641cad  &lt;/td&gt;
+&lt;td&gt; OutOfService &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt; web-elb  &lt;/td&gt;
+&lt;td&gt; web-elb-1401441163.us-west-1.elb.amazonaws.com. &lt;/td&gt;
+&lt;td&gt; i-e68e0cca  &lt;/td&gt;
+&lt;td&gt; InService    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;          &lt;/td&gt;
+&lt;td&gt;                                                 &lt;/td&gt;
+&lt;td&gt; i-e68kkbba  &lt;/td&gt;
+&lt;td&gt; InService    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;          &lt;/td&gt;
+&lt;td&gt;                                                 &lt;/td&gt;
+&lt;td&gt; i-52641cad  &lt;/td&gt;
+&lt;td&gt; OutOfService &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;hr /&gt;
+
+&lt;h2&gt;Installation&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;CLI Tool&lt;/strong&gt;&lt;br/&gt;
+  &lt;em&gt;dikhao&lt;/em&gt; is available for installation using PyPi. Once installed, it provides two commands: &lt;em&gt;padho&lt;/em&gt; and &lt;em&gt;batao&lt;/em&gt;. &lt;em&gt;padho&lt;/em&gt; syncs all AWS details into redis and &lt;em&gt;batao&lt;/em&gt; can be used for searching the same.&lt;/p&gt;
+
+&lt;p&gt;  (venv)$ pip install dikhao&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Heroku App&lt;/strong&gt;&lt;br/&gt;
+  Clone respsitory and use the automated install script &lt;em&gt;&lt;a href=&quot;https://github.com/rohit01/dikhao/blob/master/install.sh&quot;&gt;install.sh&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;  &lt;strong&gt;Manual install instructions:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;``&quot;&gt;  $ git clone git@github.com:rohit01/dikhao.git
+  $ cd dikhao
+  $ heroku create {app_name} -s cedar
+  $ git push heroku master
+  $ heroku addons:add rediscloud --app {app_name}
+  $ heroku ps:scale web=1
+
+  #### Add credentials: ####
+  $ heroku config:set AWS_ACCESS_KEY_ID=&#39;&amp;lt;ACCESS-KEY&amp;gt;&#39;
+  $ heroku config:set AWS_SECRET_ACCESS_KEY=&#39;&amp;lt;SECRET-KEY&amp;gt;&#39;
+  $ heroku config:set REDIS_HOST=&#39;&amp;lt;rediscloud-hostname&amp;gt;&#39;
+  $ heroku config:set REDIS_PORT_NO=&#39;&amp;lt;rediscloud-port&amp;gt;&#39;
+  $ heroku config:set REDIS_PASSWORD=&#39;&amp;lt;rediscloud-password&amp;gt;&#39;
+  $ heroku config:set PORT=&#39;80&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Hubot Agent:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Deploy &lt;em&gt;dikhao&lt;/em&gt; as a Heroku app&lt;/li&gt;
+&lt;li&gt;Add the &lt;em&gt;Heroku application url&lt;/em&gt; in &lt;a href=&quot;https://github.com/rohit01/dikhao/blob/master/hubot/dikhao.coffee&quot;&gt;coffee script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Integrate the coffee script in your existing hubot setup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;hr /&gt;
+
+&lt;h2&gt;Current features&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Supported AWS services:
+
+&lt;ul&gt;
+&lt;li&gt;EC2 - Instance, Elastic IP and ELB&lt;/li&gt;
+&lt;li&gt;Route53 - All DNS types&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Search input value can be any one of the indexed item. Dikhao supports indexing based on the following (&lt;a href=&quot;https://github.com/rohit01/dikhao/blob/master/dikhao/sync.py#L16&quot;&gt;configurable&lt;/a&gt;):
+
+&lt;ul&gt;
+&lt;li&gt;Route 53 - DNS record name&lt;/li&gt;
+&lt;li&gt;Route 53 - DNS record value&lt;/li&gt;
+&lt;li&gt;EC2 Instance - ID&lt;/li&gt;
+&lt;li&gt;EC2 Instance - IP address&lt;/li&gt;
+&lt;li&gt;EC2 Instance - Private IP address&lt;/li&gt;
+&lt;li&gt;EC2 Instance - Public DNS&lt;/li&gt;
+&lt;li&gt;EC2 Instance - Private DNS&lt;/li&gt;
+&lt;li&gt;EC2 ELB - Name&lt;/li&gt;
+&lt;li&gt;EC2 ELB - DNS&lt;/li&gt;
+&lt;li&gt;EC2 - Elastic IP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Provides many syncing options to help cater different needs. Few notable configurable options:
+
+&lt;ul&gt;
+&lt;li&gt;NO_EC2 - If True, EC2 details will not be synced. Default: False&lt;/li&gt;
+&lt;li&gt;NO_ROUTE53 - If True, Route53 details will not be synced. Default: False&lt;/li&gt;
+&lt;li&gt;HOSTED_ZONES - List of comma separated hosted zone names to be synced. Default: all&lt;/li&gt;
+&lt;li&gt;REGIONS - List of comma separated EC2 region names to be synced. Default: all&lt;/li&gt;
+&lt;li&gt;EXPIRE_DURATION - Duration for which details are cached. Default: 86,400 seconds (1 Day)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :-)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Ubuntu on a legacy laptop without HDD</title>
+    <link href="http://www.rohit.io/blog/ubuntu-on-a-legacy-laptop-without-hdd.html"/>
+    <updated>2014-05-14T00:45:00+00:00</updated>
+    <id>http://www.rohit.io/blog/ubuntu-on-a-legacy-laptop-without-hdd</id>
+    <content type="html">&lt;p&gt;I have a 6 year old legacy laptop with &lt;strong&gt;impaired battery, DVD drive and hard drive&lt;/strong&gt;. It lay unused for over a year, but recently, I decided to use it like a full fledge Linux laptop. Here&amp;rsquo;s the screenshot of my laptop running the latest version of &lt;em&gt;Firefox in Ubuntu 12.04&lt;/em&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/ubuntu-on-a-legacy-laptop-without-hdd/ubuntu_12.04.jpg&quot; alt=&quot;Ubuntu 12.04 Legacy Laptop&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Available options&lt;/h2&gt;
+
+&lt;p&gt;Since the hard drive and dvd drive is absent, available options include booting through USB or Network (PXE boot). USB is the easy and portable approach among the two. An external USB hard drive works well, just like the internal HDD. However, my legacy laptop was not able to detect my external HDD during boot.&lt;br/&gt;
+There are many live USB Linux options available online, but they have their own limitations. Live Linux works well with default configuration, but it gets really messy when personalized settings are saved. Here are some of the problems:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Slow:&lt;/strong&gt; Personalized settings make boot really slow over time.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unstable:&lt;/strong&gt; The system may become unstable even with minor changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Space utilization:&lt;/strong&gt; Since personal settings are saved as new files, removing pre-installed packages also need space.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recovery:&lt;/strong&gt; Recovering data, in case of system errors, may be difficult.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Full Linux installation on pen drives&lt;/h2&gt;
+
+&lt;p&gt;Unlike windows, Linux can be easily installed on any USB drive. However, a full Linux installation on a pendrive may be sluggish due to slow write speed. The performance is even worse in case of an OS because it needs to deal with large no. of small files.&lt;/p&gt;
+
+&lt;p&gt;I installed Ubuntu 12.04 on a 4 GB pendrive and was able to get good performance with few optimizations. Here are the list of optimizations that worked for me:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Device Selection:&lt;/strong&gt; A pendrive with a &lt;strong&gt;higher speed rating&lt;/strong&gt; can make or break the user experience. Speed rating is generally better on devices with less space. I had a regular 32GB and a 4GB pen drive. First, I installed Ubuntu in 32GB. It two hours to install and 10 minutes to boot. The system was too slow and froze often. On the 4GB pen drive, it took one hour to install, but &lt;strong&gt;boot time was just 1 minute&lt;/strong&gt;. The system was still slow, but usable.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;No Swap Partition:&lt;/strong&gt; Writes on a &lt;em&gt;swap&lt;/em&gt; partition on the same device may further reduce the read/write speed available for regular operations. If you really need to use &lt;em&gt;swap&lt;/em&gt; in case of &lt;em&gt;less available RAM&lt;/em&gt;, mount it on a different device.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Desktop Environment:&lt;/strong&gt; A lightweight desktop environment performs much better. I uninstalled the default Unity desktop environment and replaced it with &lt;strong&gt;LXDE&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Web Browser:&lt;/strong&gt; I tried different browsers and found that &lt;strong&gt;google chrome and chromium works best&lt;/strong&gt;. Firefox and most lightweight browsers, viz.: midori, are slow and freeze often.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h2&gt;Easy instructions for Ubuntu 12.04&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Install Ubuntu on the pendrive just like a regular ubuntu installation.&lt;/li&gt;
+&lt;li&gt;Download and execute the following shell script:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;script src=&quot;http://gist-it.appspot.com/github/rohit01/unity-to-lxde/blob/master/ubuntu_lxde.sh&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Let me know your experience in comments. &lt;strong&gt;And as always, Thanks for reading :-)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>An Adventure with Meditation</title>
+    <link href="http://www.rohit.io/blog/an-adventure-with-meditation.html"/>
+    <updated>2014-04-27T19:35:00+00:00</updated>
+    <id>http://www.rohit.io/blog/an-adventure-with-meditation</id>
+    <content type="html">&lt;p&gt;Today, I came back from a 10 day Vipassana meditation course, meditating 10 hrs per day. A great learning experience with purity from the age of Buddha - Render of Peace. Realizing that this experience can only be &lt;em&gt;experienced&lt;/em&gt;, pardon me for just being able to present a brief outline about the same.&lt;/p&gt;
+
+&lt;h2&gt;The Idea&lt;/h2&gt;
+
+&lt;p&gt;The idea of doing this was more or less, experimental. I read an interview of Microsoft&amp;rsquo;s newly named ceo (in Feb, 2014), &lt;em&gt;&amp;lsquo;Satya Nadella&amp;rsquo;&lt;/em&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Many who know me say I am also defined by my curiosity and thirst for learning. I buy more books than I can finish. I sign up for more online courses than I can complete. I fundamentally believe that if you are not learning new things, you stop doing great and useful things. - The Times of India Bangalore. Feb 05, 2014&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;This made a mark on me. I took it as an inspiration to broaden my views and take new steps, however small.&lt;/p&gt;
+
+&lt;h2&gt;The Search&lt;/h2&gt;
+
+&lt;p&gt;With a planned holiday in hand, I took it as an opportunity to do things that are not possible during regular &amp;amp; hectic work life. An &amp;lsquo;Art of Living&amp;rsquo; course seemed the usual commercial option, but I decided to explore more options. I came across &lt;a href=&quot;http://www.dhamma.org/&quot;&gt;&amp;lsquo;Vipassana Meditation - As taught by S.N. Goenka&amp;rsquo;&lt;/a&gt;, while searching on the Internet. I read more about this organization and reviews by independent Bloggers. Finally decided and registered for a 10 day course in &lt;a href=&quot;http://www.bodhi.dhamma.org/&quot;&gt;&amp;lsquo;Dhamma Bodhi Bodh Gaya Vipassana Centre&amp;rsquo;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;The Course&lt;/h2&gt;
+
+&lt;p&gt;The purity and years of experience is reflected in each and every aspect about this course. Every Vipassana center is fully run by volunteers (not paid). The course is 100% free and available for all. Though entirely run on donation, donations are accepted only from old students (who has completed at least one 10 day course). Maximum utilization of time is ensured by a comprehensive, 4 am to 9 pm &lt;a href=&quot;http://www.dhamma.org/en/about/code&quot;&gt;time table&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Rules are Rules&lt;/h2&gt;
+
+&lt;p&gt;The first rule is to submit all objects of human distraction at the registration booth. This includes all your electronic items like mobile, laptop, camera, ipod, etc. Even books, paper and pen is not allowed during the course. Here is a brief list of rules applicable for 10 days:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Noble Silence: All students must observe Noble Silence from the beginning of the course until the morning of the last full day. Noble Silence means silence of body, speech, and mind&lt;/li&gt;
+&lt;li&gt;No Physical Contact with anyone&lt;/li&gt;
+&lt;li&gt;The Precepts:
+
+&lt;ul&gt;
+&lt;li&gt;to abstain from killing any being (Not even a mosquito)&lt;/li&gt;
+&lt;li&gt;to abstain from stealing&lt;/li&gt;
+&lt;li&gt;to abstain from all sexual activity&lt;/li&gt;
+&lt;li&gt;to abstain from telling lies&lt;/li&gt;
+&lt;li&gt;to abstain from all intoxicants&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete acceptance of the Teacher and the Technique&lt;/li&gt;
+&lt;li&gt;Other Techniques, Rites, and Forms of Worship is not allowed&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Comprehensive details about the same can be found &lt;a href=&quot;http://www.dhamma.org/en/about/code&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;The Environment&lt;/h2&gt;
+
+&lt;p&gt;The Dhamma Bodhi Bodh Gaya Vipassana Centre is surrounded by large farm lands, free from noise. The campus is large and full of trees and gardens. Morning and evenings are refreshing with the chanting of birds. Human noise is hard to hear, except during daily evening discourse (by S.N. Goenka ji). The learning center has all essential facilities and services. Single rooms with attach bathroom, free laundry service, 24 hrs hot water facility, bell rings during each session are to name a few. The enthusiasm of servers, to serve, is really appreciative. Some of the facilities and services depend on the location of the Vipassana center. As of this writing, there are 154 Vipassana centers worldwide. Details about the same is listed &lt;a href=&quot;http://www.dhamma.org/en/locations/directory&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;People from different ethnic backgrounds, profession and country were present under the same roof to learn this technique of meditation. They all shared the same peace of mind, a thirst to learn and hard work to accomplish the same.&lt;/p&gt;
+
+&lt;h2&gt;The Experience&lt;/h2&gt;
+
+&lt;p&gt;On day 1 itself, it was clear that this is not a place for entertainment. In everyday life, we are surrounded with different kind of screens (Mobile, Laptop, TV, etc..). It seems very difficult to live without all of them. Submitting these during registration itself was like taking the first step. Strict rules and tight schedule made it difficult to think about anything else, but meditation. There were times, when it was difficult to concentrate, but as days passed, it became much easier than thought. Towards the end of training, how to apply the benefits into day to day life is also taught. On day 10, the rule of noble silence is removed to help students return back to normal social life.&lt;/p&gt;
+
+&lt;p&gt;Today, was my first day after this course, and I do see some minor improvements and am optimistic about future with regular practice. A 10 day course is not enough to master this technique, but rewards are there at every step. Let me know, what do you think about this in comments.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Why abolishing Income Tax makes sense in India</title>
+    <link href="http://www.rohit.io/blog/why-abolishing-income-tax-makes-sense-in-india.html"/>
+    <updated>2014-04-14T00:21:00+00:00</updated>
+    <id>http://www.rohit.io/blog/why-abolishing-income-tax-makes-sense-in-india</id>
+    <content type="html">&lt;p&gt;We all know, Income Tax is a major source of revenue for government expenditures. But, do we know the impact and effectiveness of Income Tax laws in India?&lt;/p&gt;
+
+&lt;p&gt;Few basic questions, that will help us understand the situation:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What is the revenue share of Income Tax?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How many people pay Income Tax?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Who pays Income Tax?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What is the role of hawala agents/companies?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Can we do away with Income Tax?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;hr /&gt;
+
+&lt;h2&gt;Revenue share of Income Tax on total Tax collected:&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/why-abolishing-income-tax-makes-sense-in-india/income-tax-share.png&quot; alt=&quot;Income Tax Share&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;(As shown in Satyamev Jayate 2 - Kings Every Day)&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;From the above stats, we notice that Indirect Tax generates more than twice the revenue collected through Income Tax. And yes, Indirect Tax is paid by all, including people below poverty line. Even a 1 rupee match box is sold inclusive of all taxes.&lt;/p&gt;
+
+&lt;h2&gt;How many people pay Income Tax?&lt;/h2&gt;
+
+&lt;p&gt;As per reports from the finance minister, less than 3% people file Income Tax return in India. To be precise: &lt;a href=&quot;http://www.deccanherald.com/content/299566/less-3-percent-file-income.html&quot;&gt;Only 3.5 crore people, or 2.89 percent of the country&amp;rsquo;s total population of more than 121 crore, file income Tax return&lt;/a&gt;. In contrast, 45% people in USA pay Income Tax.&lt;/p&gt;
+
+&lt;h2&gt;Who pays Income Tax and is it fairly divided?&lt;/h2&gt;
+
+&lt;p&gt;The poor does not earn enough to pay Tax, the elite/high earners hire chartered accountants (CA) to evade/avoid Tax. The middle class has taxable income and don&amp;rsquo;t have money to hire CA. Salaried class are even more affected because Tax is deducted at source (no scope for Tax evasion). &lt;a href=&quot;http://profit.ndtv.com/news/economy/article-salaried-indians-pay-more-income-tax-than-high-earners-in-us-china-survey-381525&quot;&gt;A survey shows that &amp;ldquo;Salaried Indians pay more income Tax than high earners in US, China&amp;rdquo;.&lt;/a&gt; Income Tax, in a way, is a harassment Tax for honest people. If you notice, all pay your Tax advertisements is something like this: Pay you taxes for a peace of mind. If we catch you, you will be jailed or heavily fined. #TaxTerrorism&lt;/p&gt;
+
+&lt;p&gt;People pay taxes because of fear and are not willingly. Corruption add to this by raising trust factors. Saving/Evading Tax is now socially accepted in general.&lt;/p&gt;
+
+&lt;h2&gt;Role of hawala agents/companies:&lt;/h2&gt;
+
+&lt;p&gt;Hawala agents have moved a step further and registered fraud companies to do money laundering. They play active role in Tax evasion for a small share in profit. The money saved is called black money (mainly in the form of cash). This money is either moved into foreign banks accounts, or invested within the country in black markets (parallel economy).&lt;/p&gt;
+
+&lt;h2&gt;Can we do away with Income Tax?&lt;/h2&gt;
+
+&lt;p&gt;Yes, we can. Even if the Government abolishes Income Tax, it has potential to recover the same through other forms of Tax. Few arguments:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;People will have more purchasing power and hence Indirect Tax revenue should increase.&lt;/li&gt;
+&lt;li&gt;The stagnant cash (black money) will flow into banks in bulk. They are not being invested now to avoid taxes. More money in the mainstream economy will generate more Tax.&lt;/li&gt;
+&lt;li&gt;No cost of running the Income Tax department.&lt;/li&gt;
+&lt;li&gt;If the natural resources are used/sold efficiently (without corruption), it can generate huge revenue. (Remember 2G and Coalgate?)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Eagerly waiting to hear your views in comments. &lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Setting up python vitual environment</title>
+    <link href="http://www.rohit.io/blog/setting-up-python-virtual-environment.html"/>
+    <updated>2014-04-12T00:25:00+00:00</updated>
+    <id>http://www.rohit.io/blog/setting-up-python-virtual-environment</id>
+    <content type="html">&lt;p&gt;Using python virtual environment for development is highly recommended and is widely used by python programmers. Debian/Ubuntu commands to install python virtualenv are as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Install required packages:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;    $ sudo apt-get install python-pip
+    $ sudo pip install virtualenv
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;p /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Create a virtualenv:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;    $ virtualenv [--no-site-packages] venv
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;p /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Activate virtualenv:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;    $ source venv/bin/activate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;p /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Once the virtualenv is activated, use pip to install libraries. For example:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;    (venv)$ pip install gevent redis ipython
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;p /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The above example will install python packages: gevent, redis and ipython. To deactivate virtualenv:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;    (venv)$ deactivate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;p /&gt;&lt;/p&gt;
+
+&lt;p&gt;Virtualenv can help you maintain conflicting library dependencies, python versions for different projects, in the same system. It is commonly used in production systems even with a single python application.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+  <entry>
+    <title>Simplicity</title>
+    <link href="http://www.rohit.io/blog/simplicity.html"/>
+    <updated>2014-02-09T15:19:00+00:00</updated>
+    <id>http://www.rohit.io/blog/simplicity</id>
+    <content type="html">&lt;p&gt;Today, I changed the title of my blog to &lt;strong&gt;Simplicity&lt;/strong&gt;. A simple thought, life, action and relation is somewhere lost in this complicated world! &lt;strong&gt;Simplicity is an aquired taste&lt;/strong&gt;. A taste, which helped google dominate the web, Apple to be regarded as the biggest brand and Mahatma Gandhi to become the father of the Nation.&lt;/p&gt;
+
+&lt;p&gt;The first thing to realize about simplicity is that, it does not mean &lt;em&gt;LIMITED&lt;/em&gt;. &lt;strong&gt;Simplicity is about subtracting the obvious and adding the meaningful&lt;/strong&gt;. The problem here is that the &amp;lsquo;obvious&amp;rsquo; is not so OBVIOUS :(&lt;/p&gt;
+
+&lt;p&gt;Simplicity also means, the achievement of maximum effect with minimum means. A absence of luxury or showiness, enjoying plainess.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
+  
+</feed>
+

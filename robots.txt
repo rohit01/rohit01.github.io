@@ -1,0 +1,4 @@
+User-agent: *
+Allow: *
+Disallow: /res/images/icons/*
+Disallow: /Resume/

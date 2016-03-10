@@ -1,0 +1,49 @@
+#slide-5 {
+  background: url('images/nagios.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #aaa;
+}
+
+#slide-7 {
+  background: url('images/shinken-ui.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #eee;
+}
+
+#slide-8 {
+  background: url('images/shinken-architecture.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #eee;
+}
+
+#slide-9 {
+  background: url('images/docker.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #eee;
+}
+
+#slide-10 {
+  background: url('images/devops-container.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #eee;
+}
+
+#slide-11 {
+  background: url('images/docker-vm-container.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #eee;
+}
+
+
+/*#slide-5 {
+  background-color: #222;
+  color: #eee;
+}
+
+*/

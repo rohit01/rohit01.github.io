@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Build service dashboard using Shinken</title>
+    <!-- Styles -->
+
+    <link rel="stylesheet" media="print" href="print.css">
+    <link rel="stylesheet" media="screen, projection" href="screen.css">
+
+
+    <!-- /Styles -->
+    <!-- Javascripts -->
+
+    <script type="text/javascript" src="slides.js"></script>
+
+
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>Build service dashboard using Shinken</h1></header>
+
+
+            <section><p><center>
+<br />
+<br />
+<br />
+<br />
+<br /></p>
+<p><strong> Rohit Gupta </strong>
+<br />
+<br />
+<strong> Developer @plivo </strong>
+<br />
+<br />
+<strong> @rohit01 </strong>
+<br />
+<br />
+</center></p></section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              1/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>Why are we here?</h1></header>
+
+
+            <section><ul>
+<li><strong> Monitor everything: Shinken </strong></li>
+<li><strong> Shinken Architecture </strong></li>
+<li><strong> NRPE Plugins </strong></li>
+<li><strong> Write your own NRPE plugin </strong></li>
+<li><strong> Automated service checks </strong></li>
+<li><strong> Integrate your plugins </strong></li>
+<li><strong> API based User Interface </strong></li>
+</ul></section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              2/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>What is Shinken?</h1></header>
+
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              3/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>Shinken Architecture</h1></header>
+
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              4/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1><img src="architecture.png" alt="Shinken Architecture" width="90%" height="90%"></h1></header>
+
+
+            <section><!-- <img alt="Architecture" src="architecture.png" /> -->
+
+<p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<h4> *Reference: <a href="http://www.shinken-monitoring.org/wiki/the_shinken_architecture" target="_blank">http://www.shinken-monitoring.org/wiki/the_shinken_architecture</a> </h4></p></section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              5/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>NRPE Plugins</h1></header>
+
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              6/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>Write your own NRPE plugin!</h1></header>
+
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              7/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+
+            <header><h1>Python NRPE Example</h1></header>
+
+
+            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="kn">import</span> <span class="nn">requests</span>
+<span class="lineno"> 2</span> <span class="kn">import</span> <span class="nn">sys</span>
+<span class="lineno"> 3</span> <span class="kn">import</span> <span class="nn">time</span>
+<span class="lineno"> 4</span>
+<span class="lineno"> 5</span> <span class="n">ST_OK</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno"> 6</span> <span class="n">ST_WR</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="lineno"> 7</span> <span class="n">ST_CR</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="lineno"> 8</span> <span class="n">ST_CR</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="lineno"> 9</span>
+<span class="lineno">10</span> <span class="n">url</span> <span class="o">=</span> <span class="s">&#39;http://plivo.com&#39;</span>
+<span class="lineno">11</span> <span class="k">try</span><span class="p">:</span>
+<span class="lineno">12</span>     <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="lineno">13</span>     <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="lineno">14</span>     <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="lineno">15</span> <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+<span class="lineno">16</span>     <span class="k">print</span> <span class="s">&#39;Critical - Exception occured while fetching url: </span><span class="si">%s</span><span class="s">&#39;</span> <span class="n">% url</span>
+<span class="lineno">17</span>     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">ST_CR</span><span class="p">)</span>
+</pre></div>
+</section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              8/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+
+            <header><h1>Continue...</h1></header>
+
+
+            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="n">latency</span> <span class="o">=</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span>
+<span class="lineno"> 2</span> <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">&lt;</span> <span class="mi">200</span> <span class="ow">or</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">&gt;=</span> <span class="mi">300</span><span class="p">:</span>
+<span class="lineno"> 3</span>     <span class="k">print</span> <span class="s">&#39;Critical - Response code: </span><span class="si">%s</span><span class="s"> for url: </span><span class="si">%s</span><span class="s">&#39;</span> \
+<span class="lineno"> 4</span>           <span class="o">%</span> <span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+<span class="lineno"> 5</span>     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">ST_WR</span><span class="p">)</span>
+<span class="lineno"> 6</span> <span class="k">elif</span> <span class="n">latency</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+<span class="lineno"> 7</span>     <span class="k">print</span> <span class="s">&#39;Warning - latency: </span><span class="si">%s</span><span class="s"> secs for url: </span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">latency</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+<span class="lineno"> 8</span>     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">ST_WR</span><span class="p">)</span>
+<span class="lineno"> 9</span> <span class="k">print</span> <span class="s">&#39;Ok - </span><span class="si">%s</span><span class="s"> tested successfully&#39;</span> <span class="o">%</span> <span class="n">url</span>
+<span class="lineno">10</span> <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">ST_OK</span><span class="p">)</span>
+</pre></div>
+</section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              9/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>Things to Consider</h1></header>
+
+
+            <section><ul>
+<li>Dont Re-Invent the wheel!</li>
+<li>Exit values</li>
+<li>Setup and Teardown</li>
+<li>Locks</li>
+<li>Exceptions</li>
+<li>Logs</li>
+<li>Be verbose but you have single line</li>
+<li>Graph everything</li>
+</ul></section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              10/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>Integrate your plugins</h1></header>
+
+
+            <section><ul>
+<li><strong> Configuration DIR: </strong> /usr/local/shinken/etc/</li>
+<li><strong> resource.cfg </strong></li>
+</ul>
+<pre>
+$PYTHON_VENV$=/usr/src/python_env
+$PLUGINSDIR$=/usr/local/nagios/libexec
+</pre>
+
+<ul>
+<li><strong> commands.cfg </strong></li>
+</ul>
+<pre>
+define command{
+    command_name    my_web_check
+    command_line    $PYTHON_VENV$/bin/python $PLUGINSDIR$/my_web_check.py
+}
+</pre>
+
+<ul>
+<li><strong> contacts.cfg </strong></li>
+</ul></section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              11/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>Continue...</h1></header>
+
+
+            <section><ul>
+<li><strong> templates.cfg </strong></li>
+</ul>
+<pre>
+# This is how critical call + email alerts are sent, 24x7 way.
+define notificationway{
+       notificationway_name                 email_and_call_alerts
+       service_notification_period          24x7
+       host_notification_period             24x7
+       service_notification_options         c
+       host_notification_options            d
+       host_notification_commands           host_email_alerts
+       service_notification_commands        service_email_and_call_alerts
+}
+</pre>
+
+<ul>
+<li><strong> pip install pyro </strong></li>
+</ul></section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              12/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>Some Good Practices</h1></header>
+
+
+            <section><ul>
+<li>Dont write for success scenarios</li>
+<li>Atomic checks</li>
+<li>Avoid mutual dependency</li>
+<li>Stats collection</li>
+<li>Avoid many hops</li>
+<li>Tricky for long running tests</li>
+<li>Be more verbose</li>
+</ul></section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              13/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>API based User Interface</h1></header>
+
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              14/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+
+            <section><p><img alt="questions" src="questions.png" /></p></section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              15/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+
+            <header><h1>Thank You</h1></header>
+
+
+            <section><p><center>
+<br /></p>
+<p><strong> Rohit Gupta </strong>
+<br />
+<br />
+<strong> @rohit01 </strong>
+<br />
+<br />
+<strong> Developer @plivo </strong>
+<br />
+<br />
+<strong> Email: rohit@plivo.com </strong>
+<br />
+<br />
+<strong> Ph: (+65) 31583923 </strong>
+<br />
+<br />
+<strong> Slide link: <a href="http://bit.ly/plivosg">http://bit.ly/plivosg</a> </strong>
+<br />
+</center></p></section>
+
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+
+            </section>
+          </div>
+          <footer>
+
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+
+            <aside class="page_number">
+              16/16
+            </aside>
+          </footer>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+
+      <tr id="toc-row-1">
+        <th><a href="#slide1">Build service dashboard using Shinken</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+
+
+      <tr id="toc-row-2">
+        <th><a href="#slide2">Why are we here?</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+
+
+      <tr id="toc-row-3">
+        <th><a href="#slide3">What is Shinken?</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+
+
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Shinken Architecture</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+
+
+      <tr id="toc-row-5">
+        <th><a href="#slide5"><img src="./architecture.png" alt="Shinken Architecture" width="90%" height="90%"></a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+
+
+      <tr id="toc-row-6">
+        <th><a href="#slide6">NRPE Plugins</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+
+
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Write your own NRPE plugin!</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+
+
+      <tr id="toc-row-8">
+        <th><a href="#slide8">Python NRPE Example</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+
+
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Continue...</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+
+
+      <tr id="toc-row-10">
+        <th><a href="#slide10">Things to Consider</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+
+
+      <tr id="toc-row-11">
+        <th><a href="#slide11">Integrate your plugins</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+
+
+      <tr id="toc-row-12">
+        <th><a href="#slide12">Continue...</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+
+
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Some Good Practices</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+
+
+      <tr id="toc-row-14">
+        <th><a href="#slide14">API based User Interface</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+
+
+      <tr id="toc-row-15">
+        <th><a href="#slide15">-</a></th>
+        <td><a href="#slide15">15</a></td>
+      </tr>
+
+
+      <tr id="toc-row-16">
+        <th><a href="#slide16">Thank You</a></th>
+        <td><a href="#slide16">16</a></td>
+      </tr>
+
+
+    </table>
+  </div>
+
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Full screen slides</th>
+        <td>e</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Toggle screen blanking</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Show/hide slide context</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>

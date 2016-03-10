@@ -1,0 +1,6 @@
+gem 'jekyll-redirect-from'
+gem 'jemoji'
+gem 'jekyll-lunr-js-search'
+gem 'rdiscount'
+gem 'jekyll-paginate'
+gem 'jekyll-gist'

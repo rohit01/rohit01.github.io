@@ -1,0 +1,41 @@
+Nagios:
+
+* Great infrastructure monitoring tool
+* Some people still conder as a Standard for IT infrastructure monitoring
+* History: Years in service
+* Agent and polling based
+
+Shinken:
+
+* Shinken was written by Jean Gabès as a POC for next version of Nagios
+* Turned down by nagios authors.. became an independent project
+* Nagios core replacement
+
+Docker:
+
+* Built on top of LXC
+* Complete package - Repo, process isolation, Fast, less overhead
+* Provides the benefits of VM without much of its overhead
+
+Nagios complecated relationship:
+
+* Active Development: Not under active development
+* Multi DC deployment: Kindof hack. Difficult to manage and scale
+* Performance: Written in C. Good. However, setting up a cluster is difficult
+* Outdated: Same old features. No innovation
+* User interface: Good but old. Slow in terms of architecture - parsing .dat file. However, you can plugin new UI
+
+Shinken: Start dating again:
+
+* Active Development: Written in python and has a very active community
+* Multi DC deployment: Add new pollers (one of the shinken daemons) in each DC and you are done
+* Performance: Python - Slow compared to Nagios. Cluster setup is easy. NRPE booster module
+* Modern: Support for AWS, dynamic inventory, configuration in a database, package installer and many more.
+* User Interface: Modern & Simple but basic. However, you can use multiple user interface, if you want.
+* Easy Switch: Plug and play replacement. Almost 100% compatible with nagios configuration.
+
+Docker + Shinken: Happily married
+
+* Setting up Shinken or nagios still takes time
+
+
