@@ -1,0 +1,107 @@
+---
+## Demonstrate Ansible EC2 modules
+- hosts: local
+  gather_facts: no
+  vars:
+    REGION: "us-west-2"
+    KEY_NAME: "knowlarity"
+    SG_NAME: "simplicity"
+    INSTANCE_TYPE: "t2.micro"
+    AMI_IMAGE: "ami-e1193fd1"
+    ROLE: "simplicity"
+    ZONES:
+      - 'us-west-2a'
+      - 'us-west-2b'
+  vars_files:
+    - "ec2_creds.yml"
+
+  tasks:
+    - name: "Add ec2 ssh public key"
+      ec2_key: >
+        region="{{REGION}}"
+        name="{{ KEY_NAME }}"
+        key_material="{{ item }}"
+        aws_access_key="{{AWS_ACCESS_KEY}}"
+        aws_secret_key="{{AWS_SECRET_KEY}}"
+      with_file: "~/.ssh/id_rsa.pub"
+
+    - name: "Create ec2 security group"
+      ec2_group:
+        name: "{{ SG_NAME }}"
+        description: "SG for {{ SG_NAME }}"
+        region: "{{ REGION }}"
+        aws_access_key: "{{AWS_ACCESS_KEY}}"
+        aws_secret_key: "{{AWS_SECRET_KEY}}"
+        rules:
+          - proto: tcp
+            from_port: 80
+            to_port: 80
+            cidr_ip: 0.0.0.0/0
+          - proto: tcp
+            from_port: 22
+            to_port: 22
+            cidr_ip: 0.0.0.0/0
+
+    - name: "Launch two VM -- wordpress"
+      ec2:
+        key_name: "{{ KEY_NAME }}"
+        instance_type: "{{ INSTANCE_TYPE }}"
+        image: "{{ AMI_IMAGE }}"
+        wait: yes
+        group: "{{ SG_NAME }}"
+        region: "{{ REGION }}"
+        aws_access_key: "{{AWS_ACCESS_KEY}}"
+        aws_secret_key: "{{AWS_SECRET_KEY}}"
+        exact_count: 2
+        count_tag:
+          Name: "{{ ROLE }}"
+        instance_tags:
+          Name: "{{ ROLE }}"
+      register: ec2_launch_result
+
+    - name: "Create a Load balancer"
+      ec2_elb_lb:
+        name: "{{ ROLE }}"
+        region: "{{ REGION }}"
+        cross_az_load_balancing: yes
+        zones: "{{ ZONES }}"
+        state: present
+        aws_access_key: "{{AWS_ACCESS_KEY}}"
+        aws_secret_key: "{{AWS_SECRET_KEY}}"
+        listeners:
+          - protocol: http
+            load_balancer_port: 80
+            instance_port: 80
+        health_check:
+          ping_protocol: http
+          ping_port: 80
+          ping_path: "/"
+          response_timeout: 5
+          interval: 20
+          unhealthy_threshold: 5
+          healthy_threshold: 5
+      register: elb_result
+
+    - name: "Register instances in ELB"
+      ec2_elb:
+        ec2_elbs: "{{ ROLE }}"
+        region: "{{ REGION }}"
+        instance_id: "{{ item.id }}"
+        aws_access_key: "{{AWS_ACCESS_KEY}}"
+        aws_secret_key: "{{AWS_SECRET_KEY}}"
+        state: "present"
+        wait: yes
+      with_items: ec2_launch_result.tagged_instances
+
+    - name: "Create route53 entry - www.prod.knowlarity.com"
+      route53: >
+        command=create
+        zone="prod.knowlarity.com"
+        record="www.prod.knowlarity.com."
+        type="CNAME"
+        ttl="300"
+        value="{{ elb_result.elb.dns_name }}"
+        aws_access_key="{{ AWS_ACCESS_KEY }}"
+        aws_secret_key="{{ AWS_SECRET_KEY }}"
+        overwrite=yes
+

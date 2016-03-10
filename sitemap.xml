@@ -1,32 +1,38 @@
 ---
-layout: nil
+layout: blank
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in site.posts %}
   <url>
-    <loc>http://rohit.io{{ post.url }}</loc>
+    <loc>http://{{ site.website }}{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-   </url>
-   {% endfor %}
+  </url>
+  {% endfor %}
   <url>
-    <loc>http://rohit.io/about/</loc>
+    <loc>http://{{ site.website }}/about/</loc>
     <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://rohit.io/</loc>
+    <loc>http://{{ site.website }}/projects/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://{{ site.website }}/</loc>
     <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://rohit.io/archive/</loc>
+    <loc>http://{{ site.website }}/search/</loc>
     <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.5</priority>
   </url>
 </urlset>

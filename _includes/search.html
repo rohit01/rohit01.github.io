@@ -1,13 +1,18 @@
-<form action="" id="search-box">
-  <p>
-    <input type="text" name="q" id="search-query" placeholder="Search posts" class="search-query" autocomplete="off"/>
-  </p>
+<form action="/search/index.html" id="search-box">
+  <input type="text" name="q" id="search-query" placeholder="Search posts" class="search-query" autocomplete="off"/>
 </form>
-
+<br />
+<!-- Determine number of items to display  -->
+{% if include.limit_items %}
+  {% assign limit_items = include.limit_items %}
+{% else  %}
+  {% assign limit_items = 25 %}
+{% endif  %}
+<!-- Display search results. Default - recent posts -->
 <section id="search-results">
   <ul>
     <div class="entries">
-      {% for post in site.posts %}
+      {% for post in site.posts limit:limit_items %}
         <li>
           {{ post.date | date: "%b %d, %Y"  }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
@@ -15,7 +20,7 @@
     </div>
   </ul>
 </section>
-
+<!-- JavaScript to generate search results -->
 {% raw %}
 <script id="search-results-template" type="text/mustache">
   {{#entries}}
@@ -26,6 +31,31 @@
 </script>
 {% endraw %}
 
+<!-- Search box inline stying -->
+<style type="text/css">
+  #search-query {
+    width: 100%;
+    font-size: inherit;
+    font-family: helvetica, sans-serif;
+    padding:0.5em 1em;
+  }
+  #search-query {
+    border:2px solid #ddd;
+    /*border-radius: 90px;*/
+  }
+  #search-query:focus {
+    outline:none;
+    border-color: #2299ff;
+  }
+  html.ios #search-query {
+    padding:0.5em 1em;
+    -webkit-appearance: none;
+  }
+</style>
+
+<!-- jekyll lunr-js -->
+<script type='text/javascript' src='/res/js/jquery-1.11.1.min.js'></script>
+<script type='text/javascript' src='/res/js/jquery-migrate-1.2.1.min.js'></script>
 <script src="/res/js/search.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
   $(function() {
@@ -37,40 +67,13 @@
     });
   });
 </script>
-
-
+<!-- iOS text box styling-->
 <script type="text/javascript">
   var search_field = document.getElementById('search-query');
   search_field.style.background = null;
-  if (window.rohitHostIsIOS) {
-    search_field.type = 'search';
-  } else {
-    search_field.select();
-    search_field.focus();
-  }
+  search_field.select();
+  search_field.focus();
   search_field.addEventListener('blur', function (ev) {
     this.style.background = null;
   });
 </script>
-
-
-<style type="text/css">
-  #search-query {
-    width: 70%;
-    font-size: inherit;
-    font-family: helvetica, sans-serif;
-    padding:0.5em 1em;
-  }
-  #search-query {
-    border:2px solid #ddd;
-    border-radius: 90px;
-  }
-  #search-query:focus {
-    outline:none;
-    border-color: #2299ff;
-  }
-  html.ios #search-query {
-    padding:0.5em 1em;
-    -webkit-appearance: none;
-  }
-</style>

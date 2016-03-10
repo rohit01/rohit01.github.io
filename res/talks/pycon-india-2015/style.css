@@ -1,0 +1,48 @@
+#slide-3 {
+  background-color: #000;
+}
+
+#slide-4 {
+  background: url('images/relax_it_takes_time.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #aaa;
+}
+
+#slide-5 {
+  background: url('images/nagios.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #222;
+}
+
+#slide-6 {
+  background: url('images/shinken-ui.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #222;
+}
+
+#slide-7 {
+  background: url('images/shinken-architecture.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #222;
+}
+
+#slide-8 {
+  background: url('images/docker-shinken.png');
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #222;
+}
+
+#slide-11 {
+  background: url('images/agent_smith.jpg');
+  background-size: contain;
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #EEE;
+}
+

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.author_name }} - Simplicity{% endif %} | {{ site.website }}</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <script>document.createElement("header"),document.createElement("nav"),document.createElement("section"),document.createElement("article"),document.createElement("aside"),document.createElement("footer");</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1465422930395544";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  {% if page.include_twitter_js %}
+    <!-- Include Twitter tweet widget -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  {% endif %}
+  <!-- SEO and facebook opengraph stuff -->
+  <link rel="canonical" href="http://{{ site.website }}{% if page.canonical_url %}{{ page.canonical_url }}{% else %}{{ page.url }}{% endif %}" />
+  <meta property="og:locale" content="en_US" />
+  {% if page.url == "/index.html" %}
+    <meta property="og:type" content="blog" />
+  {% else %}
+    <meta property="og:type" content="article" />
+  {% endif %}
+  <meta name="twitter:card" content="summary">
+  <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.author_name }} - Simplicity{% endif %}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.author_name }} - Simplicity{% endif %}" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | truncate: 70 }}{% else %}{{ site.author_name }} - Simplicity{% endif %}">
+  <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.author_name }} - Simplicity{% endif %}">
+  {% if page.description %}
+    <meta name="description" content="{{ page.description | escape_once }}">
+    <meta property="og:description" content="{{ page.description | escape_once }}">
+    <meta name="twitter:description" content="{{ page.description | truncate: 200 | escape_once }}">
+    <meta itemprop="description" content="{{ page.description | escape_once }}">
+  {% else if page.content %}
+    <meta name="description" content="{{ page.excerpt | strip_html | escape_once }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | escape_once }}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 | escape_once }}">
+    <meta itemprop="description" content="{{ page.excerpt | strip_html | escape_once }}">
+  {% else %}
+    <meta name="description" content="Blog on technical and social articles. @rohit01 is a developer, foss enthusiast and an Indian nationalist.">
+    <meta property="og:description" content="Blog on technical and social articles. @rohit01 is a developer, foss enthusiast and an Indian nationalist.">
+    <meta name="twitter:description" content="Blog on technical and social articles. @rohit01 is a developer, foss enthusiast and an Indian nationalist.">
+    <meta itemprop="description" content="Blog on technical and social articles. @rohit01 is a developer, foss enthusiast and an Indian nationalist.">
+  {% endif %}
+  <meta property="og:url" content="http://{{ site.website }}{{ page.url }}" />
+  <meta name="twitter:url" content="http://{{ site.website }}{{ page.url }}" />
+  <meta name="original-source" content="http://{{ site.website }}{{ page.url }}" />
+  <meta property="og:site_name" content="Rohit Gupta - Simplicity" />
+  <meta property="og:image" content="http://{{ site.website }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}/res/about/rohit.jpg{% endif %}" />
+  <meta name="twitter:image" content="http://{{ site.website }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}/res/about/rohit.jpg{% endif %}" />
+  <meta property="fb:admins" content="100002166380499" />
+  <meta property="fb:app_id" content="1465422930395544" />
+  {% if page.date %}
+    <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}">
+  {% endif %}
+  {% if page.modify_date %}
+    <meta property="article:modified_time" content="{{ page.modify_date | date: "%Y-%m-%d" }}">
+  {% endif %}
+  {% if site.publisher %}
+    <meta property="article:author" content="{{ site.publisher }}">
+    <meta property="article:publisher" content="{{ site.publisher }}">
+  {% endif %}
+  <meta property="article:section" content="Computers/Technology">
+  {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags | join: ', ' | escape_once }}, rohit01">
+    {% for tag_name in page.tags %}
+      <meta property="article:tag" content="{{ tag_name }}">
+    {% endfor %}
+  {% endif %}
+  <meta property="article:tag" content="rohit01">
+  <meta name="twitter:site" content="@rohit01">
+  <meta name="twitter:creator" content="@rohit01">
+  <meta name="generator" content="jekyll" />
+  <!-- / SEO and facebook opengraph stuff -->
+
+  <link rel="alternate" type="application/rss+xml" title="Simplicity &raquo; Feed" href="http://{{ site.website }}/rss.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Simplicity &raquo; Comments Feed" href="http://disqus.com/rohitio/latest.rss" />
+  <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+  {% if page.ios_app_name %}
+  <!-- iOS compatible -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  {% endif %}
+
+  <style type='text/css'>{% include css/style.css %}</style>
+</head>
+
+{% if page.blog_post %}
+  <body class="single single-post">
+{% else %}
+  <body class="home blog">
+{% endif %}
+
+<header id="header" role="banner">
+  <section id="branding">
+    <div class="brand-container">
+      <a href="/" id="homelink" title="home page">
+        <div id="site-title">
+            <img width="136" height="50" src="/res/images/simplicity.png" alt="Simplicity blog logo" />
+        </div>
+      </a>
+      <div id="site-description">blog by <a href="https://twitter.com/rohit01" style="text-decoration:none">@rohit01</a></div>
+    </div>
+    <div class="action-container">
+      <!-- Mobile header -->
+      <div id="more-actions">
+        <ul>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+      <div class="action-nav">
+        <ul id="extra-action-nav">
+          <li>
+            <form
+              action="//rohit.us9.list-manage.com/subscribe/post?u=42366962daa01c90b70dced51&amp;id=d33424da98"
+              method="post"
+              class="newsletter validate"
+              name="mc-embedded-subscribe-form"
+              id="mc-embedded-subscribe-form"
+              target="_blank"
+              novalidate
+            >
+              <input
+                type="email"
+                value=""
+                name="EMAIL"
+                id="mce-EMAIL"
+                class="email-input"
+                placeholder="Enter email address for monthly updates&hellip;"
+                required
+              >
+              <button type="submit" name="subscribe" class="btn btn-submit">Keep me posted!</button>
+            </form>
+          </li>
+          <li class="hide-able">
+            <center>
+              <a href="https://github.com/rohit01"><img src="/res/images/icons/github.png" alt="github profile" /></a>&nbsp;&nbsp;
+              <a href="https://twitter.com/rohit01"><img src="/res/images/icons/twitter.png" alt="twitter profile" /></a>&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/in/rohit01"><img src="/res/images/icons/linkedin.png" alt="linkedin profile" /></a>&nbsp;&nbsp;
+              <a href="https://www.facebook.com/rohit01io"><img src="/res/images/icons/facebook.png" alt="facebook profile" /></a>&nbsp;&nbsp;
+              <a href="/rss.xml" ><img src="/res/images/icons/rss.png" alt="rss feed" /></a>
+            </center>
+          </li>
+        </ul>
+      </div>
+      <!-- Default header -->
+      <div class="action-nav">
+        <ul id="extra-action-nav">
+          <li>
+            <a href="https://github.com/rohit01"><img src="/res/images/icons/github.png" alt="github profile" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+          <li>
+            <a href="https://twitter.com/rohit01"><img src="/res/images/icons/twitter.png" alt="twitter profile" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rohit01"><img src="/res/images/icons/linkedin.png" alt="linkedin profile" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+          <li>
+            <a href="https://www.facebook.com/rohit01io"><img src="/res/images/icons/facebook.png" alt="facebook profile" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+          <li>
+            <a href="http://rohit.us9.list-manage.com/subscribe?u=42366962daa01c90b70dced51&id=d33424da98"><img src="/res/images/icons/sending_email.png" alt="mailing list" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+          <li>
+            <a href="/rss.xml" ><img src="/res/images/icons/rss.png" alt="rss feed" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="clear">&nbsp;</div>
+  </section>
+</header>
+
+{{ content }}
+
+<div class="clear"></div>
+<footer id="footer" role="contentinfo">
+  <div id="copyright">
+    <a href="https://github.com/rohit01/rohit01.github.io" style="text-decoration:none">This work</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" style="text-decoration:none">Creative Commons License</a>
+  </div>
+  <!-- Footer links -->
+  <div class="footer-links">
+    <ul>
+      <li>
+        <h6>Keep in touch</h6>
+        <p><a href="https://github.com/rohit01">Github</a></p>
+        <p><a href="https://twitter.com/rohit01">Twitter</a></p>
+        <p><a href="https://www.linkedin.com/in/rohit01">Linkedin</a></p>
+        <p><a href="https://www.facebook.com/rohit01io">Facebook</a></p>
+      </li>
+      <li>
+        <h6>Subscribe</h6>
+        <p><a href="http://rohit.us9.list-manage.com/subscribe?u=42366962daa01c90b70dced51&id=d33424da98">Email</a></p>
+        <p><a href="/rss.xml">RSS Feed</a></p>
+      </li>
+      <li>
+        <h6>More</h6>
+        <p><a href="/projects/">Projects</a></p>
+        <p><a href="/photos/">Photography</a></p>
+        <p><a href="/search/">Search</a></p>
+        <p><a href="/about/">About</a></p>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<!-- JavaScript to enable '...' button in mobile devices -->
+<script>
+  var extraNavVisible, uberNavVisible;
+  function addEvent(el, evt, handler){
+    if(el.addEventListener){
+      el.addEventListener(evt, handler, false);
+    }else{
+      el.attachEvent('on' + evt, handler);
+    }
+  }
+  addEvent(document.getElementById('more-actions'), 'click', function(e){
+    extraNavVisible = !extraNavVisible;
+    document.getElementById('extra-action-nav').style.display = extraNavVisible ? 'block' : 'none';
+    if(e.preventDefault) e.preventDefault();
+    return false;
+  });
+  addEvent(document.getElementById('homelink'), 'click', function(e){
+    uberNavVisible = !uberNavVisible;
+    document.getElementById('ubernav').style.display = uberNavVisible ? 'block' : 'none';
+    if(e.preventDefault) e.preventDefault();
+    return false;
+  });
+</script>
+
+{% include google_analytics.html %}
+
+</body>
+</html>

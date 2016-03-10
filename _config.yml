@@ -4,24 +4,49 @@ highlighter: rouge
 lsi: false
 #DEFAULT permalink: /:year/:month/:day/:title.html
 permalink: /blog/:title.html
-# paginate: 50
+# Pagination configuration
+paginate: 50
+paginate_path: "page/:num"
+
 markdown: rdiscount
 # enables SmartyPants (nice curly quotation marks, em/en dashes, elipses, etc):
 rdiscount:
   extensions: [smart]
+
 # Since GH pages override this to "true", we test this value to see if we are running locally
 safe: false
-gems: 
+gems:
   - 'jekyll-redirect-from'
-  - 'jekyll-mentions'
   - 'jemoji'
-  - 'jekyll-lunr-js-search'
+  - 'jekyll-paginate'
+  - 'jekyll-gist'
+# - 'jekyll-lunr-js-search'
+# Need to fix for new version..
 # jekyll-lunr-js-search --> full-text search using JavaScript
+
 lunr_search:
-  excludes: 
+  excludes:
     - index.html
+    - 404.html
     - rss.xml
-    - atom.xml
-    - about/*
-    - archive/*
-    - res/*
+    - about/index.html
+    - search/index.html
+    - /res/*
+
+website: 'www.rohit.io'
+author_name: 'Rohit Gupta'
+publisher: 'https://www.facebook.com/rohit01io'
+
+featured_albums:
+  - title: "Nandi Hills - Refreshing morning break!"
+    thumbnail: "/photos/album/nandi-hills/thumbnail.jpg"
+    url: "/photos/album/nandi-hills/gallery/"
+  - title: "Gokarna - Relax and enjoy nature.."
+    thumbnail: "/photos/album/gokarna/thumbnail.jpg"
+    url: "/photos/album/gokarna/gallery/"
+  - title: "Uttarakhand - Welcome to Devbhoomi :pray:"
+    thumbnail: "/photos/album/uttarakhand/thumbnail.jpg"
+    url: "/photos/album/uttarakhand/gallery/"
+  - title: "Gurgaon - Reunion with friends!"
+    thumbnail: "/photos/album/gurgaon/thumbnail.jpg"
+    url: "/photos/album/gurgaon/gallery/"

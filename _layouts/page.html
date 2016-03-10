@@ -1,6 +1,115 @@
 ---
-layout: default
+layout: main
+blog_post: true
 ---
-<div class="content">
-  {{ content }}
+
+<div id="container">
+  <section id="content" role="main">
+    <article id="{{ page.id }}" class="{{ page.id }}">
+      <!-- Content -->
+      <section class="entry-content">
+        {{ content }}
+      </section>
+    </article>
+
+    {% if page.disqus_comments %}
+      <footer class="footer">
+        <section class="share-it">
+          <h3>Enjoy this?</h3>
+          <!-- Twitter button -->
+          <div class="share-button">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="rohit01" data-lang="en-us" data-count="none" data-dnt="true">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </div>
+          <!-- Facebook button -->
+          <div class="share-button">
+            <div class="fb-like" data-width="200" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+          </div>
+          <!-- HackerNews button -->
+          <div class="share-button">
+            <a href="https://news.ycombinator.com/submit" class="hn-button" data-title="{{ page.title }}" data-url="http://{{ site.website }}{{ page.url }}" data-style="twitter">HackerNews</a>
+            <script type="text/javascript">var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="/res/js/hn-button.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();</script>
+          </div>
+          <!-- LinkedIn button -->
+          <div class="share-button">
+            <script src="//platform.linkedin.com/in.js" type="text/javascript">
+              lang: en_US
+            </script>
+            <script type="IN/Share"></script>
+          </div>
+          <!-- Reddit button -->
+          <div class="share-button">
+            <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?title={{ page.title | uri_escape }}&url=' + encodeURIComponent(window.location); return false"> <img src="//www.reddit.com/static/spreddit7.gif" alt="submit to reddit" border="0" /></a>
+          </div>
+          <!-- Googleplus button -->
+          <div class="share-button">
+            <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><div class="g-plusone" data-size="tall" data-annotation="none"></div>
+          </div>
+        </section>
+        <!-- Email subscription -->
+        <section class="leadmagnet">
+          <h3>Never miss a post</h3>
+          <form 
+            action="//rohit.us9.list-manage.com/subscribe/post?u=42366962daa01c90b70dced51&amp;id=d33424da98"
+            method="post"
+            class="newsletter validate"
+            name="mc-embedded-subscribe-form"
+            id="mc-embedded-subscribe-form"
+            target="_blank"
+            novalidate
+          >
+            <label for="email">Keep updated!</label>
+            <input 
+              type="email"
+              value=""
+              name="EMAIL"
+              id="mce-EMAIL"
+              class="email-input"
+              placeholder="Enter email address for monthly updates&hellip;"
+              required
+            >
+            <button type="submit" name="subscribe" class="btn btn-submit">Keep me posted!</button>
+          </form>
+        </section>
+        <!-- Related posts -->
+        <nav id="nav-below" class="navigation" role="navigation">
+          <div class="post-foot-signoff">
+            <div class="kind-of-a-big-deal">
+              <h3>Other posts</h3>
+              {% if page.previous %}
+                <div class="nav-previous"><a href="{{ page.previous.url }}" rel="prev">{{ page.previous.title }}&nbsp;&rarr;</a></div>
+              {% else %}
+                {% if site.related_posts[0] %}
+                  <div class="nav-previous"><a href="{{ site.related_posts[0].url }}" rel="prev">{{ site.related_posts[0].title }}&nbsp;&rarr;</a></div>
+                {% endif %}
+              {% endif %}
+            </div>
+            <div class="goforth">
+              <h3>&nbsp;</h3>
+              {% if page.next %}
+                <div class="nav-next"><a href="{{ page.next.url }}" rel="next">{{ page.next.title }}&nbsp;&rarr;</a></div>
+              {% else %}
+                {% if site.related_posts[1] %}
+                  <div class="nav-next"><a href="{{ site.related_posts[1].url }}" rel="next">{{ site.related_posts[1].title }}&nbsp;&rarr;</a></div>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+        </nav>
+        <!-- Disqus comments -->
+        <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            var disqus_shortname = 'rohitio';
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          {% include disqus.html %}
+        </div>
+      </footer>
+    {% endif %}
+  </section>
 </div>
