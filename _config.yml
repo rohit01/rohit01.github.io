@@ -18,8 +18,10 @@ safe: false
 gems:
   - 'jekyll-redirect-from'
   - 'jemoji'
+  - 'rdiscount'
   - 'jekyll-paginate'
   - 'jekyll-gist'
+
 # - 'jekyll-lunr-js-search'
 # Need to fix for new version..
 # jekyll-lunr-js-search --> full-text search using JavaScript
@@ -44,7 +46,7 @@ featured_albums:
   - title: "Gokarna - Relax and enjoy nature.."
     thumbnail: "/photos/album/gokarna/thumbnail.jpg"
     url: "/photos/album/gokarna/gallery/"
-  - title: "Uttarakhand - Welcome to Devbhoomi :pray:"
+  - title: "Uttarakhand - Welcome to Devbhoomi 🙏"
     thumbnail: "/photos/album/uttarakhand/thumbnail.jpg"
     url: "/photos/album/uttarakhand/gallery/"
   - title: "Gurgaon - Reunion with friends!"
