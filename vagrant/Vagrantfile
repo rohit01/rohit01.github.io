@@ -80,17 +80,18 @@ Vagrant.configure(2) do |config|
   # SHELL
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
-    sudo apt-get upgrade
+    sudo apt-get -y upgrade
     sudo apt-get install -y build-essential gcc make nodejs patch ruby ruby-dev ruby2.0 ruby2.0-dev ruby-all-dev libxml2 libxml2-dev git-core zlib1g-dev liblzma-dev
     sudo ln -sf /usr/bin/ruby2.0 /usr/bin/ruby
     sudo ln -sf /usr/bin/gem2.0 /usr/bin/gem
-    sudo gem install 'jekyll'
-    sudo gem install 'jemoji'
+    sudo gem install 'jekyll' -v 2.5.3
+    sudo gem install 'jemoji' -v 0.5.1
     sudo gem install 'jekyll-gist'
     sudo gem install 'rdiscount'
     sudo gem install 'jekyll-lunr-js-search'
     sudo gem install 'jekyll-paginate'
     sudo gem install 'jekyll-redirect-from'
+    sudo gem install 'jekyll-mentions'
 
     # git config --global user.email "<email>"
     # git config --global user.name "<user>"
