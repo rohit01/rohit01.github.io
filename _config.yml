@@ -1,0 +1,27 @@
+name: rohit.io
+port: 4000
+highlighter: rouge
+lsi: false
+#DEFAULT permalink: /:year/:month/:day/:title.html
+permalink: /blog/:title.html
+# paginate: 50
+markdown: rdiscount
+# enables SmartyPants (nice curly quotation marks, em/en dashes, elipses, etc):
+rdiscount:
+  extensions: [smart]
+# Since GH pages override this to "true", we test this value to see if we are running locally
+safe: false
+gems: 
+  - 'jekyll-redirect-from'
+  - 'jekyll-mentions'
+  - 'jemoji'
+  - 'jekyll-lunr-js-search'
+# jekyll-lunr-js-search --> full-text search using JavaScript
+lunr_search:
+  excludes: 
+    - index.html
+    - rss.xml
+    - atom.xml
+    - about/*
+    - archive/*
+    - res/*

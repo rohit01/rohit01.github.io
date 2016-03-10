@@ -1,0 +1,88 @@
+---
+layout: default
+---
+<div class="content{% if page.photo_url %} photo-post{% endif %}">
+  <div class="post single">
+    {% unless page.photo_url %}
+    <h2 align="center">{{ page.title }}</h2>
+    <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.date | date: "%b %d, %Y" }}
+    </info>
+    {% endunless %}
+    <div class="body">{{ content }}</div>
+    <!-- Social buttons start -->
+    <div align="right">
+      <!-- <span class='st_fblike_large' displayText='Facebook Like'></span> -->
+      <!-- <span class='st_plusone_large' displayText='Google +1'></span> -->
+      <span class='st_facebook_large' displayText='Facebook'></span>
+      <span class='st_twitter_large' displayText='Tweet'></span>
+      <span class='st_linkedin_large' displayText='LinkedIn'></span>
+      <span class='st_whatsapp_large' displayText='WhatsApp'></span>
+      <span class='st_reddit_large' displayText='Reddit'></span>
+      <span class='st_googleplus_large' displayText='Google +'></span>
+      <span class='st_pinterest_large' displayText='Pinterest'></span>
+      <span class='st_email_large' displayText='Email'></span>
+    </div>
+    <!-- Social buttons end -->
+    <div class="breaker"></div>
+
+  {% if page.disqus_comments %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'rohitio'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {% include disqus.html %}
+  </div>
+  {% endif %}
+  </div>
+</div>
+{% if site.safe == false %}
+<!-- During authoring, this automatically reloads the post as its changing -->
+<script type="text/javascript">
+(function() {
+var qs = document.location.search;
+var current_etag = qs.match(/etag=("?[a-zA-Z0-9_-]+)/);
+if (current_etag !== null) { current_etag = current_etag[1]; }
+var scrolly = qs.match(/scrolly=([0-9]+)/);
+if (scrolly) {
+  scrolly = parseInt(scrolly[1]);
+  window.scrollTo(window.scrollX, scrolly);
+  setTimeout(function () {
+    window.scrollTo(window.scrollX, scrolly);
+  }, 10);
+}
+
+function check() {
+  var r = new XMLHttpRequest();
+  var url = document.location.href + ((qs && qs !== '') ? '&' : '?') + 'r=' + Math.random();
+  r.open('GET', url, true);
+  r.onreadystatechange = function() {
+    if (r.readyState == 4){
+      var found_etag = r.getResponseHeader('Etag').replace(/^"|"$/g);
+      //console.log('current_etag:', current_etag, 'found_etag:', found_etag);
+      if (current_etag === null) {
+        current_etag = found_etag;
+      } else if (found_etag !== current_etag) {
+        document.location.search =
+          '?etag=' + encodeURIComponent(found_etag) +
+          '&scrolly=' + window.scrollY;
+        return;
+      }
+      setTimeout(check, 500);
+    }
+  };
+  r.send(null);
+}
+check();
+})();
+</script>
+{% endif %}
