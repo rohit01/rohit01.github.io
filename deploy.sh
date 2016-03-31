@@ -7,6 +7,7 @@ echo "git checkout dev"
 git checkout dev
 
 echo "Building site..."
+rm -rf _site/
 jekyll build
 
 # Backup .gitmodules
