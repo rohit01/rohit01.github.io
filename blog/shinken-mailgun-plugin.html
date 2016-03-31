@@ -28,15 +28,12 @@
   <meta name="twitter:title" content="Shinken mailgun plugin">
   <meta itemprop="name" content="Shinken mailgun plugin">
   
-    <meta name="description" content="Shinken is a modern open-source server monitoring tool written in python. It has a lovely feature rich UI and is highly scalable. The great thing about this project is its active community and frequent releases. Mailgun on the other hand, provides an easy to use API for sending, receiving emails. So, no more setting up SMTP servers and maintaing multiple accounts :D
-Open-source: This project is fully open sourced and hosted in Github.
+    <meta name="description" content="Shinken is a modern open-source server monitoring tool written in python. It has a lovely feature rich UI and is highly scalable. The great thing about this project is its active community and frequent releases. Mailgun on the other hand, provides an easy to use API for sending, receiving emails. So, no more setting up SMTP servers and maintaing multiple accounts :-D
 ">
-    <meta property="og:description" content="Shinken is a modern open-source server monitoring tool written in python. It has a lovely feature rich UI and is highly scalable. The great thing about this project is its active community and frequent releases. Mailgun on the other hand, provides an easy to use API for sending, receiving emails. So, no more setting up SMTP servers and maintaing multiple accounts :D
-Open-source: This project is fully open sourced and hosted in Github.
+    <meta property="og:description" content="Shinken is a modern open-source server monitoring tool written in python. It has a lovely feature rich UI and is highly scalable. The great thing about this project is its active community and frequent releases. Mailgun on the other hand, provides an easy to use API for sending, receiving emails. So, no more setting up SMTP servers and maintaing multiple accounts :-D
 ">
     <meta name="twitter:description" content="Shinken is a modern open-source server monitoring tool written in python. It has a lovely feature rich UI and is highly scalable. The great thing about this project is its active community and freq...">
-    <meta itemprop="description" content="Shinken is a modern open-source server monitoring tool written in python. It has a lovely feature rich UI and is highly scalable. The great thing about this project is its active community and frequent releases. Mailgun on the other hand, provides an easy to use API for sending, receiving emails. So, no more setting up SMTP servers and maintaing multiple accounts :D
-Open-source: This project is fully open sourced and hosted in Github.
+    <meta itemprop="description" content="Shinken is a modern open-source server monitoring tool written in python. It has a lovely feature rich UI and is highly scalable. The great thing about this project is its active community and frequent releases. Mailgun on the other hand, provides an easy to use API for sending, receiving emails. So, no more setting up SMTP servers and maintaing multiple accounts :-D
 ">
   
   <meta property="og:url" content="http://www.rohit.io/blog/shinken-mailgun-plugin.html" />
@@ -57,7 +54,17 @@ Open-source: This project is fully open sourced and hosted in Github.
   
   <meta property="article:section" content="Computers/Technology">
   
-    <meta name="keywords" content=", rohit01">
+    <meta name="keywords" content="shinken, mailgun, programming, python, open-source, rohit01">
+    
+      <meta property="article:tag" content="shinken">
+    
+      <meta property="article:tag" content="mailgun">
+    
+      <meta property="article:tag" content="programming">
+    
+      <meta property="article:tag" content="python">
+    
+      <meta property="article:tag" content="open-source">
     
   
   <meta property="article:tag" content="rohit01">
@@ -1175,7 +1182,7 @@ footer a:link {
 </head>
 
 
-  <body class="single single-post">
+  <body class="home blog">
 
 
 <header id="header" role="banner">
@@ -1272,10 +1279,10 @@ footer a:link {
       </header>
       <!-- Content -->
       <section class="entry-content">
-        <p><a href="http://www.shinken-monitoring.org/">Shinken</a> is a modern open-source server monitoring tool written in python. It has a lovely feature rich UI and is highly scalable. The great thing about this project is its active community and frequent releases. <a href="http://www.mailgun.com/">Mailgun</a> on the other hand, provides an easy to use API for sending, receiving emails. So, no more setting up SMTP servers and maintaing multiple accounts :D<br/>
-<strong>Open-source</strong>: This project is fully open sourced and hosted in <a href="https://github.com/rohit01/shinken_mailgun_plugin">Github</a>.</p>
+        <p><a href="http://www.shinken-monitoring.org/">Shinken</a> is a modern open-source server monitoring tool written in python. It has a lovely feature rich UI and is highly scalable. The great thing about this project is its active community and frequent releases. <a href="http://www.mailgun.com/">Mailgun</a> on the other hand, provides an easy to use API for sending, receiving emails. So, no more setting up SMTP servers and maintaing multiple accounts :-D</p>
 
-<p><strong>Prerequisite:</strong></p>
+<p><strong>Open-source</strong>: This project is fully open sourced and hosted in <a href="https://github.com/rohit01/shinken_mailgun_plugin">Github</a>.<br/>
+<strong>Prerequisites:</strong></p>
 
 <ul>
 <li>A working shinken setup installed in a server.</li>
@@ -1283,18 +1290,18 @@ footer a:link {
 </ul>
 
 
-<h5>Ready to use in 3 simple steps:</h5>
+<h2>Ready to use in 3 simple steps:</h2>
 
-<p><strong>Step 1. Create a Mailgun account:</strong></p>
+<ol>
+<li><p><strong>Create a Mailgun account:</strong></p>
 
 <ul>
 <li>Sign up: <a href="https://mailgun.com/signup">https://mailgun.com/signup</a></li>
 </ul>
+</li>
+<li><p><strong>Update file: <a href="https://github.com/rohit01/shinken_mailgun_plugin/blob/master/util/email_settings.ini">shinken_mailgun_plugin/util/email_settings.ini</a></strong></p>
 
-
-<p><strong>Step 2. Update file: <a href="https://github.com/rohit01/shinken_mailgun_plugin/blob/master/util/email_settings.ini">shinken_mailgun_plugin/util/email_settings.ini</a></strong></p>
-
-<p>In &lsquo;settings&rsquo; section, update the following variables:</p>
+<p> In &lsquo;settings&rsquo; section, update the following variables:</p>
 
 <ul>
 <li>servername: Enter sandbox name (See image below)</li>
@@ -1305,9 +1312,8 @@ footer a:link {
 </ul>
 
 
-<p><img src="/res/posts/shinken-mailgun-plugin/mailgun_credentials.jpg" alt="Mailgun credentials help" /></p>
-
-<p><strong>Step 3. Update shinken configuration:</strong></p>
+<p> <img src="/res/posts/shinken-mailgun-plugin/mailgun_credentials.jpg" alt="Mailgun credentials help" /></p></li>
+<li><p><strong>Update shinken configuration:</strong></p>
 
 <ul>
 <li><strong>commands.cfg</strong> - <em>/usr/local/shinken/etc/commands.cfg</em>
@@ -1342,12 +1348,15 @@ footer a:link {
 </ul>
 </li>
 </ul>
+</li>
+</ol>
 
 
-<p>Once configurations files are updated, restart shinken-arbiter to apply settings:
-<img src="/res/posts/shinken-mailgun-plugin/shinken_arbiter_restart.png" alt="shinken-arbiter restart" /></p>
+<p><strong>Once configurations files are updated, restart shinken-arbiter to apply settings:</strong></p>
 
-<h5>Sample service check email alert:</h5>
+<p><img src="/res/posts/shinken-mailgun-plugin/shinken_arbiter_restart.png" alt="shinken-arbiter restart" /></p>
+
+<h2>Sample service check email alert:</h2>
 
 <p><strong>Service check alert for nginx crash in server: rohit.io. To customize message, edit file: email_settings.ini</strong></p>
 
@@ -1422,7 +1431,7 @@ footer a:link {
           <div class="kind-of-a-big-deal">
             <h3>Other posts</h3>
             
-              <div class="nav-previous"><a href="/blog/shinken-mailgun-plugin.html" rel="prev">Shinken mailgun plugin&nbsp;&rarr;</a></div>
+              <div class="nav-previous"><a href="/blog/rakum-school-for-the-blind.html" rel="prev">Rakum School for the Blind&nbsp;&rarr;</a></div>
             
           </div>
           <div class="goforth">

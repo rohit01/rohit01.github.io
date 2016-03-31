@@ -54,7 +54,21 @@
   
   <meta property="article:section" content="Computers/Technology">
   
-    <meta name="keywords" content=", rohit01">
+    <meta name="keywords" content="dikhao, aws, ec2, route53, redis, hubot, heroku, rohit01">
+    
+      <meta property="article:tag" content="dikhao">
+    
+      <meta property="article:tag" content="aws">
+    
+      <meta property="article:tag" content="ec2">
+    
+      <meta property="article:tag" content="route53">
+    
+      <meta property="article:tag" content="redis">
+    
+      <meta property="article:tag" content="hubot">
+    
+      <meta property="article:tag" content="heroku">
     
   
   <meta property="article:tag" content="rohit01">
@@ -1172,7 +1186,7 @@ footer a:link {
 </head>
 
 
-  <body class="single single-post">
+  <body class="home blog">
 
 
 <header id="header" role="banner">
@@ -1273,7 +1287,7 @@ footer a:link {
 
 <hr />
 
-<p><strong>Example search:</strong></p>
+<h2>Example search</h2>
 
 <ul>
 <li>CLI command:<br/>
@@ -1285,97 +1299,202 @@ footer a:link {
 </ul>
 
 
-<p><em>Note:</em> Key <em>&lsquo;route53.rohit.io&rsquo;</em> can be anything from the configurable list of indexed items (given below).</p>
+<p><em>Note:</em> Key <em>&lsquo;route53.rohit.io&rsquo;</em> can be anything from the configurable list of indexed items (written below).</p>
 
-<p><strong>Example output:</strong></p>
+<h2>Output</h2>
 
-<pre>
-Route53 Details (210 secs ago):
-+--------------------+-----+-----------+----------------------------------------------------+
-| Name               | ttl | Type      | Value                                              |
-+--------------------+-----+-----------+----------------------------------------------------+
-| route53.rohit.io.  | 300 | CNAME     | ec2-54-162-144-108.us-west-1.compute.amazonaws.com |
-| elb1-dns.rohit.io. | 600 | A (Alias) | blog-elb-993346533.us-west-1.elb.amazonaws.com.    |
-| elb1-dns.rohit.io. | 600 | A (Alias) | web-elb-1401441163.us-west-1.elb.amazonaws.com.    |
-+--------------------+-----+-----------+----------------------------------------------------+
-EC2 Instance Details (265 secs ago):
-+--------------------+----------------------------------------------------+
-|           Property | Value                                              |
-+--------------------+----------------------------------------------------+
-|        Instance ID | i-e68e0cca                                         |
-|              State | running                                            |
-|            EC2 DNS | ec2-54-162-144-108.us-west-1.compute.amazonaws.com |
-|         IP address | 54.162.144.108                                     |
-|             Region | us-west-1                                          |
-|               Zone | us-west-1b                                         |
-|      Instance type | m1.large                                           |
-| Private IP address | 10.201.136.202                                     |
-|        Private DNS | ip-10-201-136-202.us-west-1.compute.internal       |
-|          ELB names | blog-elb,web-elb                                   |
-+--------------------+----------------------------------------------------+
-Elastic IP Details (261 secs ago):
-+----------------+-------------+
-| Elastic IP     | Instance ID |
-+----------------+-------------+
-| 54.162.144.108 | i-e68e0cca  |
-+----------------+-------------+
-ELB Details (266 secs ago):
-+----------+-------------------------------------------------+-------------+--------------+
-| Name     | ELB DNS                                         | Instance ID | State        |
-+----------+-------------------------------------------------+-------------+--------------+
-| blog-elb | blog-elb-993346533.us-west-1.elb.amazonaws.com. | i-e68e0cca  | InService    |
-|          |                                                 | i-e68kkbba  | InService    |
-|          |                                                 | i-52641cad  | OutOfService |
-| web-elb  | web-elb-1401441163.us-west-1.elb.amazonaws.com. | i-e68e0cca  | InService    |
-|          |                                                 | i-e68kkbba  | InService    |
-|          |                                                 | i-52641cad  | OutOfService |
-+----------+-------------------------------------------------+-------------+--------------+
-</pre>
+<pre><code>Route53 Details (210 secs ago):
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th> Name               </th>
+<th> ttl </th>
+<th> Type      </th>
+<th> Value                                              </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> route53.rohit.io.  </td>
+<td> 300 </td>
+<td> CNAME     </td>
+<td> ec2-54-162-144-108.us-west-1.compute.amazonaws.com </td>
+</tr>
+<tr>
+<td> elb1-dns.rohit.io. </td>
+<td> 600 </td>
+<td> A (Alias) </td>
+<td> blog-elb-993346533.us-west-1.elb.amazonaws.com.    </td>
+</tr>
+<tr>
+<td> elb1-dns.rohit.io. </td>
+<td> 600 </td>
+<td> A (Alias) </td>
+<td> web-elb-1401441163.us-west-1.elb.amazonaws.com.    </td>
+</tr>
+</tbody>
+</table>
+
+
+<pre><code>EC2 Instance Details (265 secs ago):
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>           Property </th>
+<th> Value                                              </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>        Instance ID </td>
+<td> i-e68e0cca                                         </td>
+</tr>
+<tr>
+<td>              State </td>
+<td> running                                            </td>
+</tr>
+<tr>
+<td>            EC2 DNS </td>
+<td> ec2-54-162-144-108.us-west-1.compute.amazonaws.com </td>
+</tr>
+<tr>
+<td>         IP address </td>
+<td> 54.162.144.108                                     </td>
+</tr>
+<tr>
+<td>             Region </td>
+<td> us-west-1                                          </td>
+</tr>
+<tr>
+<td>               Zone </td>
+<td> us-west-1b                                         </td>
+</tr>
+<tr>
+<td>      Instance type </td>
+<td> m1.large                                           </td>
+</tr>
+<tr>
+<td> Private IP address </td>
+<td> 10.201.136.202                                     </td>
+</tr>
+<tr>
+<td>        Private DNS </td>
+<td> ip-10-201-136-202.us-west-1.compute.internal       </td>
+</tr>
+<tr>
+<td>          ELB names </td>
+<td> blog-elb,web-elb                                   </td>
+</tr>
+</tbody>
+</table>
+
+
+<pre><code>Elastic IP Details (261 secs ago):
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th> Elastic IP     </th>
+<th> Instance ID </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> 54.162.144.108 </td>
+<td> i-e68e0cca  </td>
+</tr>
+</tbody>
+</table>
+
+
+<pre><code>ELB Details (266 secs ago):
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th> Name     </th>
+<th> ELB DNS                                         </th>
+<th> Instance ID </th>
+<th> State        </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> blog-elb </td>
+<td> blog-elb-993346533.us-west-1.elb.amazonaws.com. </td>
+<td> i-e68e0cca  </td>
+<td> InService    </td>
+</tr>
+<tr>
+<td>          </td>
+<td>                                                 </td>
+<td> i-e68kkbba  </td>
+<td> InService    </td>
+</tr>
+<tr>
+<td>          </td>
+<td>                                                 </td>
+<td> i-52641cad  </td>
+<td> OutOfService </td>
+</tr>
+<tr>
+<td> web-elb  </td>
+<td> web-elb-1401441163.us-west-1.elb.amazonaws.com. </td>
+<td> i-e68e0cca  </td>
+<td> InService    </td>
+</tr>
+<tr>
+<td>          </td>
+<td>                                                 </td>
+<td> i-e68kkbba  </td>
+<td> InService    </td>
+</tr>
+<tr>
+<td>          </td>
+<td>                                                 </td>
+<td> i-52641cad  </td>
+<td> OutOfService </td>
+</tr>
+</tbody>
+</table>
 
 
 <hr />
 
-<h5><strong>Installation:</strong></h5>
+<h2>Installation</h2>
 
 <ul>
-<li><strong>CLI Tool:</strong><br/>
-  <em>dikhao</em> is available for installation using PyPi. Once installed, it provides two commands: <em>padho</em> and <em>batao</em>. <em>padho</em> syncs all AWS details into redis and <em>batao</em> can be used for searching the same.</li>
-</ul>
+<li><p><strong>CLI Tool</strong><br/>
+  <em>dikhao</em> is available for installation using PyPi. Once installed, it provides two commands: <em>padho</em> and <em>batao</em>. <em>padho</em> syncs all AWS details into redis and <em>batao</em> can be used for searching the same.</p>
 
-
-<pre>
-    (venv)$ pip install dikhao
-</pre>
-
-
-<ul>
-<li><p><strong>Heroku App:</strong><br/>
+<p>  (venv)$ pip install dikhao</p></li>
+<li><p><strong>Heroku App</strong><br/>
   Clone respsitory and use the automated install script <em><a href="https://github.com/rohit01/dikhao/blob/master/install.sh">install.sh</a></em>.</p>
 
-<p>  <strong>Manual install instructions:</strong></p></li>
-</ul>
+<p>  <strong>Manual install instructions:</strong></p>
 
+<pre><code class="``">  $ git clone git@github.com:rohit01/dikhao.git
+  $ cd dikhao
+  $ heroku create {app_name} -s cedar
+  $ git push heroku master
+  $ heroku addons:add rediscloud --app {app_name}
+  $ heroku ps:scale web=1
 
-<pre>
-        $ git clone git@github.com:rohit01/dikhao.git
-        $ cd dikhao
-        $ heroku create {app_name} -s cedar
-        $ git push heroku master
-        $ heroku addons:add rediscloud --app {app_name}
-        $ heroku ps:scale web=1
-
-        <b>Add credentials:</b>
-        $ heroku config:set AWS_ACCESS_KEY_ID='&lt;ACCESS-KEY&gt;'
-        $ heroku config:set AWS_SECRET_ACCESS_KEY='&lt;SECRET-KEY&gt;'
-        $ heroku config:set REDIS_HOST='&lt;rediscloud-hostname&gt;'
-        $ heroku config:set REDIS_PORT_NO='&lt;rediscloud-port&gt;'
-        $ heroku config:set REDIS_PASSWORD='&lt;rediscloud-password&gt;'
-        $ heroku config:set PORT='80'
-</pre>
-
-
-<ul>
-<li><strong>Hubot Agent:</strong>
+  #### Add credentials: ####
+  $ heroku config:set AWS_ACCESS_KEY_ID='&lt;ACCESS-KEY&gt;'
+  $ heroku config:set AWS_SECRET_ACCESS_KEY='&lt;SECRET-KEY&gt;'
+  $ heroku config:set REDIS_HOST='&lt;rediscloud-hostname&gt;'
+  $ heroku config:set REDIS_PORT_NO='&lt;rediscloud-port&gt;'
+  $ heroku config:set REDIS_PASSWORD='&lt;rediscloud-password&gt;'
+  $ heroku config:set PORT='80'
+</code></pre></li>
+<li><p><strong>Hubot Agent:</strong></p>
 
 <ul>
 <li>Deploy <em>dikhao</em> as a Heroku app</li>
@@ -1388,7 +1507,7 @@ ELB Details (266 secs ago):
 
 <hr />
 
-<p><strong>Current features:</strong></p>
+<h2>Current features</h2>
 
 <ol>
 <li>Supported AWS services:
@@ -1426,9 +1545,7 @@ ELB Details (266 secs ago):
 </ol>
 
 
-<p><br /></p>
-
-<p><strong>Thanks for reading :-)</strong></p>
+<p><strong>And as always, Thanks for reading :-)</strong></p>
 
       </section>
     </article>
@@ -1497,7 +1614,7 @@ ELB Details (266 secs ago):
           <div class="kind-of-a-big-deal">
             <h3>Other posts</h3>
             
-              <div class="nav-previous"><a href="/blog/dikhao-quickly-find-all-related-aws-resources.html" rel="prev">Dikhao - Quickly find all related AWS resources&nbsp;&rarr;</a></div>
+              <div class="nav-previous"><a href="/blog/ubuntu-on-a-legacy-laptop-without-hdd.html" rel="prev">Ubuntu on a legacy laptop without HDD&nbsp;&rarr;</a></div>
             
           </div>
           <div class="goforth">
