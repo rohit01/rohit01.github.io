@@ -22,7 +22,7 @@ I have a 6 year old legacy laptop with **impaired battery, DVD drive and hard dr
 
 ## Available options
 
-Since the hard drive and dvd drive is absent, available options include booting through USB or Network (PXE boot). USB is the easy and portable approach among the two. An external USB hard drive works well, just like the internal HDD. However, my legacy laptop was not able to detect my external HDD during boot.  
+Since the hard drive and dvd drive is absent, available options include booting through USB or Network (PXE boot). USB is the easy and portable approach among the two. An external USB hard drive works well, just like the internal HDD. However, my legacy laptop was not able to detect my external HDD during boot.
 There are many live USB Linux options available online, but they have their own limitations. Live Linux works well with default configuration, but it gets really messy when personalized settings are saved. Here are some of the problems:
 
 * **Slow:** Personalized settings make boot really slow over time.
@@ -49,6 +49,6 @@ I installed Ubuntu 12.04 on a 4 GB pendrive and was able to get good performance
 * Install Ubuntu on the pendrive just like a regular ubuntu installation.
 * Download and execute the following shell script:
 
-<script src="http://gist-it.appspot.com/github/rohit01/unity-to-lxde/blob/master/ubuntu_lxde.sh"></script>
+<script src="https://gist-it.appspot.com/github/rohit01/unity-to-lxde/blob/master/ubuntu_lxde.sh"></script>
 
 Let me know your experience in comments. **And as always, Thanks for reading :-)**

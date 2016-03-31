@@ -4,10 +4,10 @@ layout: blank
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Rohit Gupta</title>
-  <link href="http://rohit.io/atom.xml" rel="self"/>
-  <link href="http://rohit.io/"/>
+  <link href="https://www.rohit.io/atom.xml" rel="self"/>
+  <link href="https://www.rohit.io/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://rohit.io/</id>
+  <id>https://www.rohit.io/</id>
   <author>
     <name>Rohit Gupta</name>
     <email>hello@rohit.io</email>
@@ -15,13 +15,13 @@ layout: blank
   {% for post in site.posts limit:10 %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="http://rohit.io{{ post.url }}"/>
+    <link href="https://www.rohit.io{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://rohit.io{{ post.id }}</id>
+    <id>https://www.rohit.io{{ post.id }}</id>
     <content type="html">{{ post.content | xml_escape }}</content>
     <author>
       <name>Rohit Gupta</name>
-      <uri>http://rohit.io/about/</uri>
+      <uri>https://www.rohit.io/about/</uri>
     </author>
   </entry>
   {% endfor %}

@@ -22,7 +22,7 @@ Visited sometime back. It is a unique blind school at [Indranagar, Bangalore, In
 
 ![](/res/posts/rakum-school-for-the-blind/braille.jpg)
 
-The training imparted includes reading and writing through [Braille](http://en.wikipedia.org/wiki/Braille) and mobility training for totally blind children. The school also encourages extracurricular activities like [karate](http://rakum.org/rakum_school/node/135), [yoga](http://rakum.org/rakum_school/node/171), music, dance, fine arts and crafts.
+The training imparted includes reading and writing through [Braille](https://en.wikipedia.org/wiki/Braille) and mobility training for totally blind children. The school also encourages extracurricular activities like [karate](http://rakum.org/rakum_school/node/135), [yoga](http://rakum.org/rakum_school/node/171), music, dance, fine arts and crafts.
 
 <img src="/res/posts/rakum-school-for-the-blind/entrance.jpg" width="250" align="right">
 
@@ -30,7 +30,7 @@ The training imparted includes reading and writing through [Braille](http://en.w
 
 **More info about the school:**
 
-- [Wikipedia](http://en.wikipedia.org/wiki/Sri_Rakum_School_for_the_Blind)
+- [Wikipedia](https://en.wikipedia.org/wiki/Sri_Rakum_School_for_the_Blind)
 - [Facebook](https://www.facebook.com/Sri.Rakum.Blind.School)
 - [Twitter](https://twitter.com/rakum)
 - [Official website](http://www.rakum.org/)

@@ -7,7 +7,7 @@
     {% if page.title != "Archive (sidebar)" %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% endif %}
-    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
     <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -37,7 +37,7 @@
     <meta property="og:image" content="{{ page.photo_url }}">
     {% endif %}
     {% endif %}
-    <meta property="og:url" content="http://rohit.io{{ page.url | remove_first:'index.html' }}">
+    <meta property="og:url" content="https://www.rohit.io{{ page.url | remove_first:'index.html' }}">
     <meta property="og:site_name" content="rohit.io">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_GB" />
@@ -47,19 +47,9 @@
     {% if page.title != "Archive (sidebar)" %}
     {% include sidebar_ui_controller.html %}
     {% endif %}
-    {% if page.include_move %}
-    <script src="http://movelang.org/move.js"></script>
-    {% endif %}
     {% if page.include_embed_gist %}
       <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gist-embed/1.9/gist-embed.min.js"></script>
-    {% endif %}
-    {% if page.social_buttons %}
-      <!-- Social buttons JS start - ShareThis -->
-      <script type="text/javascript">var switchTo5x=true;</script>
-      <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-      <script type="text/javascript">stLight.options({publisher: "d7a58b0f-2484-4ba1-b730-4c4097339922", doNotHash: false, doNotCopy: true, hashAddressBar: false});</script>
-      <!-- Social buttons JS End - ShareThis -->
     {% endif %}
   </head>
   <body{% if page.wide_layout %} class="wide"{% endif %}>
@@ -102,7 +92,7 @@
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
         </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         {% include disqus.html %}
         </div>
       </div>
@@ -122,9 +112,9 @@
     {% unless page.no_footer %}
     <footer>
       <p>
-        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
         <img src="/res/cc-by.png" class="cc"></a>
-        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+        This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
       </p>
     </footer>
     {% endunless %}

@@ -12,7 +12,7 @@ tags:
 thumbnail: /res/posts/29-questions-to-ask-yourself-if-you-are-in-devops/thumbnail.jpg
 ---
 
-A few days ago, I had an opportunity to meet and interact with [Mike Place](https://github.com/cachedout), who works as a developer at [Saltstack](http://saltstack.com/). We had an interesting conversation about devops and how things work in the valley. Mike explained the growing importance of devops in organizations and the rise of devops as a culture that aims to collaboratively deliver systems into production, reliably and effectively.
+A few days ago, I had an opportunity to meet and interact with [Mike Place](https://github.com/cachedout), who works as a developer at [Saltstack](https://saltstack.com/). We had an interesting conversation about devops and how things work in the valley. Mike explained the growing importance of devops in organizations and the rise of devops as a culture that aims to collaboratively deliver systems into production, reliably and effectively.
 
 He said *“Businesses are ever-changing. Engineers ship code, dozens of times each day. Every change in production has some probability of failure and business can get impacted due to that very failure. Risk is a combination of both of them. If only one of them is high, the risk may still be low. But if both of them are high, it can be a disaster. **The role of devops is to minimize the risk of every change.**”*
 

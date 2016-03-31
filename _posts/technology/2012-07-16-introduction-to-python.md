@@ -35,8 +35,8 @@ Installing python: Many linux distribution may have this as pre-installed. If no
 You can also install it in windows or mac. Just google like [this.](http://lmgtfy.com/?q=install+python+in+windows)
 I would also recommend to install ipython or bython. They have features like tab completion, code suggestions. It can be very helpful in initial learning.
 
-Starting python prompt is simple. Just type 'python' in linux console. If trying out ipython or bpython, type 'ipython' or 'bpython' respectively. Official [documentation website](http://docs.python.org): http://docs.python.org
+Starting python prompt is simple. Just type 'python' in linux console. If trying out ipython or bpython, type 'ipython' or 'bpython' respectively. Official [documentation website](https://docs.python.org): https://docs.python.org
 
-Some [recommended tutorials](/res/posts/introduction-to-python/basic_python.zip) by [fossee group](http://fossee.in/) (IIT Bombay): [http://rohit.io/res/posts/introduction-to-python/basic_python.zip](/res/posts/introduction-to-python/basic_python.zip)
+Some [recommended tutorials](/res/posts/introduction-to-python/basic_python.zip) by [fossee group](http://fossee.in/) (IIT Bombay): [https://www.rohit.io/res/posts/introduction-to-python/basic_python.zip](/res/posts/introduction-to-python/basic_python.zip)
 
 Post your feedback in comments. **Thanks for reading** :)

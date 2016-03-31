@@ -16,7 +16,7 @@ tags:
   - lug
 ---
 
-I started of with open source/linux in my first year of graduation and soon fell in love with it. It was my hobby. Now I am working for a open-source based startup: [Plivo Inc.](http://plivo.com)
+I started of with open source/linux in my first year of graduation and soon fell in love with it. It was my hobby. Now I am working for a open-source based startup: [Plivo Inc.](https://www.plivo.com/)
 
 I came to know something called Linux exists from my friend, who was a studying in NIT Surathkal. His views on Linux was something like 'Everybody uses windows, so whats the difference between them and me!'. That was a huge motivation for me to start off with Linux.
 

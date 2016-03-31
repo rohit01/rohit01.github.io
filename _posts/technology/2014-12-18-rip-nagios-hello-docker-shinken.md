@@ -20,7 +20,7 @@ Nagios is a great IT infrastructure monitoring tool. Some people still consider 
 Shinken vs Nagios:
 ==================
 
-At [Knowlarity](http://www.knowlarity.com/), we did the big switch from Nagios to Shinken for our complete infrastructure in just about a week. Having used both Nagios and Shinken now, I can tell you how Shinken has helped solve some of the fundamental problems which we faced using Nagios. 
+At [Knowlarity](https://www.knowlarity.com/), we did the big switch from Nagios to Shinken for our complete infrastructure in just about a week. Having used both Nagios and Shinken now, I can tell you how Shinken has helped solve some of the fundamental problems which we faced using Nagios.
 
 * **Reliability**: I was working on a NRPE notification plugin and deployed it in Nagios. I turned down a service to test it, but to my surprise Nagios was showing the status as OK (green). The last executed time got updated in the UI but nothing happened under the hood. It was a random issue and I suspect it could have been because of a old version of Nagios 3.x. I have been using Shinken for a while now (even before the migration in Knowlarity), and I have never once faced these sort of issues. The UI always displays the truth.
 
