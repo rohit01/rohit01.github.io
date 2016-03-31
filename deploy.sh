@@ -27,6 +27,7 @@ rm -rf *
 
 # Add files
 mv ./._site ./_site
+rm -rf ./photos
 mv ./.photos ./photos
 cp -r _site/* ./
 cp .gitmodules.backup .gitmodules
