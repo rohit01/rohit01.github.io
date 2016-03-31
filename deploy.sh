@@ -10,8 +10,9 @@ echo "Building site..."
 rm -rf _site/
 jekyll build
 
-echo "Backup .gitmodules"
+echo "Backup .gitmodules & .gitignore"
 cp .gitmodules .gitmodules.backup
+cp .gitignore .gitignore.backup
 
 echo "git checkout master"
 git checkout master
@@ -33,9 +34,10 @@ rm -rf _site/
 echo "Add photos"
 rm -rf ./photos
 mv ./.photos ./photos
-echo "Add .gitmodules"
+echo "Add .gitmodules & .gitignore"
 cp .gitmodules.backup .gitmodules
-rm .gitmodules.backup
+cp .gitignore.backup .gitignore
+rm .gitmodules.backup .gitignore.backup
 
 echo "git add website"
 git add ./ ./photos ./.gitmodules
