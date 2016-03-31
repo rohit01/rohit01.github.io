@@ -28,7 +28,8 @@ git rm -r *
 
 echo "Add files"
 mv ./._site ./_site
-cp -r _site/* ./
+mv _site/* ./
+rm -rf _site/
 echo "Add photos"
 rm -rf ./photos
 mv ./.photos ./photos
