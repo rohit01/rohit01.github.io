@@ -10,3 +10,6 @@
 [submodule "photos/album/uttarakhand"]
 	path = photos/album/uttarakhand
 	url = https://github.com/rohit01/photos-uttarakhand.git
+[submodule "photos/album/nandi-hills-edited"]
+	path = photos/album/nandi-hills-edited
+	url = https://github.com/rohit01/photos-nandi-hills-edited.git
