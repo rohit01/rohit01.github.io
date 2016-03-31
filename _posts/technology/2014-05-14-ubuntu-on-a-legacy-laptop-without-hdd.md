@@ -52,3 +52,10 @@ I installed Ubuntu 12.04 on a 4 GB pendrive and was able to get good performance
 <script src="https://gist-it.appspot.com/github/rohit01/unity-to-lxde/blob/master/ubuntu_lxde.sh"></script>
 
 Let me know your experience in comments. **And as always, Thanks for reading :-)**
+
+---
+
+**[Update]**
+
+*Russian translation: <http://softdroid.net/ubuntu-na-noutbuke-bez-hdd>*  
+*Courtesy: Vlad Brown*
