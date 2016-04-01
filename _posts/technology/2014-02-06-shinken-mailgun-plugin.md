@@ -16,7 +16,7 @@ tags:
 
 [Shinken](http://www.shinken-monitoring.org/) is a modern open-source server monitoring tool written in python. It has a lovely feature rich UI and is highly scalable. The great thing about this project is its active community and frequent releases. [Mailgun](https://www.mailgun.com/) on the other hand, provides an easy to use API for sending, receiving emails. So, no more setting up SMTP servers and maintaing multiple accounts :-D
 
-**Open-source**: This project is fully open sourced and hosted in [Github](https://github.com/rohit01/shinken_mailgun_plugin).
+**Open-source**: This project is fully open sourced and hosted in [Github](https://github.com/rohit01/shinken_mailgun_plugin).  
 **Prerequisites:**
 
 * A working shinken setup installed in a server.
