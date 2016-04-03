@@ -26,6 +26,13 @@ thumbnail: /photos/preview.jpg
   </a>
 </p>
 
+**Album - *[Nandi Hills - Edited](./album/nandi-hills-edited/gallery/):***
+<p align="center">
+  <a href="./album/nandi-hills-edited/gallery/">
+    <img src="./album/nandi-hills-edited/preview.jpg" alt="Nandi Hills" width="70%" height="70%" align="center">
+  </a>
+</p>
+
 **Album - *[Gurgaon](./album/gurgaon/gallery/):***
 <p align="center">
   <a href="./album/gurgaon/gallery/">
