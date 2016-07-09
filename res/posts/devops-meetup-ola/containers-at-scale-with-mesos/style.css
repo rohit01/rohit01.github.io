@@ -1,0 +1,31 @@
+#slide-3 {
+  background: url('images/golden-temple-kitchen.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #ddd;
+}
+
+#slide-4 {
+  background: url('images/mumbai-dabbawala.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #116;
+}
+
+#slide-6 {
+  background: url('images/mesos-architecture.png');
+  background-size: fill;
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #116;
+}
+
+#slide-7 {
+  background: url('images/marathonlb-architecture.png');
+  background-size: 50% 50%;
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #116;
+}
