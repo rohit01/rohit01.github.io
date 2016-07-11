@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-07-12 00:30:00 IST
+date: 2016-07-12 00:30:00 IST
 title: Devops Meetup @ Ola
 include_twitter_js: true
 categories:
@@ -13,7 +13,7 @@ tags:
 thumbnail: /res/posts/devops-meetup-ola/thumbnail.jpg
 ---
 
-Last Saturday, we hosted a DevOps Meetup at [Ola](https://www.olacabs.com/) Bangalore office (EGL). We were delighted to meet so many people, talk about latest trends in devops and network with each other.  
+Last Saturday, we hosted a DevOps Meetup at [Ola](https://www.olacabs.com/) Bangalore office (EGL). We were delighted to meet so many people, talk about latest trends in DevOps and network with each other.  
 Here are some exciting pics from the event:
 
 <div style='position: relative; padding-bottom: 81%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://www.rohit.io/photos/album/devops-meetup-ola/gallery/' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>
@@ -39,7 +39,7 @@ We had 5 sessions which covered a variety of topics.
 
 **Speaker**: [@chandrashekar_m](https://twitter.com/chandrashekar_m), Architect at Knowlarity Communications  
 **Slides**: [click here](http://www.slideshare.net/AmazonWebServices/aws-may-2016-webinar-series-deep-dive-on-serverless-web-applications)  
-**Summary**: In this talk, Chandra talked about AWS managed services. He talked about AWS lambda, Redshift, DynomoDB among others to create serverless web applications. He also gave an example about Knowlarity use case and explained, how startups can leverage it to have a better focus on business.
+**Summary**: In this talk, Chandra talked about AWS managed services. He talked about AWS lambda, Redshift, DynomoDB among others to create serverless web applications. He also gave an example of Knowlarity use case and explained, how startups can leverage it to have a better focus on business.
 
 ### Salt - Deploy, Monitor, React
 ---
