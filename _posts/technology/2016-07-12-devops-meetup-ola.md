@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-07-11 13:00:00 IST
+date: 2015-07-12 00:30:00 IST
 title: Devops Meetup @ Ola
 include_twitter_js: true
 categories:
