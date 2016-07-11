@@ -48,9 +48,9 @@ We had 5 sessions which covered a variety of topics.
 
 **Speaker**: [@NabarunChatterj](https://twitter.com/NabarunChatterj), Production Engineer I at Ola  
 **Slides**: [click here](/res/posts/devops-meetup-ola/salt-deploy-monitor-react.pdf)  
-**Summary**: In this talk, Nabarun gave an introduction about Saltstack, its components and the reason why it exists. He gave an ausome demo on agent-less feature and with agents as well. Monitoring and react features were also discussed.
+**Summary**: In this talk, Nabarun gave an introduction about Saltstack. He talked about salt minions, agent vs agentless approach for configuration management and various components of saltstack. He explained concepts around states, grains, pillars, reactors as well as beacons. Post demo, he also shared his tutorial repository: <https://github.com/nabarunchatterjee/salt-tutorial>
 
-###  Let's talk DNS. by Abhinav Mehta, Software Architect at ZipGo
+###  Let's talk DNS
 ---
 
 <img src="/res/posts/devops-meetup-ola/images/abhinav.jpg" width="50%" height="50%" align="right">
@@ -68,7 +68,7 @@ We had 5 sessions which covered a variety of topics.
 **Slides**: [click here](/res/posts/devops-meetup-ola/productivity-tools/)  
 **Summary**: In this talk, Sharad talked about OpenGrok, which is a fast and usable source code search and cross reference engine. He talked about how it helped improve productivity of NOC/support engineers. He also talked about select search chrome extension and vim plugins to talk it to the next level.
 
-### Say Cheers!
+### Awesome Audience!
 <img src="/res/posts/devops-meetup-ola/images/group_pic.jpg" width="100%" height="100%" align="center">
 
 ### Tweets on this event :-D
