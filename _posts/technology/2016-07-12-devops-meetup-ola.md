@@ -13,7 +13,7 @@ tags:
 thumbnail: /res/posts/devops-meetup-ola/thumbnail.jpg
 ---
 
-Last Saturday, we hosted a DevOps Meetup at [Ola](https://www.olacabs.com/) Bangalore office (EGL). We were delighted to welcome awesome people at our office, talk about devops and network with eack other.
+Last Saturday, we hosted a DevOps Meetup at [Ola](https://www.olacabs.com/) Bangalore office (EGL). We were delighted to meet so many people, talk about latest trends in devops and network with each other.  
 Here are some exciting pics from the event:
 
 <div style='position: relative; padding-bottom: 81%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://www.rohit.io/photos/album/devops-meetup-ola/gallery/' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>
@@ -30,7 +30,7 @@ We had 5 sessions which covered a variety of topics.
 
 **Speaker**: [@rohit01](https://twitter.com/rohit01), Production Engineer II at Ola  
 **Slides**: [click here](/res/posts/devops-meetup-ola/containers-at-scale-with-mesos/)  
-**Summary**: In this talk, I spoke about how a monolithic application can be converted into micro services. I used a calculator rest API [docker image](https://hub.docker.com/r/rohit01/calc_api/) as an example. Demonstrated, how easy it is to create micro-services using Mesos.
+**Summary**: In this talk, I spoke about how a monolithic application can be converted into microservices. I used a calculator rest API [docker image](https://hub.docker.com/r/rohit01/calc_api/) as an example. Demonstrated, how easy it is to create micro-services using Mesos.
 
 ### AWS managed services to create serverless applications
 ---
@@ -39,7 +39,7 @@ We had 5 sessions which covered a variety of topics.
 
 **Speaker**: [@chandrashekar_m](https://twitter.com/chandrashekar_m), Architect at Knowlarity Communications  
 **Slides**: [click here](http://www.slideshare.net/AmazonWebServices/aws-may-2016-webinar-series-deep-dive-on-serverless-web-applications)  
-**Summary**: In this talk, Chandra talked about AWS managed services. He talked about AWS lambda, Redshift, DynomoDB among others to create serverless web applications. He also game an example about knowlarity and explained, how startups can leverage it to have a better focus on business.
+**Summary**: In this talk, Chandra talked about AWS managed services. He talked about AWS lambda, Redshift, DynomoDB among others to create serverless web applications. He also gave an example about Knowlarity use case and explained, how startups can leverage it to have a better focus on business.
 
 ### Salt - Deploy, Monitor, React
 ---
@@ -48,7 +48,7 @@ We had 5 sessions which covered a variety of topics.
 
 **Speaker**: [@NabarunChatterj](https://twitter.com/NabarunChatterj), Production Engineer I at Ola  
 **Slides**: [click here](/res/posts/devops-meetup-ola/salt-deploy-monitor-react.pdf)  
-**Summary**: In this talk, Nabarun gave an introduction about Saltstack. He talked about salt minions, agent vs agentless approach for configuration management and various components of saltstack. He explained concepts around states, grains, pillars, reactors as well as beacons. Post demo, he also shared his tutorial repository: <https://github.com/nabarunchatterjee/salt-tutorial>
+**Summary**: In this talk, Nabarun gave an introduction about Saltstack. He talked about salt minions, agent vs agentless approach for configuration management and various components of Saltstack. He explained concepts around states, grains, pillars, reactors as well as beacons. Post demo, he also shared his tutorial repository: <https://github.com/nabarunchatterjee/salt-tutorial>
 
 ###  Let's talk DNS
 ---
@@ -57,7 +57,7 @@ We had 5 sessions which covered a variety of topics.
 
 **Speaker**: [@mehta_](https://twitter.com/rohit01), Software Architect at ZipGo  
 **Slides**: [click here](http://www.slideshare.net/developeratworks/lets-talk-dns)  
-**Summary**:  In this talk, Abhinav talked DNS service. He started with basics, showed live demo of how DNS resolution works and slowly moved into advanced topics. DNS root servers got people really excited.
+**Summary**:  In this talk, Abhinav talked DNS service. He started with basics, showed a live demo of how DNS resolution works and slowly moved into advanced topics. DNS root servers got people really excited.
 
 ### Productivity Tool(s)
 ---
@@ -66,7 +66,7 @@ We had 5 sessions which covered a variety of topics.
 
 **Speaker**: [@sharad1087](https://twitter.com/sharad1087), Software Professional at Sandvine  
 **Slides**: [click here](/res/posts/devops-meetup-ola/productivity-tools/)  
-**Summary**: In this talk, Sharad talked about OpenGrok, which is a fast and usable source code search and cross reference engine. He talked about how it helped improve productivity of NOC/support engineers. He also talked about select search chrome extension and vim plugins to talk it to the next level.
+**Summary**: In this talk, Sharad talked about OpenGrok, which is a fast and usable source code search and cross reference engine. He talked about how it helped improve the productivity of NOC/support engineers. He also talked about select search chrome extension and vim plugins to talk it to the next level.
 
 ### Awesome Audience!
 <img src="/res/posts/devops-meetup-ola/images/group_pic.jpg" width="100%" height="100%" align="center">
