@@ -13,3 +13,6 @@
 [submodule "photos/album/nandi-hills-edited"]
 	path = photos/album/nandi-hills-edited
 	url = https://github.com/rohit01/photos-nandi-hills-edited.git
+[submodule "photos/album/devops-meetup-ola"]
+	path = photos/album/devops-meetup-ola
+	url = https://github.com/rohit01/photos-devops-meetup-ola.git

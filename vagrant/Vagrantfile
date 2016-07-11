@@ -98,6 +98,8 @@ Vagrant.configure(2) do |config|
     git config --global color.ui true
     git config --global push.default matching
     git clone https://github.com/rohit01/rohit01.github.io.git
+
+    # Using fgallery for photos
   SHELL
 
 end
