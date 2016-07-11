@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Productivity Tool(s)...</title>
+
+        <meta name="description" content="Some useful tool(s)">
+        <meta name="author" content="Sharad Singla">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script type="text/javascript">
+          var link = document.createElement( 'link' );
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+          document.getElementsByTagName( 'head' )[0].appendChild( link );
+
+          var textarray = [
+          "This error message is crappy... Let's look at the code!",
+          "Where's this error coming from?",
+          "How do I parse an XML?",
+          "Is there a list of all APIs we have?",
+          ];
+
+          function RndText() {
+              var rannum= Math.floor(Math.random()*textarray.length);
+              document.getElementById('ShowText').innerHTML=textarray[rannum];
+          }
+          onload = function() { RndText(); }
+
+          var inter = setInterval(function() { RndText(); }, 600);
+        </script>
+    </head>
+  
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h3>Productivity Tool(s)</h3>
+                    <br>
+                    sharad singla
+                    <br>
+                    (sharad1087@gmail.com)
+                </section>
+
+                <section>
+                    <section>
+                        Forward Integration...
+                        <br>
+                        <br>
+                        ...Backward Integration
+                    </section>
+                    <section>
+                        <img src="images/devops/opengrok/bittu_tikki.jpg" height="450" width="650"/>
+                    </section>
+                    <section>
+                        <img src="images/devops/opengrok/bittu_logo.png" height="400" width="400"/>
+                    </section>
+                    <section>
+                        <img src="images/devops/opengrok/integration_humor.jpg" height="600" width="1000"/>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <img src="images/devops/opengrok/linus.jpg" height="480" width="600"/>
+                    </section>
+                    <section>
+                        <img src="images/devops/opengrok/linus_quote.jpg" height="600" width="1000"/>
+                    </section>
+                    <section>
+		        <h3><div id="ShowText"/>
+                    </section>
+                    <section>
+                        <img src="images/devops/opengrok/code_quote.jpg"/>
+                    </section>
+                </section>
+
+                <section>
+                    <section style="text-align: center;">
+                        <h3>Introducing...</h3>
+                        <br>
+                        <img src="images/devops/opengrok/opengrok-logo.png" height="100" width="450"/>
+                    </section>
+                    <section style="text-align: center;">
+                        <h3>Mike testing, mike testing...</h3>
+                        <br>
+                        Hello 1, 2, 4...
+                        <br>
+                        Hello 1, 2, 4...
+                        <br>
+                        <br>
+                        https://github.com/OpenGrok/OpenGrok/wiki/OpenGrok-installations
+                    </section>
+                    <section style="text-align: center;">
+                        A
+                        <br>
+                        <br>
+                        "<u>wicked fast</u>"
+                        <br>
+                        <br>
+                        source browser!
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Setting it up...</h3>
+                    </section>
+                    <section>
+                        <h3>Written in Java</h3>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Web server (Tomcat7, GlassFish)</li>
+                            <li>JDK 7 or 8</li>
+                            <li>exuberant-ctags</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>On Ubuntu...</h3>
+                        <ul>
+                            <li>sudo apt-get install exuberant-ctags tomcat7 openjdk-7-jdk ant git</li>
+                            <li>mkdir ~/workspace</li>
+                            <li>cd ~/workspace</li>
+                            <li>wget https://github.com/OpenGrok/OpenGrok/archive/0.12.tar.gz</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>On Ubuntu, contd...</h3>
+                        <ul>
+                            <li>sudo /etc/init.d/tomcat7 start</li>
+                            <li>On browser, check http://localhost:8080</li>
+                            <li>tar -xvzf 0.12.tar.gz</li>
+                            <li>cd ~/workspace/OpenGrok-0.12</li>
+                            <li>ant</li>
+                            <li>sudo ./Opengrok deploy</li>
+                            <li>On browser, check http://localhost:8080/source</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Indexing the source code...</h3>
+                        <ul>
+                            <li>cd ~/workspace/OpenGrok-0.12</li>
+                            <li>sudo ./Opengrok index <path to source code></li>
+                            <li>sudo /etc/init.d/tomcat7 restart</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>How it does, what it does?</h3>
+                    </section>
+                    <section>
+                        <h3>Inverted index</h3>
+                        <br>
+                        An <u>inverted index</u> is an index data structure storing a mapping <u>from content</u>, such as words or numbers, <u>to</u> its locations in a <u>document</u> or a set of documents.
+                        <br>
+                        <br>
+                        A <u>forward index</u>, in contrast, maps <u>from documents to content</u>.
+                    </section>
+                    <section>
+                        <img src="images/devops/opengrok/inverted_image_example.jpg" width="800" height="650"/>
+                    </section>
+                    <section>
+                        <h3>Packages</h3>
+                        <ul>
+                            <li>org.opensolaris.opengrok.analysis (a.k.a. Analyzer Guru)</li>
+                            <li>org.opensolaris.opengrok.index</li>
+                            <li>org.opensolaris.opengrok.search</li>
+                            <li>org.opensolaris.opengrok.history  (a.k.a. History Guru)</li>
+                            <li>org.opensolaris.opengrok.web</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img src="images/devops/opengrok/opengrok_workflow.png" width="800" height="650"/>
+                    </section>
+                    <section>
+                        <i>Higher up the <u>management</u> chain,</i>
+                        <br>
+                        <i>they do <u>less</u> (specialized) work.</i>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        Creator: Doug Cutting
+                        <br>
+                        <br>
+                        Creation: Lucene
+                    </section>
+                    <section>
+                        <h3>The popularity of Lucene</h3>
+                        <br>
+                        http://wiki.apache.org/lucene-java/PoweredBy
+                    </section>
+                    <section>
+                        At the core of Lucene's logical architecture is the idea of a document containing fields of text. This flexibility allows Lucene's API to be independent of the file format.
+                        <br>
+                        <br>
+Text from PDFs, HTML, Microsoft Word, Mind Maps, and OpenDocument documents, as well as many others (except images), can all be indexed as long as their textual information can be extracted.
+                    </section>
+                    <section>
+                        <img src="images/devops/opengrok/lucene.jpg" width="900" height="650"/>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Is this helpful?</h3>
+                    </section>
+                    <section>
+                        <h3>Is this simple?</h3>
+                    </section>
+                    <section>
+                        <img src="images/devops/opengrok/simplify.jpg" width="800" height="450"/>
+                    </section>
+                    <section>
+                        <h3>Amdahl's Law</h3>
+                        <br>
+                        <img src="images/devops/opengrok/amdahl_law.png" width="600" height="300"/>
+                    </section>
+                    <section>
+                        <h3>What does it mean?</h3>
+                        <br>
+                        Amdahl's law is used to find the <u>maximum expected improvement</u> to an overall system when <u>only part of the system is improved</u>.
+                        <br>
+                        <br>
+                        It is often used in parallel computing to predict the theoretical maximum speedup using multiple processors.
+                        <br>
+                        <br>
+                        80/20 or 90/10 principle 
+                        <br>
+                        <br>
+                        "<i>A program spends 90% of its time in 10% of its code</i>"
+                    </section>
+                    <section>
+                        Make the common case faster (Amdahl's law)
+                        <br>
+                        <br>
+                        ...and easier! (human nature)
+                    </section>
+                    <section>
+                        <h3>Introducing...</h3>
+                        <br>
+                        <img src="images/devops/opengrok/simpleselectsearch.png" height="200" width="800"/>
+                    </section>
+                    <section>
+                        It's a Chrome extension.
+                        <br>
+                        <br>
+                        Allows configuring search engines.
+                    </section>
+                    <section>
+                        <img src="images/devops/opengrok/sss_example.webp" height="450" width="900"/>
+                    </section>
+                    <section>
+                        <h3>Vim plugin</h3>
+                        <br>
+                        <br>
+                        https://github.com/jdevera/vim-opengrok-search/
+                        <br>
+                        <ul>
+                            <li>:let b:ogs_app_url = 'http://localhost:8080/source'</li>
+                            <li>:OgSetProject linux</li>
+                            <li>:Og full keepalive</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <h3>References</h3>
+                    <ul>
+                        <li>https://github.com/OpenGrok/OpenGrok</li>
+                        <li>http://opengrok.github.io/OpenGrok/</li>
+                        <li>https://github.com/OpenGrok/OpenGrok/releases/tag/0.12</li>
+                        <li>https://github.com/OpenGrok/OpenGrok/wiki</li>
+                        <li>https://blogs.oracle.com/taz/entry/opengrok_0_12</li>
+                        <li>https://staxz.wordpress.com/2015/03/02/install-opengrok-in-ubuntu-14-04/</li>
+                        <li>https://lucene.apache.org/core/</li>
+                        <li>https://cutting.wordpress.com/</li>
+                        <li>http://simpleselectsearch.blogspot.in/</li>
+                        <li>https://github.com/jdevera/vim-opengrok-search</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <img src="images/devops/opengrok/opengrok-logo.png" height="100" width="450"/>
+                        <br>
+                        The significance of the open flower bracket...
+                    </section>
+                    <section>
+                        The logo has a opening flower bracket.
+                        <br>
+                        <br>
+                        This is a common block start symbol in languages like C and Java.
+                        <br>
+                        <br>
+                        It has no closing bracket to signify open source.
+                    </section>
+                </section>
+
+                <section>
+                  <img src="images/devops/opengrok/thank_you.jpg">
+                  <h3>Thank You!</h3>
+                </section>
+
+        </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              slideNumber: true,
+              transition: 'convex', // none/fade/slide/convex/concave/zoom
+      
+              // Optional reveal.js plugins
+              dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true }
+              ]
+            });
+        </script>
+    </body>
+</html>
