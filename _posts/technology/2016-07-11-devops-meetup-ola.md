@@ -16,7 +16,7 @@ thumbnail: /res/posts/devops-meetup-ola/thumbnail.jpg
 Last Saturday, we hosted a DevOps Meetup at [Ola](https://www.olacabs.com/) Bangalore office (EGL). We were delighted to meet so many people, talk about latest trends in DevOps and network with each other.  
 Here are some exciting pics from the event:
 
-<div style='position: relative; padding-bottom: 81%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://www.rohit.io/photos/album/devops-meetup-ola/gallery/' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>
+<div style='position: relative; padding-bottom: 81%; height: 0; overflow: hidden;'><iframe id='iframe' src='/photos/album/devops-meetup-ola/gallery/' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>
 
 Tech Talks on DevOps
 ====================
