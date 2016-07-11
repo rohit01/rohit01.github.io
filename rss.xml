@@ -3,12 +3,96 @@
   <title>Simplicity - @rohit01</title>
   <link href="http://www.rohit.io/rss.xml" rel="self" />
   <link href="http://www.rohit.io/" />
-  <updated>2016-07-11T19:09:36+00:00</updated>
+  <updated>2016-07-11T19:21:25+00:00</updated>
   <id>http://www.rohit.io/</id>
   <author>
     <name>Rohit Gupta</name>
     <email>hello@rohit.io</email>
   </author>
+  
+  <entry>
+    <title>Devops Meetup @ Ola</title>
+    <link href="http://www.rohit.io/blog/devops-meetup-ola.html"/>
+    <updated>2015-07-11T18:30:00+00:00</updated>
+    <id>http://www.rohit.io/blog/devops-meetup-ola</id>
+    <content type="html">&lt;p&gt;Last Saturday, we hosted a DevOps Meetup at &lt;a href=&quot;https://www.olacabs.com/&quot;&gt;Ola&lt;/a&gt; Bangalore office (EGL). We were delighted to meet so many people, talk about latest trends in DevOps and network with each other.&lt;br/&gt;
+Here are some exciting pics from the event:&lt;/p&gt;
+
+&lt;div style=&#39;position: relative; padding-bottom: 81%; height: 0; overflow: hidden;&#39;&gt;&lt;iframe id=&#39;iframe&#39; src=&#39;http://www.rohit.io/photos/album/devops-meetup-ola/gallery/&#39; scrolling=&#39;no&#39; frameborder=&#39;0&#39;style=&#39;width:100%; height:100%; position: absolute; top:0; left:0;&#39; &gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Tech Talks on DevOps&lt;/h1&gt;
+
+&lt;p&gt;We had 5 sessions which covered a variety of topics.&lt;/p&gt;
+
+&lt;h3&gt;Micro-services at scale&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/devops-meetup-ola/images/rohit.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/rohit01&quot;&gt;@rohit01&lt;/a&gt;, Production Engineer II at Ola&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.rohit.io/res/posts/devops-meetup-ola/containers-at-scale-with-mesos/&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, I spoke about how a monolithic application can be converted into microservices. I used a calculator rest API &lt;a href=&quot;https://hub.docker.com/r/rohit01/calc_api/&quot;&gt;docker image&lt;/a&gt; as an example. Demonstrated, how easy it is to create micro-services using Mesos.&lt;/p&gt;
+
+&lt;h3&gt;AWS managed services to create serverless applications&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/devops-meetup-ola/images/chandra.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/chandrashekar_m&quot;&gt;@chandrashekar_m&lt;/a&gt;, Architect at Knowlarity Communications&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.slideshare.net/AmazonWebServices/aws-may-2016-webinar-series-deep-dive-on-serverless-web-applications&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, Chandra talked about AWS managed services. He talked about AWS lambda, Redshift, DynomoDB among others to create serverless web applications. He also gave an example of Knowlarity use case and explained, how startups can leverage it to have a better focus on business.&lt;/p&gt;
+
+&lt;h3&gt;Salt - Deploy, Monitor, React&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/devops-meetup-ola/images/nabarun.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/NabarunChatterj&quot;&gt;@NabarunChatterj&lt;/a&gt;, Production Engineer I at Ola&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.rohit.io/res/posts/devops-meetup-ola/salt-deploy-monitor-react.pdf&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, Nabarun gave an introduction about Saltstack. He talked about salt minions, agent vs agentless approach for configuration management and various components of Saltstack. He explained concepts around states, grains, pillars, reactors as well as beacons. Post demo, he also shared his tutorial repository: &lt;a href=&quot;https://github.com/nabarunchatterjee/salt-tutorial&quot;&gt;https://github.com/nabarunchatterjee/salt-tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Let&amp;rsquo;s talk DNS&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/devops-meetup-ola/images/abhinav.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/rohit01&quot;&gt;@mehta_&lt;/a&gt;, Software Architect at ZipGo&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.slideshare.net/developeratworks/lets-talk-dns&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;:  In this talk, Abhinav talked DNS service. He started with basics, showed a live demo of how DNS resolution works and slowly moved into advanced topics. DNS root servers got people really excited.&lt;/p&gt;
+
+&lt;h3&gt;Productivity Tool(s)&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/devops-meetup-ola/images/sharad.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/sharad1087&quot;&gt;@sharad1087&lt;/a&gt;, Software Professional at Sandvine&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.rohit.io/res/posts/devops-meetup-ola/productivity-tools/&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, Sharad talked about OpenGrok, which is a fast and usable source code search and cross reference engine. He talked about how it helped improve the productivity of NOC/support engineers. He also talked about select search chrome extension and vim plugins to talk it to the next level.&lt;/p&gt;
+
+&lt;h3&gt;Awesome Audience!&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rohit.io/res/posts/devops-meetup-ola/images/group_pic.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; align=&quot;center&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;Tweets on this event :-D&lt;/h3&gt;
+
+&lt;div class=&quot;tweetline&quot; align=&quot;center&quot;&gt;
+    &lt;a class=&quot;twitter-timeline&quot;  href=&quot;https://twitter.com/hashtag/DMAtOla&quot; data-widget-id=&quot;751442179281653760&quot;&gt;#DMAtOla Tweets&lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>http://www.rohit.io/about/</uri>
+    </author>
+  </entry>
   
   <entry>
     <title>29 questions to ask yourself if you’re in devops</title>
@@ -1101,25 +1185,6 @@ There are many live USB Linux options available online, but they have their own 
 &lt;p&gt;&lt;p /&gt;&lt;/p&gt;
 
 &lt;p&gt;Virtualenv can help you maintain conflicting library dependencies, python versions for different projects, in the same system. It is commonly used in production systems even with a single python application.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
-</content>
-    <author>
-      <name>Rohit Gupta</name>
-      <uri>http://www.rohit.io/about/</uri>
-    </author>
-  </entry>
-  
-  <entry>
-    <title>Simplicity</title>
-    <link href="http://www.rohit.io/blog/simplicity.html"/>
-    <updated>2014-02-09T15:19:00+00:00</updated>
-    <id>http://www.rohit.io/blog/simplicity</id>
-    <content type="html">&lt;p&gt;Today, I changed the title of my blog to &lt;strong&gt;Simplicity&lt;/strong&gt;. A simple thought, life, action and relation is somewhere lost in this complicated world! &lt;strong&gt;Simplicity is an aquired taste&lt;/strong&gt;. A taste, which helped google dominate the web, Apple to be regarded as the biggest brand and Mahatma Gandhi to become the father of the Nation.&lt;/p&gt;
-
-&lt;p&gt;The first thing to realize about simplicity is that, it does not mean &lt;em&gt;LIMITED&lt;/em&gt;. &lt;strong&gt;Simplicity is about subtracting the obvious and adding the meaningful&lt;/strong&gt;. The problem here is that the &amp;lsquo;obvious&amp;rsquo; is not so OBVIOUS :(&lt;/p&gt;
-
-&lt;p&gt;Simplicity also means, the achievement of maximum effect with minimum means. A absence of luxury or showiness, enjoying plainess.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
 </content>

@@ -3,12 +3,96 @@
   <title>Rohit Gupta</title>
   <link href="https://www.rohit.io/atom.xml" rel="self"/>
   <link href="https://www.rohit.io/"/>
-  <updated>2016-07-11T19:09:36+00:00</updated>
+  <updated>2016-07-11T19:21:25+00:00</updated>
   <id>https://www.rohit.io/</id>
   <author>
     <name>Rohit Gupta</name>
     <email>hello@rohit.io</email>
   </author>
+  
+  <entry>
+    <title>Devops Meetup @ Ola</title>
+    <link href="https://www.rohit.io/blog/devops-meetup-ola.html"/>
+    <updated>2015-07-11T18:30:00+00:00</updated>
+    <id>https://www.rohit.io/blog/devops-meetup-ola</id>
+    <content type="html">&lt;p&gt;Last Saturday, we hosted a DevOps Meetup at &lt;a href=&quot;https://www.olacabs.com/&quot;&gt;Ola&lt;/a&gt; Bangalore office (EGL). We were delighted to meet so many people, talk about latest trends in DevOps and network with each other.&lt;br/&gt;
+Here are some exciting pics from the event:&lt;/p&gt;
+
+&lt;div style=&#39;position: relative; padding-bottom: 81%; height: 0; overflow: hidden;&#39;&gt;&lt;iframe id=&#39;iframe&#39; src=&#39;http://www.rohit.io/photos/album/devops-meetup-ola/gallery/&#39; scrolling=&#39;no&#39; frameborder=&#39;0&#39;style=&#39;width:100%; height:100%; position: absolute; top:0; left:0;&#39; &gt;&lt;/iframe&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Tech Talks on DevOps&lt;/h1&gt;
+
+&lt;p&gt;We had 5 sessions which covered a variety of topics.&lt;/p&gt;
+
+&lt;h3&gt;Micro-services at scale&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/posts/devops-meetup-ola/images/rohit.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/rohit01&quot;&gt;@rohit01&lt;/a&gt;, Production Engineer II at Ola&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;/res/posts/devops-meetup-ola/containers-at-scale-with-mesos/&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, I spoke about how a monolithic application can be converted into microservices. I used a calculator rest API &lt;a href=&quot;https://hub.docker.com/r/rohit01/calc_api/&quot;&gt;docker image&lt;/a&gt; as an example. Demonstrated, how easy it is to create micro-services using Mesos.&lt;/p&gt;
+
+&lt;h3&gt;AWS managed services to create serverless applications&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/posts/devops-meetup-ola/images/chandra.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/chandrashekar_m&quot;&gt;@chandrashekar_m&lt;/a&gt;, Architect at Knowlarity Communications&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.slideshare.net/AmazonWebServices/aws-may-2016-webinar-series-deep-dive-on-serverless-web-applications&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, Chandra talked about AWS managed services. He talked about AWS lambda, Redshift, DynomoDB among others to create serverless web applications. He also gave an example of Knowlarity use case and explained, how startups can leverage it to have a better focus on business.&lt;/p&gt;
+
+&lt;h3&gt;Salt - Deploy, Monitor, React&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/posts/devops-meetup-ola/images/nabarun.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/NabarunChatterj&quot;&gt;@NabarunChatterj&lt;/a&gt;, Production Engineer I at Ola&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;/res/posts/devops-meetup-ola/salt-deploy-monitor-react.pdf&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, Nabarun gave an introduction about Saltstack. He talked about salt minions, agent vs agentless approach for configuration management and various components of Saltstack. He explained concepts around states, grains, pillars, reactors as well as beacons. Post demo, he also shared his tutorial repository: &lt;a href=&quot;https://github.com/nabarunchatterjee/salt-tutorial&quot;&gt;https://github.com/nabarunchatterjee/salt-tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Let&amp;rsquo;s talk DNS&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/posts/devops-meetup-ola/images/abhinav.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/rohit01&quot;&gt;@mehta_&lt;/a&gt;, Software Architect at ZipGo&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;http://www.slideshare.net/developeratworks/lets-talk-dns&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;:  In this talk, Abhinav talked DNS service. He started with basics, showed a live demo of how DNS resolution works and slowly moved into advanced topics. DNS root servers got people really excited.&lt;/p&gt;
+
+&lt;h3&gt;Productivity Tool(s)&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/posts/devops-meetup-ola/images/sharad.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;right&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speaker&lt;/strong&gt;: &lt;a href=&quot;https://twitter.com/sharad1087&quot;&gt;@sharad1087&lt;/a&gt;, Software Professional at Sandvine&lt;br/&gt;
+&lt;strong&gt;Slides&lt;/strong&gt;: &lt;a href=&quot;/res/posts/devops-meetup-ola/productivity-tools/&quot;&gt;click here&lt;/a&gt;&lt;br/&gt;
+&lt;strong&gt;Summary&lt;/strong&gt;: In this talk, Sharad talked about OpenGrok, which is a fast and usable source code search and cross reference engine. He talked about how it helped improve the productivity of NOC/support engineers. He also talked about select search chrome extension and vim plugins to talk it to the next level.&lt;/p&gt;
+
+&lt;h3&gt;Awesome Audience!&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/posts/devops-meetup-ola/images/group_pic.jpg&quot; width=&quot;100%&quot; height=&quot;100%&quot; align=&quot;center&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;Tweets on this event :-D&lt;/h3&gt;
+
+&lt;div class=&quot;tweetline&quot; align=&quot;center&quot;&gt;
+    &lt;a class=&quot;twitter-timeline&quot;  href=&quot;https://twitter.com/hashtag/DMAtOla&quot; data-widget-id=&quot;751442179281653760&quot;&gt;#DMAtOla Tweets&lt;/a&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :)&lt;/strong&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>Rohit Gupta</name>
+      <uri>https://www.rohit.io/about/</uri>
+    </author>
+  </entry>
   
   <entry>
     <title>29 questions to ask yourself if you’re in devops</title>
@@ -569,281 +653,6 @@ main()
 &lt;p&gt;Github repository: &lt;a href=&quot;https://github.com/rohit01/ansible-playbooks&quot;&gt;https://github.com/rohit01/ansible-playbooks&lt;/a&gt;. This project provides a basic layout for building configuration management system using Ansible.&lt;/p&gt;
 
 &lt;p&gt;Would love to hear your feedback in comments. &lt;strong&gt;And as always, Thanks for reading :-)&lt;/strong&gt;&lt;/p&gt;
-</content>
-    <author>
-      <name>Rohit Gupta</name>
-      <uri>https://www.rohit.io/about/</uri>
-    </author>
-  </entry>
-  
-  <entry>
-    <title>Dikhao - Quickly find all related AWS resources</title>
-    <link href="https://www.rohit.io/blog/dikhao-quickly-find-all-related-aws-resources.html"/>
-    <updated>2014-05-14T13:10:00+00:00</updated>
-    <id>https://www.rohit.io/blog/dikhao-quickly-find-all-related-aws-resources</id>
-    <content type="html">&lt;p&gt;Dikhao is an open source project (&lt;a href=&quot;https://github.com/rohit01/dikhao&quot;&gt;hosted in github&lt;/a&gt;), to cache every EC2 and route53 resource, find relations between them, and provide really fast lookups. It can be installed as a python command line utility (&lt;em&gt;pip install dikhao&lt;/em&gt;), deployed in &lt;a href=&quot;https://heroku.com/&quot;&gt;Heroku&lt;/a&gt; and has a ready to use &lt;a href=&quot;https://hubot.github.com/&quot;&gt;hubot&lt;/a&gt; plugin.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2&gt;Example search&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CLI command:&lt;br/&gt;
-  &lt;code&gt;$ batao -i route53.rohit.io&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://hubot.github.com/&quot;&gt;Hubot&lt;/a&gt; bot in hipchat:&lt;br/&gt;
-  &lt;code&gt;@hubot batao route53.rohit.io&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://heroku.com/&quot;&gt;Heroku&lt;/a&gt; application:&lt;br/&gt;
-  &lt;code&gt;http://&amp;lt;app_name&amp;gt;.herokuapp.com/lookup/route53.rohit.io&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; Key &lt;em&gt;&amp;lsquo;route53.rohit.io&amp;rsquo;&lt;/em&gt; can be anything from the configurable list of indexed items (written below).&lt;/p&gt;
-
-&lt;h2&gt;Output&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;Route53 Details (210 secs ago):
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt; Name               &lt;/th&gt;
-&lt;th&gt; ttl &lt;/th&gt;
-&lt;th&gt; Type      &lt;/th&gt;
-&lt;th&gt; Value                                              &lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt; route53.rohit.io.  &lt;/td&gt;
-&lt;td&gt; 300 &lt;/td&gt;
-&lt;td&gt; CNAME     &lt;/td&gt;
-&lt;td&gt; ec2-54-162-144-108.us-west-1.compute.amazonaws.com &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt; elb1-dns.rohit.io. &lt;/td&gt;
-&lt;td&gt; 600 &lt;/td&gt;
-&lt;td&gt; A (Alias) &lt;/td&gt;
-&lt;td&gt; blog-elb-993346533.us-west-1.elb.amazonaws.com.    &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt; elb1-dns.rohit.io. &lt;/td&gt;
-&lt;td&gt; 600 &lt;/td&gt;
-&lt;td&gt; A (Alias) &lt;/td&gt;
-&lt;td&gt; web-elb-1401441163.us-west-1.elb.amazonaws.com.    &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-&lt;pre&gt;&lt;code&gt;EC2 Instance Details (265 secs ago):
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;           Property &lt;/th&gt;
-&lt;th&gt; Value                                              &lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;        Instance ID &lt;/td&gt;
-&lt;td&gt; i-e68e0cca                                         &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;              State &lt;/td&gt;
-&lt;td&gt; running                                            &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;            EC2 DNS &lt;/td&gt;
-&lt;td&gt; ec2-54-162-144-108.us-west-1.compute.amazonaws.com &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;         IP address &lt;/td&gt;
-&lt;td&gt; 54.162.144.108                                     &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;             Region &lt;/td&gt;
-&lt;td&gt; us-west-1                                          &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;               Zone &lt;/td&gt;
-&lt;td&gt; us-west-1b                                         &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;      Instance type &lt;/td&gt;
-&lt;td&gt; m1.large                                           &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt; Private IP address &lt;/td&gt;
-&lt;td&gt; 10.201.136.202                                     &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;        Private DNS &lt;/td&gt;
-&lt;td&gt; ip-10-201-136-202.us-west-1.compute.internal       &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;          ELB names &lt;/td&gt;
-&lt;td&gt; blog-elb,web-elb                                   &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-&lt;pre&gt;&lt;code&gt;Elastic IP Details (261 secs ago):
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt; Elastic IP     &lt;/th&gt;
-&lt;th&gt; Instance ID &lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt; 54.162.144.108 &lt;/td&gt;
-&lt;td&gt; i-e68e0cca  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-&lt;pre&gt;&lt;code&gt;ELB Details (266 secs ago):
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt; Name     &lt;/th&gt;
-&lt;th&gt; ELB DNS                                         &lt;/th&gt;
-&lt;th&gt; Instance ID &lt;/th&gt;
-&lt;th&gt; State        &lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt; blog-elb &lt;/td&gt;
-&lt;td&gt; blog-elb-993346533.us-west-1.elb.amazonaws.com. &lt;/td&gt;
-&lt;td&gt; i-e68e0cca  &lt;/td&gt;
-&lt;td&gt; InService    &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;          &lt;/td&gt;
-&lt;td&gt;                                                 &lt;/td&gt;
-&lt;td&gt; i-e68kkbba  &lt;/td&gt;
-&lt;td&gt; InService    &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;          &lt;/td&gt;
-&lt;td&gt;                                                 &lt;/td&gt;
-&lt;td&gt; i-52641cad  &lt;/td&gt;
-&lt;td&gt; OutOfService &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt; web-elb  &lt;/td&gt;
-&lt;td&gt; web-elb-1401441163.us-west-1.elb.amazonaws.com. &lt;/td&gt;
-&lt;td&gt; i-e68e0cca  &lt;/td&gt;
-&lt;td&gt; InService    &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;          &lt;/td&gt;
-&lt;td&gt;                                                 &lt;/td&gt;
-&lt;td&gt; i-e68kkbba  &lt;/td&gt;
-&lt;td&gt; InService    &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;          &lt;/td&gt;
-&lt;td&gt;                                                 &lt;/td&gt;
-&lt;td&gt; i-52641cad  &lt;/td&gt;
-&lt;td&gt; OutOfService &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-&lt;hr /&gt;
-
-&lt;h2&gt;Installation&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;CLI Tool&lt;/strong&gt;&lt;br/&gt;
-  &lt;em&gt;dikhao&lt;/em&gt; is available for installation using PyPi. Once installed, it provides two commands: &lt;em&gt;padho&lt;/em&gt; and &lt;em&gt;batao&lt;/em&gt;. &lt;em&gt;padho&lt;/em&gt; syncs all AWS details into redis and &lt;em&gt;batao&lt;/em&gt; can be used for searching the same.&lt;/p&gt;
-
-&lt;p&gt;  (venv)$ pip install dikhao&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Heroku App&lt;/strong&gt;&lt;br/&gt;
-  Clone respsitory and use the automated install script &lt;em&gt;&lt;a href=&quot;https://github.com/rohit01/dikhao/blob/master/install.sh&quot;&gt;install.sh&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;  &lt;strong&gt;Manual install instructions:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;``&quot;&gt;  $ git clone git@github.com:rohit01/dikhao.git
-  $ cd dikhao
-  $ heroku create {app_name} -s cedar
-  $ git push heroku master
-  $ heroku addons:add rediscloud --app {app_name}
-  $ heroku ps:scale web=1
-
-  #### Add credentials: ####
-  $ heroku config:set AWS_ACCESS_KEY_ID=&#39;&amp;lt;ACCESS-KEY&amp;gt;&#39;
-  $ heroku config:set AWS_SECRET_ACCESS_KEY=&#39;&amp;lt;SECRET-KEY&amp;gt;&#39;
-  $ heroku config:set REDIS_HOST=&#39;&amp;lt;rediscloud-hostname&amp;gt;&#39;
-  $ heroku config:set REDIS_PORT_NO=&#39;&amp;lt;rediscloud-port&amp;gt;&#39;
-  $ heroku config:set REDIS_PASSWORD=&#39;&amp;lt;rediscloud-password&amp;gt;&#39;
-  $ heroku config:set PORT=&#39;80&#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Hubot Agent:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Deploy &lt;em&gt;dikhao&lt;/em&gt; as a Heroku app&lt;/li&gt;
-&lt;li&gt;Add the &lt;em&gt;Heroku application url&lt;/em&gt; in &lt;a href=&quot;https://github.com/rohit01/dikhao/blob/master/hubot/dikhao.coffee&quot;&gt;coffee script&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Integrate the coffee script in your existing hubot setup&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;hr /&gt;
-
-&lt;h2&gt;Current features&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Supported AWS services:
-
-&lt;ul&gt;
-&lt;li&gt;EC2 - Instance, Elastic IP and ELB&lt;/li&gt;
-&lt;li&gt;Route53 - All DNS types&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Search input value can be any one of the indexed item. Dikhao supports indexing based on the following (&lt;a href=&quot;https://github.com/rohit01/dikhao/blob/master/dikhao/sync.py#L16&quot;&gt;configurable&lt;/a&gt;):
-
-&lt;ul&gt;
-&lt;li&gt;Route 53 - DNS record name&lt;/li&gt;
-&lt;li&gt;Route 53 - DNS record value&lt;/li&gt;
-&lt;li&gt;EC2 Instance - ID&lt;/li&gt;
-&lt;li&gt;EC2 Instance - IP address&lt;/li&gt;
-&lt;li&gt;EC2 Instance - Private IP address&lt;/li&gt;
-&lt;li&gt;EC2 Instance - Public DNS&lt;/li&gt;
-&lt;li&gt;EC2 Instance - Private DNS&lt;/li&gt;
-&lt;li&gt;EC2 ELB - Name&lt;/li&gt;
-&lt;li&gt;EC2 ELB - DNS&lt;/li&gt;
-&lt;li&gt;EC2 - Elastic IP&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Provides many syncing options to help cater different needs. Few notable configurable options:
-
-&lt;ul&gt;
-&lt;li&gt;NO_EC2 - If True, EC2 details will not be synced. Default: False&lt;/li&gt;
-&lt;li&gt;NO_ROUTE53 - If True, Route53 details will not be synced. Default: False&lt;/li&gt;
-&lt;li&gt;HOSTED_ZONES - List of comma separated hosted zone names to be synced. Default: all&lt;/li&gt;
-&lt;li&gt;REGIONS - List of comma separated EC2 region names to be synced. Default: all&lt;/li&gt;
-&lt;li&gt;EXPIRE_DURATION - Duration for which details are cached. Default: 86,400 seconds (1 Day)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;&lt;strong&gt;And as always, Thanks for reading :-)&lt;/strong&gt;&lt;/p&gt;
 </content>
     <author>
       <name>Rohit Gupta</name>
