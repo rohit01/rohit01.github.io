@@ -3,7 +3,7 @@
   <title>Rohit Gupta</title>
   <link href="https://www.rohit.io/atom.xml" rel="self"/>
   <link href="https://www.rohit.io/"/>
-  <updated>2016-07-12T01:00:10+00:00</updated>
+  <updated>2016-07-12T01:36:28+05:30</updated>
   <id>https://www.rohit.io/</id>
   <author>
     <name>Rohit Gupta</name>
@@ -13,7 +13,7 @@
   <entry>
     <title>Devops Meetup @ Ola</title>
     <link href="https://www.rohit.io/blog/devops-meetup-ola.html"/>
-    <updated>2016-07-11T18:30:00+00:00</updated>
+    <updated>2016-07-12T01:00:00+05:30</updated>
     <id>https://www.rohit.io/blog/devops-meetup-ola</id>
     <content type="html">&lt;p&gt;Last Saturday, we hosted a DevOps Meetup at &lt;a href=&quot;https://www.olacabs.com/&quot;&gt;Ola&lt;/a&gt; Bangalore office (EGL). We were delighted to meet so many people, talk about latest trends in DevOps and network with each other.&lt;br/&gt;
 Here are some exciting pics from the event:&lt;/p&gt;
@@ -97,7 +97,7 @@ Here are some exciting pics from the event:&lt;/p&gt;
   <entry>
     <title>29 questions to ask yourself if you’re in devops</title>
     <link href="https://www.rohit.io/blog/29-questions-to-ask-yourself-if-you-are-in-devops.html"/>
-    <updated>2015-07-10T20:10:00+00:00</updated>
+    <updated>2015-07-10T20:10:00+05:30</updated>
     <id>https://www.rohit.io/blog/29-questions-to-ask-yourself-if-you-are-in-devops</id>
     <content type="html">&lt;p&gt;A few days ago, I had an opportunity to meet and interact with &lt;a href=&quot;https://github.com/cachedout&quot;&gt;Mike Place&lt;/a&gt;, who works as a developer at &lt;a href=&quot;https://saltstack.com/&quot;&gt;Saltstack&lt;/a&gt;. We had an interesting conversation about devops and how things work in the valley. Mike explained the growing importance of devops in organizations and the rise of devops as a culture that aims to collaboratively deliver systems into production, reliably and effectively.&lt;/p&gt;
 
@@ -153,7 +153,7 @@ Here are some exciting pics from the event:&lt;/p&gt;
   <entry>
     <title>Ansible Meetup @ Knowlarity</title>
     <link href="https://www.rohit.io/blog/ansible-meetup-knowlarity.html"/>
-    <updated>2015-04-12T22:10:00+00:00</updated>
+    <updated>2015-04-12T22:10:00+05:30</updated>
     <id>https://www.rohit.io/blog/ansible-meetup-knowlarity</id>
     <content type="html">&lt;p&gt;Yesterday, we hosted an Ansible Meetup at at &lt;a href=&quot;https://www.knowlarity.com/&quot;&gt;Knowlarity&lt;/a&gt; Bangalore office. It was a wonderful gathering, interactive sessions which included cute as well as dangerous questions :p&lt;br/&gt;
 Here are some exciting pics from the event:&lt;/p&gt;
@@ -237,7 +237,7 @@ Here are some exciting pics from the event:&lt;/p&gt;
   <entry>
     <title>Devops Meetup @ Knowlarity</title>
     <link href="https://www.rohit.io/blog/devops-meetup-knowlarity.html"/>
-    <updated>2015-02-21T21:00:00+00:00</updated>
+    <updated>2015-02-21T21:00:00+05:30</updated>
     <id>https://www.rohit.io/blog/devops-meetup-knowlarity</id>
     <content type="html">&lt;p&gt;Today, we hosted a &lt;a href=&quot;https://www.meetup.com/devops-bangalore/&quot;&gt;DevOps Bangalore Group&lt;/a&gt; meetup at &lt;a href=&quot;https://www.knowlarity.com/&quot;&gt;Knowlarity&lt;/a&gt; office. A picture can tell a thousand words. So, let&amp;rsquo;s enjoy the story of this event with a slideshow (photo courtesy - &lt;a href=&quot;https://twitter.com/soumpaul&quot;&gt;@soumpaul&lt;/a&gt;).&lt;/p&gt;
 
@@ -287,7 +287,7 @@ Here are some exciting pics from the event:&lt;/p&gt;
   <entry>
     <title>RIP Nagios. Hello Docker Shinken!</title>
     <link href="https://www.rohit.io/blog/rip-nagios-hello-docker-shinken.html"/>
-    <updated>2014-12-18T18:00:00+00:00</updated>
+    <updated>2014-12-18T18:00:00+05:30</updated>
     <id>https://www.rohit.io/blog/rip-nagios-hello-docker-shinken</id>
     <content type="html">&lt;p&gt;Nagios is a great IT infrastructure monitoring tool. Some people still consider it as an IT standard for monitoring. But as with any software, there is always competition. I personally find Shinken to be one of the most compatible, modern and dare I say, a better alternative to Nagios. In this post, I will do a quick comparison between the two tools, show you reasons to migrate and more importantly how to migrate your current Nagios setup to Shinken in less than 10 minutes! No, seriously!&lt;/p&gt;
 
@@ -360,7 +360,7 @@ Here are some exciting pics from the event:&lt;/p&gt;
   <entry>
     <title>Why static blog site is a good idea!</title>
     <link href="https://www.rohit.io/blog/why-static-blog-site-is-a-good-idea.html"/>
-    <updated>2014-12-08T20:40:00+00:00</updated>
+    <updated>2014-12-08T20:40:00+05:30</updated>
     <id>https://www.rohit.io/blog/why-static-blog-site-is-a-good-idea</id>
     <content type="html">&lt;p&gt;Starting a blog is fairly easy. There are many free blog hosting providers in the internet. However, each of them has some limitation on the level of customization. So, I decided to host it myself and figure out the best alternative.&lt;/p&gt;
 
@@ -405,7 +405,7 @@ Here are some exciting pics from the event:&lt;/p&gt;
   <entry>
     <title>PythonExpress @ DSCE</title>
     <link href="https://www.rohit.io/blog/pythonexpress-dsce.html"/>
-    <updated>2014-09-08T01:45:00+00:00</updated>
+    <updated>2014-09-08T01:45:00+05:30</updated>
     <id>https://www.rohit.io/blog/pythonexpress-dsce</id>
     <content type="html">&lt;p&gt;Spent an exciting weekend with college students of Dayananda Sagar College of Engineering (DSCE), Bangalore. They conducted a python workshop on 6-7 Sept, 2014 and invited me as a trainer (Thanks to &lt;a href=&quot;http://www.pythonexpress.in/&quot;&gt;pythonexpress&lt;/a&gt;).&lt;/p&gt;
 
@@ -431,7 +431,7 @@ Here are some exciting pics from the event:&lt;/p&gt;
   <entry>
     <title>Not Just Another Independence Day</title>
     <link href="https://www.rohit.io/blog/not-just-another-independence-day.html"/>
-    <updated>2014-08-18T03:35:00+00:00</updated>
+    <updated>2014-08-18T03:35:00+05:30</updated>
     <id>https://www.rohit.io/blog/not-just-another-independence-day</id>
     <content type="html">&lt;p&gt;My alarm rang with a musical note, I turned it off and saw it&amp;rsquo;s 4:15 in the morning. Surprisingly, my friend was already awake and I wished him &lt;strong&gt;&lt;em&gt;Good Morning&lt;/em&gt;&lt;/strong&gt;, he replied &lt;strong&gt;&lt;em&gt;Jai Hind&lt;/em&gt;&lt;/strong&gt;. This was the start and it certainly set the mood for making it &lt;em&gt;Not Just Another Independence Day&lt;/em&gt;!&lt;/p&gt;
 
@@ -462,7 +462,7 @@ Here are some exciting pics from the event:&lt;/p&gt;
   <entry>
     <title>Contributing to Ansible is Super Easy</title>
     <link href="https://www.rohit.io/blog/contributing-to-ansible-is-super-easy.html"/>
-    <updated>2014-08-05T13:23:00+00:00</updated>
+    <updated>2014-08-05T13:23:00+05:30</updated>
     <id>https://www.rohit.io/blog/contributing-to-ansible-is-super-easy</id>
     <content type="html">&lt;p&gt;Just three days back, I thought about writing a SMS notification module and bingo, I was able to send a &lt;a href=&quot;https://github.com/ansible/ansible/pull/8408&quot;&gt;pull request&lt;/a&gt;, same day. I submitted a module named &amp;lsquo;plivo&amp;rsquo; which allows sending SMS notification using &lt;a href=&quot;https://www.plivo.com&quot;&gt;Plivo&lt;/a&gt; services. The playbook examples are hosted here: &lt;a href=&quot;https://github.com/rohit01/ansible-plivo-example&quot;&gt;https://github.com/rohit01/ansible-plivo-example&lt;/a&gt;.&lt;/p&gt;
 
@@ -600,7 +600,7 @@ main()
   <entry>
     <title>Ansible is Awesome</title>
     <link href="https://www.rohit.io/blog/ansible-is-awesome.html"/>
-    <updated>2014-07-30T10:30:00+00:00</updated>
+    <updated>2014-07-30T10:30:00+05:30</updated>
     <id>https://www.rohit.io/blog/ansible-is-awesome</id>
     <content type="html">&lt;p&gt;Since a couple of weeks, I have started using Ansible and am amazed with its awesomeness. In this short duration, I automated a bunch of items, read about best practices and found a lot of batteries/community projects.&lt;/p&gt;
 
