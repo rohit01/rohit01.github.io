@@ -4,10 +4,10 @@ layout: blank
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Simplicity - @rohit01</title>
-  <link href="http://{{ site.website }}/rss.xml" rel="self" />
-  <link href="http://{{ site.website }}/" />
+  <link href="https://{{ site.website }}/rss.xml" rel="self" />
+  <link href="https://{{ site.website }}/" />
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://{{ site.website }}/</id>
+  <id>https://{{ site.website }}/</id>
   <author>
     <name>{{ site.author_name }}</name>
     <email>hello@rohit.io</email>
@@ -15,13 +15,13 @@ layout: blank
   {% for post in site.posts limit:15 %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="http://{{ site.website }}{{ post.url }}"/>
+    <link href="https://{{ site.website }}{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://{{ site.website }}{{ post.id }}</id>
-    <content type="html">{{ post.content | replace:' href="/res/', ' href="http://www.rohit.io/res/' | replace:' src="/res/', ' src="http://www.rohit.io/res/' | xml_escape }}</content>
+    <id>https://{{ site.website }}{{ post.id }}</id>
+    <content type="html">{{ post.content | replace:' href="/res/', ' href="https://www.rohit.io/res/' | replace:' src="/res/', ' src="https://www.rohit.io/res/'  | replace:' src="/photos/album/', ' src="https://www.rohit.io/photos/album/' | xml_escape }}</content>
     <author>
       <name>{{ site.author_name }}</name>
-      <uri>http://{{ site.website }}/about/</uri>
+      <uri>https://{{ site.website }}/about/</uri>
     </author>
   </entry>
   {% endfor %}
