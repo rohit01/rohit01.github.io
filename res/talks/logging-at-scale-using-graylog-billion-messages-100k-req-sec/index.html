@@ -355,38 +355,22 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   font-weight: bold;
 }
 
-/*#slide-3 {
-  background: url('images/golden-temple-kitchen.jpg');
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat;
-  color: #ddd;
-}
-
-#slide-4 {
-  background: url('images/mumbai-dabbawala.jpg');
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat;
-  color: #116;
-}
-
-#slide-6 {
-  background: url('images/mesos-architecture.png');
-  background-size: fill;
-  background-position: center; 
-  background-repeat: no-repeat;
-  color: #116;
-}
-
 #slide-7 {
-  background: url('images/marathonlb-architecture.png');
-  background-size: 50% 50%;
+  background: url('images/graylog-ui.png');
+  background-size: 80% auto;
   background-position: center; 
   background-repeat: no-repeat;
-  color: #116;
+  color: #A20;
 }
-*/
+
+#slide-11 {
+  background: url('images/graylog-dashboard.png');
+  background-size: 80% auto;
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #E20;
+}
+
   </style>
 </head>
 <body>
@@ -396,7 +380,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
   <div class="slide -" id="slide-1">
     <section class="slide-content"><h1 id="logging-at-scale-using-graylog-billion-messages-100k-req-sec">Logging at scale using Graylog - Billion+ messages, 100K req/sec</h1>
-</section>
+<!-- Slide #1 -->
+
+<!-- Slide #2 --></section>
   </div>
   <div class="slide hidden -" id="slide-2">
     <section class="slide-content"><div class="author">
@@ -410,82 +396,144 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   <h3 class="url">
     <b><a href="https://www.rohit.io">www.rohit.io</a></b>
   </h3>
-</div></section>
+</div>
+
+<!-- Slide #3 --></section>
   </div>
   <div class="slide hidden -" id="slide-3">
-    <section class="slide-content"><h2 id="what-is-graylog-">What is Graylog?</h2>
+    <section class="slide-content"><h2 id="-b-what-is-graylog-b-"><b>What is Graylog?</b></h2>
 <ul>
 <li>Open source log management that actually works.</li>
 <li>Search, analysis and alerting across all of your log files.</li>
 </ul>
-</section>
+<!-- Slide #4 --></section>
   </div>
   <div class="slide hidden -" id="slide-4">
-    <section class="slide-content"><h2 id="ola-infrastructure-overview">Ola Infrastructure Overview</h2>
+    <section class="slide-content"><h2 id="-b-ola-infrastructure-overview-b-"><b>Ola Infrastructure Overview</b></h2>
 <ul>
 <li>Hundreds of micro-services</li>
 <li>100k requests per second</li>
 </ul>
-</section>
+<!-- Slide #5 --></section>
   </div>
   <div class="slide hidden -" id="slide-5">
-    <section class="slide-content"><h2 id="when-did-we-start-using-it-">When did we start using it?</h2>
+    <section class="slide-content"><h2 id="-b-when-did-we-start-using-it-b-"><b>When did we start using it?</b></h2>
 <ul>
-<li>We found managing ELK clusters require high maintenance intensive.</li>
+<li>We found managing ELK clusters require are maintenance intensive.</li>
 <li>We were revamping our infra and centralized logging was a basic requirement.</li>
 </ul>
-</section>
+<!-- Slide #6 --></section>
   </div>
   <div class="slide hidden -" id="slide-6">
-    <section class="slide-content"><h2 id="but-why-graylog-">But why Graylog?</h2>
-<ul>
-<li>Great UI, best suited for viewing log</li>
-<li>Several input &amp; output options</li>
-<li>Easy manageability of elasticsearch indexes</li>
-<li>Realtime log analysis and alerts</li>
-<li>Dashboards</li>
-</ul>
-</section>
+    <section class="slide-content"><h1 id="but-why-graylog-">But why Graylog?</h1>
+<!-- Slide #7 --></section>
   </div>
   <div class="slide hidden -" id="slide-7">
-    <section class="slide-content"><h2 id="how-the-pipeline-looks-">How the pipeline looks?</h2>
-<ul>
-<li>Fluentd</li>
-<li>Kafka</li>
-<li>Graylog Server</li>
-<li>Elasticsearch</li>
-</ul>
-</section>
+    <section class="slide-content"><h2 id="-b-great-ui-best-for-viewing-logs-b-"><b>Great UI, Best for viewing Logs</b></h2>
+<!-- Slide #8 --></section>
   </div>
   <div class="slide hidden -" id="slide-8">
-    <section class="slide-content"><h2 id="problems-learnings">Problems &amp; Learnings</h2>
-<ul>
-<li>Huge message lag - several reasons<ul>
-<li>Plan capacity requirements</li>
-<li>Limit log message size</li>
-<li>Use consistent datatype in json</li>
-<li>Avoid buffer at multiple levels</li>
-<li>Send gelf formatted message to kafka</li>
-</ul>
-</li>
-<li>Use native docker log driver: json-log</li>
-</ul>
-</section>
+    <section class="slide-content"><h2 id="-b-several-input-output-options-b-"><b>Several input &amp; output options</b></h2>
+<p><img src="images/graylog-inputs.png" width="100%"></p>
+<!-- Slide #9 --></section>
   </div>
   <div class="slide hidden -" id="slide-9">
-    <section class="slide-content"><h2 id="who-all-loved-it-">Who all loved it?</h2>
+    <section class="slide-content"><h2 id="-b-easy-manageability-of-elasticsearch-indexes-b-"><b>Easy manageability of elasticsearch indexes</b></h2>
+<p><img src="images/graylog-indices.png" width="100%"></p>
+<!-- Slide #10 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-10">
+    <section class="slide-content"><h2 id="-b-realtime-log-analysis-and-alerts-b-"><b>Realtime log analysis and alerts</b></h2>
+<p><img src="images/graylog-streams.png" width="100%"></p>
+<!-- Slide #11 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-11">
+    <section class="slide-content"><h2 id="-b-dashboard-b-"><b>Dashboard</b></h2>
+<!-- Slide #12 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-12">
+    <section class="slide-content"><h2 id="-b-how-the-pipeline-looks-b-"><b>How the pipeline looks?</b></h2>
+<p><img src="images/pipeline-basic.png" width="100%"></p>
+<!-- Slide #13 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-13">
+    <section class="slide-content"><h2 id="-b-what-does-each-component-do-b-"><b>What does each component do?</b></h2>
+<p><img src="images/pipeline-with-description.png" width="100%"></p>
+<!-- Slide #14 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-14">
+    <section class="slide-content"><h1 id="problems-learnings">Problems &amp; Learnings</h1>
+<!-- Slide #15 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-15">
+    <section class="slide-content"><h2 id="-b-1-huge-lag-for-application-logs-in-graylog-ui-b-"><b>#1 Huge Lag for Application logs in Graylog UI</b></h2>
+<p><img src="images/fluentd-consumer-problem.png" width="100%"></p>
+<!-- Slide #15 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-16">
+    <section class="slide-content"><h2 id="-b-1-send-gelf-formatted-messages-to-kafka-for-native-graylog-support-b-"><b>#1 Send gelf formatted messages to Kafka for native graylog support</b></h2>
+<p><img src="images/fluentd-consumer-solution.png" width="100%"></p>
+<!-- Slide #16 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-17">
+    <section class="slide-content"><h2 id="-b-2-docker-service-crash-due-to-fluentd-log-driver-b-"><b>#2 Docker service crash due to Fluentd log driver</b></h2>
+<p><img src="images/docker-crash.png" width="100%"></p>
+<!-- Slide #17 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-18">
+    <section class="slide-content"><h2 id="-b-3-exceptions-in-graylog-server-due-to-3-mb-log-messages-b-"><b>#3 Exceptions in Graylog server due to 3 MB log messages</b></h2>
+<p><img src="images/huge-log-message-problem.png" width="100%"></p>
+<!-- Slide #18 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-19">
+    <section class="slide-content"><h2 id="-b-3-truncate-log-messages-before-sending-to-kafka-b-"><b>#3 Truncate log messages before sending to kafka</b></h2>
+<p><img src="images/huge-log-message-solution.png" width="100%"></p>
+<!-- Slide #19 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-20">
+    <section class="slide-content"><h2 id="-b-4-inconsistent-schema-problem-b-"><b>#4 Inconsistent schema problem</b></h2>
+<p><img src="images/inconsistent-schema-problem.png" width="100%"></p>
+<!-- Slide #20 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-21">
+    <section class="slide-content"><h2 id="-b-4-convert-everything-to-string-at-source-b-"><b>#4 Convert everything to string at source</b></h2>
+<p><img src="images/inconsistent-schema-solution.png" width="100%"></p>
+<!-- Slide #20 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-22">
+    <section class="slide-content"><h2 id="-b-5-journal-utilisation-too-high-uncommitted-messages-deleted-from-journal-b-"><b>#5 Journal Utilisation too high, uncommitted messages deleted from journal</b></h2>
+<p><img src="images/journal-utilisation-problem.png" width="100%"></p>
+<!-- Slide #20 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-23">
+    <section class="slide-content"><h2 id="-b-5-final-setting-disable-buffers-and-journal-b-"><b>#5 Final setting - disable buffers and journal</b></h2>
+<p><img src="images/journal-utilisation-solution.png" width="100%"></p>
+<!-- Slide #21 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-24">
+    <section class="slide-content"><h2 id="-b-6-missing-logs-due-to-slow-fluentd-kafka-plugin-b-"><b>#6 Missing logs due to slow fluentd kafka plugin</b></h2>
+<p><img src="images/missing-logs-problem.png" width="100%"></p>
+<!-- Slide #22 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-25">
+    <section class="slide-content"><h2 id="-b-6-heka-is-superfast-10x-less-cpu-5x-less-memory-b-"><b>#6 Heka is superfast, 10x less CPU, 5x less memory</b></h2>
+<p><img src="images/missing-logs-problem.png" width="100%"></p>
+<!-- Slide #23 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-26">
+    <section class="slide-content"><h2 id="-b-who-all-loved-it-b-"><b>Who all loved it?</b></h2>
 <ul>
 <li>Developers</li>
 <li>Devops</li>
 <li>Management</li>
 </ul>
-</section>
+<!-- Slide #24 --></section>
   </div>
-  <div class="slide hidden -" id="slide-10">
+  <div class="slide hidden -" id="slide-27">
     <section class="slide-content"><h1 id="questions-">Questions?</h1>
-</section>
+<!-- Slide #25 --></section>
   </div>
-  <div class="slide hidden -" id="slide-11">
+  <div class="slide hidden -" id="slide-28">
     <section class="slide-content"><h1 id="thank-you-">Thank You :)</h1>
 </section>
   </div>
