@@ -1,0 +1,15 @@
+#slide-7 {
+  background: url('images/graylog-ui.png');
+  background-size: 80% auto;
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #A20;
+}
+
+#slide-11 {
+  background: url('images/graylog-dashboard.png');
+  background-size: 80% auto;
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #E20;
+}
