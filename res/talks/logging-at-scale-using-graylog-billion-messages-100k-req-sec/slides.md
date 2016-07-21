@@ -155,7 +155,7 @@ style: style.css
 ---
 ## <b>#6 Heka is superfast, 10x less CPU, 5x less memory</b>
 
-<img src="images/missing-logs-problem.png" width="100%">
+<img src="images/missing-logs-solution.png" width="100%">
 
 <!-- Slide #23 -->
 ---
