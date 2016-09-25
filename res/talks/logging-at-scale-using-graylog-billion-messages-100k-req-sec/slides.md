@@ -3,7 +3,6 @@ output: index.html
 controls: false
 style: style.css
 
-
 ---
 # Logging at scale using Graylog - Billion+ messages, 100K req/sec
 <!-- Slide #1 -->
@@ -27,26 +26,29 @@ style: style.css
 ---
 ## <b>What is Graylog?</b>
 
-* Open source log management that actually works.
-* Search, analysis and alerting across all of your log files.
+* Open source <b>log management</b> that actually works.
+* Search, analysis, alerting and a lot more.
 
 <!-- Slide #4 -->
 ---
-## <b>Ola Infrastructure Overview</b>
+## <b>Ola Infra Requirements</b>
 
-* Hundreds of micro-services
-* 100k requests per second
+* **Volume:** Billion+ logs per day
+* **Velocity:** 100k+ messages per sec
+* **Variety:** Hundreds of micro-services
+
+<!-- Q: How many of you are Ola users? -->
 
 <!-- Slide #5 -->
 ---
-## <b>When did we start using it?</b>
+## <b>What triggered the development?</b>
 
-* We found managing ELK clusters require are maintenance intensive.
-* We were revamping our infra and centralized logging was a basic requirement.
+* ELK clusters are **maintenance intensive**
+* **Infra v2 revamp** with centralized logging as a basic requirement
 
 <!-- Slide #6 -->
 ---
-# But why Graylog?
+# But why graylog?
 
 <!-- Slide #7 -->
 ---
@@ -64,10 +66,9 @@ style: style.css
 
 <img src="images/graylog-indices.png" width="100%">
 
-
 <!-- Slide #10 -->
 ---
-## <b>Realtime log analysis and alerts</b>
+## <b>Realtime log analysis & alerts</b>
 
 <img src="images/graylog-streams.png" width="100%">
 
@@ -75,21 +76,22 @@ style: style.css
 ---
 ## <b>Dashboard</b>
 
-<!-- Slide #12 -->
----
-## <b>How the pipeline looks?</b>
-
-<img src="images/pipeline-basic.png" width="100%">
-
-<!-- Slide #13 -->
----
-## <b>What does each component do?</b>
-
-<img src="images/pipeline-with-description.png" width="100%">
-
 <!-- Slide #14 -->
 ---
-# Problems & Learnings
+# Problems & learnings, the Ola story!
+
+<!-- Slide #15 -->
+---
+## <b>#1: Initial Pipeline</b>
+
+<img src="images/fluentd-consumer-problem.png" width="100%">
+
+---
+## <b>#1: Initial Pipeline</b>
+
+<img src="images/fluentd-consumer-problem.png" width="100%">
+
+<center>**Huge message lag in Graylog UI**</center>
 
 <!-- Slide #15 -->
 ---
@@ -141,7 +143,7 @@ style: style.css
 
 <!-- Slide #20 -->
 ---
-## <b>#5 Final setting - disable buffers and journal</b>
+## <b>#5 Final setting - disable buffers & journal</b>
 
 <img src="images/journal-utilisation-solution.png" width="100%">
 
