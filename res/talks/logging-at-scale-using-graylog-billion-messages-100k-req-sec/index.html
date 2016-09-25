@@ -360,7 +360,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   background-size: 80% auto;
   background-position: center; 
   background-repeat: no-repeat;
-  color: #A20;
+  color: #39C;
 }
 
 #slide-11 {
@@ -403,8 +403,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   <div class="slide hidden -" id="slide-3">
     <section class="slide-content"><h2 id="-b-what-is-graylog-b-"><b>What is Graylog?</b></h2>
 <ul>
-<li>Open source log management that actually works.</li>
-<li>Search, analysis and alerting across all of your log files.</li>
+<li>Open source <b>log management</b> that actually works.</li>
+<li>Search, analysis and alerting and a lot more.</li>
 </ul>
 <!-- Slide #4 --></section>
   </div>
@@ -412,15 +412,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <section class="slide-content"><h2 id="-b-ola-infrastructure-overview-b-"><b>Ola Infrastructure Overview</b></h2>
 <ul>
 <li>Hundreds of micro-services</li>
-<li>100k requests per second</li>
+<li><strong>> 100k</strong> messages per sec</li>
+<li><strong>Billion+</strong> logs per day</li>
 </ul>
+<!-- Q: How many of you are Ola users? -->
+
 <!-- Slide #5 --></section>
   </div>
   <div class="slide hidden -" id="slide-5">
     <section class="slide-content"><h2 id="-b-when-did-we-start-using-it-b-"><b>When did we start using it?</b></h2>
 <ul>
-<li>We found managing ELK clusters require are maintenance intensive.</li>
-<li>We were revamping our infra and centralized logging was a basic requirement.</li>
+<li>ELK clusters are <strong>maintenance intensive</strong></li>
+<li><strong>Infra v2 revamp</strong> with centralized logging as a basic requirement</li>
 </ul>
 <!-- Slide #6 --></section>
   </div>
@@ -449,20 +452,22 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </div>
   <div class="slide hidden -" id="slide-11">
     <section class="slide-content"><h2 id="-b-dashboard-b-"><b>Dashboard</b></h2>
-<!-- Slide #12 --></section>
-  </div>
-  <div class="slide hidden -" id="slide-12">
-    <section class="slide-content"><h2 id="-b-how-the-pipeline-looks-b-"><b>How the pipeline looks?</b></h2>
-<p><img src="images/pipeline-basic.png" width="100%"></p>
-<!-- Slide #13 --></section>
-  </div>
-  <div class="slide hidden -" id="slide-13">
-    <section class="slide-content"><h2 id="-b-what-does-each-component-do-b-"><b>What does each component do?</b></h2>
-<p><img src="images/pipeline-with-description.png" width="100%"></p>
 <!-- Slide #14 --></section>
   </div>
+  <div class="slide hidden -" id="slide-12">
+    <section class="slide-content"><h1 id="problems-learnings-the-ola-story-">Problems &amp; learnings, the Ola story!</h1>
+<!-- Slide #15 --></section>
+  </div>
+  <div class="slide hidden -" id="slide-13">
+    <section class="slide-content"><h2 id="-b-1-initial-pipeline-b-"><b>#1: Initial Pipeline</b></h2>
+<p><img src="images/fluentd-consumer-problem.png" width="100%"></p>
+</section>
+  </div>
   <div class="slide hidden -" id="slide-14">
-    <section class="slide-content"><h1 id="problems-learnings">Problems &amp; Learnings</h1>
+    <section class="slide-content"><h2 id="-b-1-initial-pipeline-b-"><b>#1: Initial Pipeline</b></h2>
+<p><img src="images/fluentd-consumer-problem.png" width="100%"></p>
+<center><strong>Huge message lag in Graylog UI</strong></center>
+
 <!-- Slide #15 --></section>
   </div>
   <div class="slide hidden -" id="slide-15">
