@@ -18,4 +18,4 @@
 	url = https://github.com/rohit01/photos-devops-meetup-ola.git
 [submodule "photos/album/endurance-to-nandi-hills"]
 	path = photos/album/endurance-to-nandi-hills
-	url = git@github.com:rohit01/photos-endurance-to-nandi-hills.git
+	url = https://github.com/rohit01/photos-endurance-to-nandi-hills.git
