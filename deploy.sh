@@ -54,3 +54,6 @@ git checkout dev
 
 # Sample command to add submodules:
 # git submodule add git@github.com:rohit01/photos-endurance-to-nandi-hills.git photos/album/endurance-to-nandi-hills
+
+# Easy way pull latest of all submodules..
+# git submodule update --recursive --remote
