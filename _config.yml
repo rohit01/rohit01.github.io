@@ -37,7 +37,8 @@ lunr_search:
 
 website: 'www.rohit.io'
 author_name: 'Rohit Gupta'
-publisher: 'https://www.facebook.com/rohit01io'
+# Not in facebook anymore
+# publisher: 'https://www.facebook.com/rohit01io'
 
 featured_albums:
   - title: "Nandi Hills - Refreshing morning break!"
