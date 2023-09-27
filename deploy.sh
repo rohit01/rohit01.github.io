@@ -44,7 +44,7 @@ git add ./ ./photos ./.gitmodules
 
 echo "Commit and push"
 git commit -m "Release $(date +%b_%d_%G_%Hh%Mm%Ss)"
-git push
+git push origin master
 
 echo "git checkout dev"
 git checkout dev
